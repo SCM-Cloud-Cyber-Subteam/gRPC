@@ -1,0 +1,77 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+package com.scm.resources;
+
+// CONNECTION MESSAGES
+
+message ConnectRequest {
+	string server = 1;
+}
+
+message ConnectReply {
+	bool confirmation = 1;
+}
+
+// GROUPS/TAG NAMES MESSAGES
+
+message GroupsRequest {
+	string request = 1;
+}
+
+message GroupsReply {
+	repeated string groupNames = 1;
+}
+
+message GroupTagsRequest {
+	string groupName = 1;
+}
+
+message GroupTagsReply {
+	repeated string tagNames = 1;
+}
+
+// TAG VALUE MESSAGES
+
+message TagRequest {
+	string tagName = 1;
+	string groupName = 2;
+}
+
+message TagReply {
+	string clientHandle = 1;
+	string itemName = 2;
+	bool active = 3;
+	string accessPath = 4;
+	int64 timeStamp = 5;
+	string dataType = 6;
+	string value = 7;
+	bool quality = 8;
+}
+
+message MultipleTagsRequest {
+	repeated TagRequest tagRequest = 1;
+}
+
+message MultipleTagsReply {
+	repeated TagReply tagReply = 1;
+}
+
+// SERVICE
+
+service MessageHandler {
+	
+	// RPC for connection/confirmation message
+	rpc connect(ConnectRequest) returns (ConnectReply) {}
+
+	// RPC get groups/tag info
+	rpc getGroups(GroupsRequest) returns (GroupsReply) {}
+
+	rpc getGroupTags(GroupTagsRequest) returns (GroupTagsReply) {}
+
+	// RPC for getting tag values (single)
+	rpc getTag(TagRequest) returns (TagReply) {}
+
+	// RPC for getting tag values (multiple)
+	rpc getMultipleTags(MultipleTagsRequest) returns (MultipleTagsReply){}
+}
