@@ -22,7 +22,7 @@ import org.json.simple.JSONArray;
 public class ScmGrpcServer {
 	public static void main(String [] args) throws IOException, InterruptedException {
 		System.out.println("SecCldMfg Grpc Server Started");
-		Server server = ServerBuilder.forPort(8080)
+		Server server = ServerBuilder.forPort(50501)
 			.addService(new MessageHandlerImpl())
 			.build();
 		server.start();
@@ -66,7 +66,7 @@ class MessageHandlerImpl extends MessageHandlerGrpc.MessageHandlerImplBase {
 		
 		String groupName = request.getGroupName();
 
-		List<String> groupTagsList = OPCDataExtractor.getExistingTagsInGroups();
+		List<String> groupTagsList = OPCDataExtractor.getAvailableTagsInGroup(groupName);
 
 		GroupTagsReply reply = GroupTagsReply.newBuilder()
 			.addAllTagNames(groupTagsList)
@@ -76,23 +76,23 @@ class MessageHandlerImpl extends MessageHandlerGrpc.MessageHandlerImplBase {
 		replyObserver.onCompleted();
 	}
 
-	/*@Override
+	@Override
 	public void getTag(TagRequest request, StreamObserver<TagReply> replyObserver){
 
 		String tagName = request.getTagName();
 		String groupName = request.getGroupName();
 		JSONObject tagData = OPCDataExtractor.getTag(tagName, groupName);
 	
-		// TODO : Need to do something with value
 
 		TagReply reply = TagReply.newBuilder()
-			.setClientHandle(tagData.get("clientHandle"))
-			.setItemName(tagData.get("itemName"))
-			.setActive(tagData.get("active"))
-			.setAccessPath(tagData.get("accessPath"))
-			.setTimeStamp(tagData.get("timeStamp"))
-			.setValue(tagData.get("value"))
-			.setQuality(tagData.get("quality"))
+			.setClientHandle(tagData.get("clientHandle").toString())
+			.setItemName(tagData.get("itemName").toString())
+			.setActive(Boolean.valueOf(tagData.get("active").toString()))
+			.setAccessPath(tagData.get("accessPath").toString())
+			.setTimeStamp(Long.valueOf(tagData.get("timeStamp").toString()))
+			.setDataType(tagData.get("dataType").toString())
+			.setValue(tagData.get("value").toString())
+			.setQuality(Boolean.valueOf(tagData.get("quality").toString()))
 			.build();
 
 		replyObserver.onNext(reply);
@@ -107,24 +107,26 @@ class MessageHandlerImpl extends MessageHandlerGrpc.MessageHandlerImplBase {
 		String[] groupNames = new String[requests.size()];
 
 
-		for (int index = 0;index < requests.size(); ++index) {
-			tagNames[index] = requests[index].getTagName();
-			groupNames[index] = requests[index].getGroupName();
+		for (int index = 0;index < request.getTagRequestCount(); ++index) {
+			tagNames[index] = request.getTagRequest(index).getTagName();
+			groupNames[index] = request.getTagRequest(index).getGroupName();
 		}
 
-		JSONArray tagDataArray = OPCDataExtractor.getTags(tagNames, groupNames);
+		ArrayList<JSONObject> tagDataArray = OPCDataExtractor.getTags(tagNames, groupNames);
 		
 		MultipleTagsReply.Builder replyBuilder = MultipleTagsReply.newBuilder();
 
-		for (int index = 0; index < tagDataArray.size(); ++index) {
+		for (JSONObject singleTagData : tagDataArray) {
+
 			TagReply currTagReply = TagReply.newBuilder()
-				.setClientHandle(tagData.get("clientHandle"))
-				.setItemName(tagData.get("itemName"))
-				.setActive(tagData.get("active"))
-				.setAccessPath(tagData.get("accessPath"))
-				.setTimeStamp(tagData.get("timeStamp"))
-				.setValue(tagData.get("value"))
-				.setQuality(tagData.get("quality"))
+				.setClientHandle(singleTagData.get("clientHandle").toString())
+				.setItemName(singleTagData.get("itemName").toString())
+				.setActive(Boolean.valueOf(singleTagData.get("active").toString()))
+				.setAccessPath(singleTagData.get("accessPath").toString())
+				.setTimeStamp(Long.valueOf(singleTagData.get("timeStamp").toString()))
+				.setDataType(singleTagData.get("dataType").toString())
+				.setValue(singleTagData.get("value").toString())
+				.setQuality(Boolean.valueOf(singleTagData.get("quality").toString()))
 				.build();
 
 			replyBuilder.addTagReply(currTagReply);
@@ -136,6 +138,6 @@ class MessageHandlerImpl extends MessageHandlerGrpc.MessageHandlerImplBase {
 		replyObserver.onCompleted();
 	}
 	
-	*/
+	
  
 }

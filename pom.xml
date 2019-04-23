@@ -6,7 +6,7 @@
 
   <groupId>com.scm</groupId>
   <artifactId>scmgrpc</artifactId>
-  <version>1.0-SNAPSHOT</version>
+  <version>1.0</version>
   <packaging>jar</packaging>
 
   <name>scmgrpc</name>
@@ -38,7 +38,27 @@
       <artifactId>json-simple</artifactId>
       <version>1.1.1</version>
     </dependency> 
-
+    <dependency>
+      <groupId>getInfo</groupId>
+      <artifactId>getAllInfo</artifactId>
+      <version>1.0</version>
+     </dependency>
+     <!-- https://translate.google.com/translate?hl=en&sl=ru&u=http://alex-elkin.blogspot.com/2016/11/opc-da-java-maven-jeasyopc.html&prev=search -->
+     <dependency>
+       <groupId>commons-logging</groupId>
+       <artifactId>commons-logging</artifactId>
+       <version>1.2</version>
+     </dependency>
+     <dependency>
+       <groupId>log4j</groupId>
+       <artifactId>log4j</artifactId>
+       <version>1.2.13</version>
+     </dependency>
+     <dependency>
+       <groupId>javafish</groupId>
+       <artifactId>jeasyopc-2.3.2</artifactId>
+       <version>2.3.2</version>
+     </dependency>
   </dependencies>
 
   <build>
