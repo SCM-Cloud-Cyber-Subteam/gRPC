@@ -31,6 +31,15 @@ message GroupTagsReply {
 	repeated string tagNames = 1;
 }
 
+message TagGroupFileRequest {
+	string filePathTagGroup = 1;
+}
+
+message TagGroupTwoFileRequest {
+	string filePathTag = 1;
+	string filePathGroup = 2;
+}
+
 // TAG VALUE MESSAGES
 
 message TagRequest {
@@ -60,7 +69,7 @@ message MultipleTagsReply {
 // SERVICE
 
 service MessageHandler {
-	
+
 	// RPC for connection/confirmation message
 	rpc connect(ConnectRequest) returns (ConnectReply) {}
 
@@ -74,4 +83,10 @@ service MessageHandler {
 
 	// RPC for getting tag values (multiple)
 	rpc getMultipleTags(MultipleTagsRequest) returns (MultipleTagsReply){}
+
+	//RPC for getting tag values from reading a single file
+	rpc readTagsFromFile(TagGroupFileRequest) returns (MultipleTagsReply){}
+
+	//RPC for getting tag values from reading separate files for groups/tagNames
+	rpc readTagsFromSeparateFile(TagGroupTwoFileRequest) returns (MultipleTagsReply){}
 }
