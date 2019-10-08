@@ -41,7 +41,9 @@
     <dependency>
       <groupId>getInfo</groupId>
       <artifactId>getAllInfo</artifactId>
+      <scope>system</scope>
       <version>1.0</version>
+      <systemPath>${basedir}\target\getAllInfo.jar</systemPath>
      </dependency>
      <!-- https://translate.google.com/translate?hl=en&sl=ru&u=http://alex-elkin.blogspot.com/2016/11/opc-da-java-maven-jeasyopc.html&prev=search -->
      <dependency>
@@ -57,7 +59,9 @@
      <dependency>
        <groupId>javafish</groupId>
        <artifactId>jeasyopc-2.3.2</artifactId>
+       <scope>system</scope>
        <version>2.3.2</version>
+       <systemPath>${basedir}\target\jeasyopc-2.3.2\jeasyopc.jar</systemPath>
      </dependency>
   </dependencies>
 

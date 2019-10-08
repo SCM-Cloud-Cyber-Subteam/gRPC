@@ -82,11 +82,11 @@ service MessageHandler {
 	rpc getTag(TagRequest) returns (TagReply) {}
 
 	// RPC for getting tag values (multiple)
-	rpc getMultipleTags(MultipleTagsRequest) returns (MultipleTagsReply){}
+	rpc getMultipleTags(MultipleTagsRequest) returns (stream MultipleTagsReply){}
 
 	//RPC for getting tag values from reading a single file
-	rpc readTagsFromFile(TagGroupFileRequest) returns (MultipleTagsReply){}
+	rpc readTagsFromFile(TagGroupFileRequest) returns (stream MultipleTagsReply){}
 
 	//RPC for getting tag values from reading separate files for groups/tagNames
-	rpc readTagsFromSeparateFile(TagGroupTwoFileRequest) returns (MultipleTagsReply){}
+	rpc readTagsFromSeparateFile(TagGroupTwoFileRequest) returns (stream MultipleTagsReply){}
 }
