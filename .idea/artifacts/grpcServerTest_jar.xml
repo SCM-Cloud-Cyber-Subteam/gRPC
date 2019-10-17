@@ -1,0 +1,11 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="grpcServerTest:jar">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="gRPC.jar">
+      <element id="module-output" name="gRPC" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../../MDP_WN18/CloudTeam/DataExtraction/target/getAllInfo.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../../MDP_WN18/CloudTeam/JARS/json-simple-1.1.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../../MDP_WN18/CloudTeam/JARS/jeasyopc.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

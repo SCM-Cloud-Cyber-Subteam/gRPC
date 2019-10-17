@@ -1,4 +1,4 @@
-package com.scm.grpc;
+package main.java.com.scm.grpc;
 
 import getInfo.getAllInfo;
 import com.scm.resources.*;

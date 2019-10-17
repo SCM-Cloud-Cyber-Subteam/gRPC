@@ -1,10 +1,111 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module type="JAVA_MODULE" version="4">
   <component name="NewModuleRootManager">
-    <output url="file://$MODULE_DIR$/bin" />
+    <output url="file://$MODULE_DIR$/target" />
     <exclude-output />
-    <content url="file://$MODULE_DIR$" />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
+    </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../MDP_WN18/CloudTeam/DataExtraction/target/getAllInfo.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../MDP_WN18/CloudTeam/JARS/jeasyopc.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../MDP_WN18/CloudTeam/JARS/json-simple-1.1.1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../../../GitHub/grpc-java" />
+        </CLASSES>
+        <JAVADOC>
+          <root url="file://$MODULE_DIR$/../../../GitHub/grpc-java/auth/build/docs/javadoc" />
+        </JAVADOC>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/../../../GitHub/grpc-java" />
+          <root url="file://$MODULE_DIR$/../../../GitHub/grpc-java/alts/src/main/java" />
+          <root url="file://$MODULE_DIR$/../../../GitHub/grpc-java/alts/src/test/java" />
+          <root url="file://$MODULE_DIR$/../../../GitHub/grpc-java/android-interop-testing/app/src/androidTest/java" />
+          <root url="file://$MODULE_DIR$/../../../GitHub/grpc-java/android-interop-testing/app/src/main/java" />
+          <root url="file://$MODULE_DIR$/../../../GitHub/grpc-java/android/src/main/java" />
+          <root url="file://$MODULE_DIR$/../../../GitHub/grpc-java/android/src/test/java" />
+          <root url="file://$MODULE_DIR$/../../../GitHub/grpc-java/auth/src/main/java" />
+          <root url="file://$MODULE_DIR$/../../../GitHub/grpc-java/auth/src/test/java" />
+          <root url="file://$MODULE_DIR$/../../../GitHub/grpc-java/benchmarks/src/jmh/java" />
+          <root url="file://$MODULE_DIR$/../../../GitHub/grpc-java/benchmarks/src/main/java" />
+          <root url="file://$MODULE_DIR$/../../../GitHub/grpc-java/benchmarks/src/test/java" />
+          <root url="file://$MODULE_DIR$/../../../GitHub/grpc-java/context/src/jmh/java" />
+          <root url="file://$MODULE_DIR$/../../../GitHub/grpc-java/context/src/main/java" />
+          <root url="file://$MODULE_DIR$/../../../GitHub/grpc-java/context/src/test/java" />
+          <root url="file://$MODULE_DIR$/../../../GitHub/grpc-java/core/src/jmh/java" />
+          <root url="file://$MODULE_DIR$/../../../GitHub/grpc-java/core/src/main/java" />
+          <root url="file://$MODULE_DIR$/../../../GitHub/grpc-java/core/src/test/java" />
+          <root url="file://$MODULE_DIR$/../../../GitHub/grpc-java/cronet/src/main/java" />
+          <root url="file://$MODULE_DIR$/../../../GitHub/grpc-java/cronet/src/test/java" />
+          <root url="file://$MODULE_DIR$/../../../GitHub/grpc-java/examples/android/clientcache/app/src/main/java" />
+          <root url="file://$MODULE_DIR$/../../../GitHub/grpc-java/examples/android/clientcache/app/src/test/java" />
+          <root url="file://$MODULE_DIR$/../../../GitHub/grpc-java/examples/android/helloworld/app/src/main/java" />
+          <root url="file://$MODULE_DIR$/../../../GitHub/grpc-java/examples/android/routeguide/app/src/main/java" />
+          <root url="file://$MODULE_DIR$/../../../GitHub/grpc-java/examples/src/main/java" />
+          <root url="file://$MODULE_DIR$/../../../GitHub/grpc-java/examples/src/test/java" />
+          <root url="file://$MODULE_DIR$/../../../GitHub/grpc-java/gae-interop-testing/gae-jdk7/src/main/java" />
+          <root url="file://$MODULE_DIR$/../../../GitHub/grpc-java/gae-interop-testing/gae-jdk8/src/main/java" />
+          <root url="file://$MODULE_DIR$/../../../GitHub/grpc-java/grpclb/src/main/java" />
+          <root url="file://$MODULE_DIR$/../../../GitHub/grpc-java/grpclb/src/test/java" />
+          <root url="file://$MODULE_DIR$/../../../GitHub/grpc-java/interop-testing/src/main/java" />
+          <root url="file://$MODULE_DIR$/../../../GitHub/grpc-java/interop-testing/src/test/java" />
+          <root url="file://$MODULE_DIR$/../../../GitHub/grpc-java/netty/shaded/src/testShadow/java" />
+          <root url="file://$MODULE_DIR$/../../../GitHub/grpc-java/netty/src/jmh/java" />
+          <root url="file://$MODULE_DIR$/../../../GitHub/grpc-java/netty/src/main/java" />
+          <root url="file://$MODULE_DIR$/../../../GitHub/grpc-java/netty/src/test/java" />
+          <root url="file://$MODULE_DIR$/../../../GitHub/grpc-java/okhttp/src/main/java" />
+          <root url="file://$MODULE_DIR$/../../../GitHub/grpc-java/okhttp/src/test/java" />
+          <root url="file://$MODULE_DIR$/../../../GitHub/grpc-java/okhttp/third_party/okhttp/main/java" />
+          <root url="file://$MODULE_DIR$/../../../GitHub/grpc-java/okhttp/third_party/okhttp/test/java" />
+          <root url="file://$MODULE_DIR$/../../../GitHub/grpc-java/protobuf-lite/src/main/java" />
+          <root url="file://$MODULE_DIR$/../../../GitHub/grpc-java/protobuf-lite/src/test/java" />
+          <root url="file://$MODULE_DIR$/../../../GitHub/grpc-java/protobuf-nano/src/generated/test/javanano" />
+          <root url="file://$MODULE_DIR$/../../../GitHub/grpc-java/protobuf-nano/src/main/java" />
+          <root url="file://$MODULE_DIR$/../../../GitHub/grpc-java/protobuf-nano/src/test/java" />
+          <root url="file://$MODULE_DIR$/../../../GitHub/grpc-java/protobuf/src/main/java" />
+          <root url="file://$MODULE_DIR$/../../../GitHub/grpc-java/protobuf/src/test/java" />
+          <root url="file://$MODULE_DIR$/../../../GitHub/grpc-java/services/src/generated/main/grpc" />
+          <root url="file://$MODULE_DIR$/../../../GitHub/grpc-java/services/src/generated/main/java" />
+          <root url="file://$MODULE_DIR$/../../../GitHub/grpc-java/services/src/generated/test/grpc" />
+          <root url="file://$MODULE_DIR$/../../../GitHub/grpc-java/services/src/generated/test/java" />
+          <root url="file://$MODULE_DIR$/../../../GitHub/grpc-java/services/src/main/java" />
+          <root url="file://$MODULE_DIR$/../../../GitHub/grpc-java/services/src/test/java" />
+          <root url="file://$MODULE_DIR$/../../../GitHub/grpc-java/stub/src/main/java" />
+          <root url="file://$MODULE_DIR$/../../../GitHub/grpc-java/stub/src/test/java" />
+          <root url="file://$MODULE_DIR$/../../../GitHub/grpc-java/testing-proto/src/generated/main/grpc" />
+          <root url="file://$MODULE_DIR$/../../../GitHub/grpc-java/testing-proto/src/generated/main/java" />
+          <root url="file://$MODULE_DIR$/../../../GitHub/grpc-java/testing-proto/src/test/java" />
+          <root url="file://$MODULE_DIR$/../../../GitHub/grpc-java/testing/src/main/java" />
+          <root url="file://$MODULE_DIR$/../../../GitHub/grpc-java/testing/src/test/java" />
+        </SOURCES>
+      </library>
+    </orderEntry>
   </component>
 </module>
