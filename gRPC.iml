@@ -11,15 +11,6 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/../../MDP_WN18/CloudTeam/DataExtraction/target/getAllInfo.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library>
-        <CLASSES>
           <root url="jar://$MODULE_DIR$/../../MDP_WN18/CloudTeam/JARS/jeasyopc.jar!/" />
         </CLASSES>
         <JAVADOC />
@@ -105,6 +96,15 @@
           <root url="file://$MODULE_DIR$/../../../GitHub/grpc-java/testing/src/main/java" />
           <root url="file://$MODULE_DIR$/../../../GitHub/grpc-java/testing/src/test/java" />
         </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../MDP_WN18/CloudTeam/JARS/getAllInfo.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
       </library>
     </orderEntry>
   </component>

@@ -39,13 +39,6 @@
 			<artifactId>json-simple</artifactId>
 			<version>1.1.1</version>
 		</dependency>
-		<dependency>
-			<groupId>getInfo</groupId>
-			<artifactId>getAllInfo</artifactId>
-			<scope>system</scope>
-			<version>1.0</version>
-			<systemPath>C:\Users\VRMILLING\Documents\02_MDP_Students\MDP_WN18\CloudTeam\DataExtraction\target\getAllInfo.jar</systemPath>
-		</dependency>
 		<!-- https://translate.google.com/translate?hl=en&sl=ru&u=http://alex-elkin.blogspot.com/2016/11/opc-da-java-maven-jeasyopc.html&prev=search -->
 		<dependency>
 			<groupId>commons-logging</groupId>
@@ -60,8 +53,8 @@
 		<dependency>
 			<groupId>javafish</groupId>
 			<artifactId>jeasyopc-2.3.2</artifactId>
-			<scope>system</scope>
 			<version>2.3.2</version>
+			<scope>system</scope>
 			<systemPath>C:\Users\VRMILLING\Documents\02_MDP_Students\MDP_WN18\CloudTeam\DataExtraction\target\jeasyopc-2.3.2\jeasyopc.jar</systemPath>
 		</dependency>
 	</dependencies>
@@ -74,7 +67,7 @@
 				<version>1.6.1</version>
 			</extension>
 		</extensions>
-		<defaultGoal>verify</defaultGoal>
+		<defaultGoal>package</defaultGoal>
 		<plugins>
 			<!-- clean lifecycle, see https://maven.apache.org/ref/current/maven-core/lifecycles.html#clean_Lifecycle -->
 			<plugin>

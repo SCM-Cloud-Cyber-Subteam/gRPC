@@ -1,7 +1,7 @@
 package main.java.com.scm.grpc;
 
-import getInfo.getAllInfo;
 import com.scm.resources.*;
+import main.java.com.scm.resources.getAllInfo;
 
 import io.grpc.stub.*;
 import io.grpc.*;
