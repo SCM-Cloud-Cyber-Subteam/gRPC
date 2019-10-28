@@ -18,15 +18,30 @@ import java.util.ArrayList;
 import java.util.concurrent.TimeUnit;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import java.util.Scanner;
 
 import org.json.simple.JSONObject;
 import org.json.simple.JSONArray;
 
 public class ScmGrpcClientMain {
-	public static void main(String [] args){
+	public static void main(String [] args)throws InterruptedException{
 		ScmGrpcClient foo = new ScmGrpcClient("141.212.133.36", 50051);
-		System.out.println(foo.getExistingGroups());
-	}
+		Scanner input = new Scanner(System.in);
+		String tagName, groupName;
+		while(true){
+			System.out.println("Enter tag name SPACE group name to get value or 'exit' to quit");
+			tagName = input.next();
+			groupName = input.next();
+			if (tagName.equals("exit")) {
+				System.out.println("Goodbye");
+				System.exit(0);
+			}
+			System.out.println("VALUE OF " + tagName + ":");
+			System.out.println(foo.getTag(tagName, groupName));
+			Thread.sleep(2000);
+		}
+
+}
 }
 
 class ScmGrpcClient {
