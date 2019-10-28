@@ -54,12 +54,21 @@
 			<groupId>javafish</groupId>
 			<artifactId>jeasyopc-2.3.2</artifactId>
 			<version>2.3.2</version>
-			<scope>system</scope>
+		<!--	<scope>system</scope>
 			<systemPath>C:\Users\VRMILLING\Documents\02_MDP_Students\MDP_WN18\CloudTeam\DataExtraction\target\jeasyopc-2.3.2\jeasyopc.jar</systemPath>
+			-->
 		</dependency>
 	</dependencies>
 
 	<build>
+		<resources>
+			<resource>
+				<directory>C:\Users\VRMILLING\Documents\02_MDP_Students\MDP_WN18\CloudTeam\DataExtraction\target\jeasyopc-2.3.2\resources</directory>
+				<includes>
+					<include>**/*.properties</include>
+				</includes>
+			</resource>
+		</resources>
 		<extensions>
 			<extension>
 				<groupId>kr.motd.maven</groupId>
@@ -96,6 +105,7 @@
 				<version>2.5.2</version>
 				<executions>
 					<execution>
+						<id>install-getAllInfo</id>
 						<phase>initialize</phase>
 						<goals>
 							<goal>install-file</goal>
@@ -106,6 +116,20 @@
 							<version>1.0</version>
 							<packaging>jar</packaging>
 							<file>C:\Users\VRMILLING\Documents\02_MDP_Students\MDP_WN18\CloudTeam\DataExtraction\target\getAllInfo.jar</file>
+						</configuration>
+					</execution>
+					<execution>
+						<id>install-jeasyopc</id>
+						<phase>initialize</phase>
+						<goals>
+							<goal>install-file</goal>
+						</goals>
+						<configuration>
+							<groupId>javafish</groupId>
+							<artifactId>jeasyopc-2.3.2</artifactId>
+							<version>2.3.2</version>
+							<packaging>jar</packaging>
+							<file>C:\Users\VRMILLING\Documents\02_MDP_Students\MDP_WN18\CloudTeam\DataExtraction\target\jeasyopc-2.3.2\jeasyopc.jar</file>
 						</configuration>
 					</execution>
 				</executions>
@@ -128,6 +152,19 @@
 				<artifactId>maven-shade-plugin</artifactId>
 				<version>3.0.0</version>
 				<configuration>
+					<transformers>
+						<transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
+							<mainClass>com.scm.grpc.ScmGrpcClientMain</mainClass>
+						</transformer>
+					</transformers>
+					<filters>
+						<filter>
+							<artifact>javafish:jeasyopc-2.3.2</artifact>
+							<includes>
+								<include>**</include>
+							</includes>
+						</filter>
+					</filters>
 				</configuration>
 				<executions>
 					<execution>

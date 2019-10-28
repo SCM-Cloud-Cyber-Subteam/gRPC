@@ -14,6 +14,14 @@
       </extension>
     </extensions>
     <defaultGoal>package</defaultGoal>
+    <resources>
+      <resource>
+        <directory>C:\Users\VRMILLING\Documents\02_MDP_Students\MDP_WN18\CloudTeam\DataExtraction\target\jeasyopc-2.3.2\resources</directory>
+        <includes>
+          <include>**/*.properties</include>
+        </includes>
+      </resource>
+    </resources>
     <plugins>
       <plugin>
         <artifactId>maven-clean-plugin</artifactId>
@@ -40,6 +48,7 @@
         <version>2.5.2</version>
         <executions>
           <execution>
+            <id>install-getAllInfo</id>
             <phase>initialize</phase>
             <goals>
               <goal>install-file</goal>
@@ -50,6 +59,20 @@
               <version>1.0</version>
               <packaging>jar</packaging>
               <file>C:\Users\VRMILLING\Documents\02_MDP_Students\MDP_WN18\CloudTeam\DataExtraction\target\getAllInfo.jar</file>
+            </configuration>
+          </execution>
+          <execution>
+            <id>install-jeasyopc</id>
+            <phase>initialize</phase>
+            <goals>
+              <goal>install-file</goal>
+            </goals>
+            <configuration>
+              <groupId>javafish</groupId>
+              <artifactId>jeasyopc-2.3.2</artifactId>
+              <version>2.3.2</version>
+              <packaging>jar</packaging>
+              <file>C:\Users\VRMILLING\Documents\02_MDP_Students\MDP_WN18\CloudTeam\DataExtraction\target\jeasyopc-2.3.2\jeasyopc.jar</file>
             </configuration>
           </execution>
         </executions>
@@ -77,7 +100,21 @@
             </goals>
           </execution>
         </executions>
-        <configuration />
+        <configuration>
+          <transformers>
+            <transformer>
+              <mainClass>com.scm.grpc.ScmGrpcClientMain</mainClass>
+            </transformer>
+          </transformers>
+          <filters>
+            <filter>
+              <artifact>javafish:jeasyopc-2.3.2</artifact>
+              <includes>
+                <include>**</include>
+              </includes>
+            </filter>
+          </filters>
+        </configuration>
       </plugin>
     </plugins>
   </build>
@@ -93,13 +130,6 @@
           <groupId>org.hamcrest</groupId>
         </exclusion>
       </exclusions>
-    </dependency>
-    <dependency>
-      <groupId>javafish</groupId>
-      <artifactId>jeasyopc-2.3.2</artifactId>
-      <version>2.3.2</version>
-      <scope>system</scope>
-      <systemPath>C:\Users\VRMILLING\Documents\02_MDP_Students\MDP_WN18\CloudTeam\DataExtraction\target\jeasyopc-2.3.2\jeasyopc.jar</systemPath>
     </dependency>
   </dependencies>
   <properties>

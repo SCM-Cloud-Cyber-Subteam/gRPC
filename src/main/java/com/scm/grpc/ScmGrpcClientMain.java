@@ -24,7 +24,7 @@ import org.json.simple.JSONArray;
 
 public class ScmGrpcClientMain {
 	public static void main(String [] args){
-		ScmGrpcClient foo = new ScmGrpcClient("localhost", 50501);
+		ScmGrpcClient foo = new ScmGrpcClient("141.212.133.36", 50051);
 		System.out.println(foo.getExistingGroups());
 	}
 }
