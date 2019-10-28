@@ -24,21 +24,20 @@ import org.json.simple.JSONObject;
 import org.json.simple.JSONArray;
 
 public class ScmGrpcClientMain {
-	public static void main(String [] args)throws InterruptedException{
+	public static void main(String [] args){
 		ScmGrpcClient foo = new ScmGrpcClient("141.212.133.36", 50051);
 		Scanner input = new Scanner(System.in);
 		String tagName, groupName;
 		while(true){
 			System.out.println("Enter tag name SPACE group name to get value or 'exit' to quit");
 			tagName = input.next();
-			groupName = input.next();
 			if (tagName.equals("exit")) {
 				System.out.println("Goodbye");
 				System.exit(0);
 			}
+			groupName = input.next();
 			System.out.println("VALUE OF " + tagName + ":");
 			System.out.println(foo.getTag(tagName, groupName));
-			Thread.sleep(2000);
 		}
 
 }
