@@ -27,6 +27,7 @@ public class ScmGrpcClientMain {
 	public static void main(String [] args){
 		ScmGrpcClient foo = new ScmGrpcClient("141.212.133.36", 50051);
 		Scanner input = new Scanner(System.in);
+		getAllInfo OPCDataExtractor = new getAllInfo();
 		String choice, tagName, groupName, srcPath,destPath;
 		while(true){
 			System.out.println("Enter 1 to read tags from file or 2 to input tag/group name or 'exit' to exit");
@@ -40,12 +41,19 @@ public class ScmGrpcClientMain {
 					srcPath = input.next();
 					System.out.println("Enter a destination path");
 					destPath = input.next();
-
+					String[][] tagsAndGroups = OPCDataExtractor.readTagsFromFile(srcPath);
+					System.out.println(OPCDataExtractor.writeTagsToFile(destPath,OPCDataExtractor.getTags(tagsAndGroups)));
+				case "2":
+					System.out.println("Enter a tag name");
+					tagName = input.next();
+					System.out.println("Enter its group corresponding group name");
+					groupName = input.next();
+					System.out.println(OPCDataExtractor.getTag(tagName,groupName));
 			}
 
 		}
 
-}
+	}
 }
 
 class ScmGrpcClient {
@@ -81,18 +89,18 @@ class ScmGrpcClient {
 
 
 	private void connect(String server) {
-	    
+
 	    logger.info("Will try to connect to server '" + server + "'");
 	    ConnectRequest request = ConnectRequest.newBuilder().setServer(server).build();
 	    ConnectReply reply;
-	    
+
 	    try {
 	      	reply = blockingStub.connect(request);
 	    } catch (StatusRuntimeException e) {
 	      	logger.log(Level.WARNING, "RPC failed: Failed to connect to server '" + server + "'", e.getStatus());
 	      	throw(e);
 	    }
-	    
+
 	    this.connected = true;
 
 	    logger.info("Successfully connected to '" + server + "'");
@@ -191,7 +199,7 @@ class ScmGrpcClient {
 	public List<String> getAvailableTagsInGroup(String groupName){
 		if (!this.connected) {return new ArrayList<String>();}
 	    logger.info("Getting Existing Tags in Groups from '" + groupName + "' from server '" + this.currentServer + "'");
-		
+
 		GroupTagsRequest request = GroupTagsRequest.newBuilder().setGroupName(groupName).build();
 		GroupTagsReply reply;
 
@@ -223,5 +231,22 @@ class ScmGrpcClient {
 
 	}
 
-}
+	public String readTagsFromFile(String srcFile, String destFile){
+		if(!this.connected){return "";}
+		logger.info("Reading tags from file '" + srcFile + "'");
 
+		TagGroupFileRequest request = TagGroupFileRequest.newBuilder().setSrcPathTagGroup(srcFile).setDestPath(destFile).build();
+		SuccessfulWritingReply reply;
+
+		try{
+				reply = blockingStub.readTagsFromFile(request);
+		}catch (StatusRuntimeException e){
+			logger.log(Level.WARNING, "Unable to read from file '" + srcFile + "'", e.getStatus());
+			throw(e);
+		}
+
+		return reply.getSuccess();
+
+	}
+
+}
