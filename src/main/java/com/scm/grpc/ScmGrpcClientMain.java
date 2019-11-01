@@ -42,13 +42,16 @@ public class ScmGrpcClientMain {
 					srcPath = input.next();
 					System.out.println("Enter a destination path");
 					destPath = input.next();
-					System.out.println(OPCDataExtractor.readTagsFromFile(srcPath,destPath));
+					String[][] tagsAndGroups = OPCDataExtractor.readTagsFromFile(srcPath);
+					System.out.println(OPCDataExtractor.writeTagsToFile(destPath,OPCDataExtractor.getTags(tagsAndGroups)));
+					break;
 				case "2":
 					System.out.println("Enter a tag name");
 					tagName = input.next();
 					System.out.println("Enter its group corresponding group name");
 					groupName = input.next();
 					System.out.println(OPCDataExtractor.getTag(tagName,groupName));
+					break;
 			}
 
 		}
@@ -143,7 +146,7 @@ class ScmGrpcClient {
 
 		return tagData;
 	}
-
+	/*
 	public JSONArray getTags(String[] tagNamesGiven, String[] groupNamesGiven){
 		if (!this.connected) {return new JSONArray();}
 
@@ -195,7 +198,7 @@ class ScmGrpcClient {
 
 	    return tagsData;
 	}
-
+		*/
 	public List<String> getAvailableTagsInGroup(String groupName){
 		if (!this.connected) {return new ArrayList<String>();}
 	    logger.info("Getting Existing Tags in Groups from '" + groupName + "' from server '" + this.currentServer + "'");

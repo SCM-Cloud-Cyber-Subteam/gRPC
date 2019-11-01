@@ -139,18 +139,21 @@ class MessageHandlerImpl extends MessageHandlerGrpc.MessageHandlerImplBase {
 	}
 	*/
 
-
-	public void readTagsFromFile(TagGroupFileRequest request, StreamObserver<SuccessfulWritingReply> replyObserver)throws IOException{
+	@Override
+	public void readTagsFromFile(TagGroupFileRequest request, StreamObserver<SuccessfulWritingReply> replyObserver){
 
 		String srcFile = request.getSrcPathTagGroup();
 		String destFile = request.getDestPath();
-
-		String[][] tagsAndGroups = OPCDataExtractor.readTagsFromFile(srcFile);
-		SuccessfulWritingReply reply = SuccessfulWritingReply.newBuilder()
-				.setSuccess(OPCDataExtractor.writeTagsToFile(destFile,OPCDataExtractor.getTags(tagsAndGroups)));
-		replyObserver.onNext(reply);
-		replyObserver.onCompleted();
-
+		try {
+			String[][] tagsAndGroups = OPCDataExtractor.readTagsFromFile(srcFile);
+			SuccessfulWritingReply reply = SuccessfulWritingReply.newBuilder()
+					.setSuccess(OPCDataExtractor.writeTagsToFile(destFile, OPCDataExtractor.getTags(tagsAndGroups))).build();
+			replyObserver.onNext(reply);
+			replyObserver.onCompleted();
+		}
+		catch(IOException e){
+			e.printStackTrace();
+		}
 	}
  
 }
