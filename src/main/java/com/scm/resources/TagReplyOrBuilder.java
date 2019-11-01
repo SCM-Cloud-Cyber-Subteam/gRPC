@@ -9,66 +9,79 @@ public interface TagReplyOrBuilder extends
 
   /**
    * <code>string clientHandle = 1;</code>
+   * @return The clientHandle.
    */
   java.lang.String getClientHandle();
   /**
    * <code>string clientHandle = 1;</code>
+   * @return The bytes for clientHandle.
    */
   com.google.protobuf.ByteString
       getClientHandleBytes();
 
   /**
    * <code>string itemName = 2;</code>
+   * @return The itemName.
    */
   java.lang.String getItemName();
   /**
    * <code>string itemName = 2;</code>
+   * @return The bytes for itemName.
    */
   com.google.protobuf.ByteString
       getItemNameBytes();
 
   /**
    * <code>bool active = 3;</code>
+   * @return The active.
    */
   boolean getActive();
 
   /**
    * <code>string accessPath = 4;</code>
+   * @return The accessPath.
    */
   java.lang.String getAccessPath();
   /**
    * <code>string accessPath = 4;</code>
+   * @return The bytes for accessPath.
    */
   com.google.protobuf.ByteString
       getAccessPathBytes();
 
   /**
    * <code>int64 timeStamp = 5;</code>
+   * @return The timeStamp.
    */
   long getTimeStamp();
 
   /**
    * <code>string dataType = 6;</code>
+   * @return The dataType.
    */
   java.lang.String getDataType();
   /**
    * <code>string dataType = 6;</code>
+   * @return The bytes for dataType.
    */
   com.google.protobuf.ByteString
       getDataTypeBytes();
 
   /**
    * <code>string value = 7;</code>
+   * @return The value.
    */
   java.lang.String getValue();
   /**
    * <code>string value = 7;</code>
+   * @return The bytes for value.
    */
   com.google.protobuf.ByteString
       getValueBytes();
 
   /**
    * <code>bool quality = 8;</code>
+   * @return The quality.
    */
   boolean getQuality();
 }

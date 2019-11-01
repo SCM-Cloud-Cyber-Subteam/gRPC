@@ -9,10 +9,12 @@ public interface GroupTagsRequestOrBuilder extends
 
   /**
    * <code>string groupName = 1;</code>
+   * @return The groupName.
    */
   java.lang.String getGroupName();
   /**
    * <code>string groupName = 1;</code>
+   * @return The bytes for groupName.
    */
   com.google.protobuf.ByteString
       getGroupNameBytes();

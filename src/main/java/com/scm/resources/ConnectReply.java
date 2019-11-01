@@ -19,6 +19,13 @@ private static final long serialVersionUID = 0L;
   }
 
   @java.lang.Override
+  @SuppressWarnings({"unused"})
+  protected java.lang.Object newInstance(
+      UnusedPrivateParameter unused) {
+    return new ConnectReply();
+  }
+
+  @java.lang.Override
   public final com.google.protobuf.UnknownFieldSet
   getUnknownFields() {
     return this.unknownFields;
@@ -31,7 +38,6 @@ private static final long serialVersionUID = 0L;
     if (extensionRegistry == null) {
       throw new java.lang.NullPointerException();
     }
-    int mutable_bitField0_ = 0;
     com.google.protobuf.UnknownFieldSet.Builder unknownFields =
         com.google.protobuf.UnknownFieldSet.newBuilder();
     try {
@@ -83,6 +89,7 @@ private static final long serialVersionUID = 0L;
   private boolean confirmation_;
   /**
    * <code>bool confirmation = 1;</code>
+   * @return The confirmation.
    */
   public boolean getConfirmation() {
     return confirmation_;
@@ -133,11 +140,10 @@ private static final long serialVersionUID = 0L;
     }
     com.scm.resources.ConnectReply other = (com.scm.resources.ConnectReply) obj;
 
-    boolean result = true;
-    result = result && (getConfirmation()
-        == other.getConfirmation());
-    result = result && unknownFields.equals(other.unknownFields);
-    return result;
+    if (getConfirmation()
+        != other.getConfirmation()) return false;
+    if (!unknownFields.equals(other.unknownFields)) return false;
+    return true;
   }
 
   @java.lang.Override
@@ -395,12 +401,15 @@ private static final long serialVersionUID = 0L;
     private boolean confirmation_ ;
     /**
      * <code>bool confirmation = 1;</code>
+     * @return The confirmation.
      */
     public boolean getConfirmation() {
       return confirmation_;
     }
     /**
      * <code>bool confirmation = 1;</code>
+     * @param value The confirmation to set.
+     * @return This builder for chaining.
      */
     public Builder setConfirmation(boolean value) {
       
@@ -410,6 +419,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>bool confirmation = 1;</code>
+     * @return This builder for chaining.
      */
     public Builder clearConfirmation() {
       

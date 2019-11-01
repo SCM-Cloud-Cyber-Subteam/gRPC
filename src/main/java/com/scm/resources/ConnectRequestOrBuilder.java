@@ -9,10 +9,12 @@ public interface ConnectRequestOrBuilder extends
 
   /**
    * <code>string server = 1;</code>
+   * @return The server.
    */
   java.lang.String getServer();
   /**
    * <code>string server = 1;</code>
+   * @return The bytes for server.
    */
   com.google.protobuf.ByteString
       getServerBytes();

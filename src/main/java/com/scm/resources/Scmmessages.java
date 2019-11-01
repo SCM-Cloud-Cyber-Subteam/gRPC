@@ -45,6 +45,16 @@ public final class Scmmessages {
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_com_scm_resources_GroupTagsReply_fieldAccessorTable;
   static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_com_scm_resources_TagGroupFileRequest_descriptor;
+  static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_com_scm_resources_TagGroupFileRequest_fieldAccessorTable;
+  static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_com_scm_resources_TagGroupTwoFileRequest_descriptor;
+  static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_com_scm_resources_TagGroupTwoFileRequest_fieldAccessorTable;
+  static final com.google.protobuf.Descriptors.Descriptor
     internal_static_com_scm_resources_TagRequest_descriptor;
   static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
@@ -64,6 +74,11 @@ public final class Scmmessages {
   static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_com_scm_resources_MultipleTagsReply_fieldAccessorTable;
+  static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_com_scm_resources_SuccessfulWritingReply_descriptor;
+  static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_com_scm_resources_SuccessfulWritingReply_fieldAccessorTable;
 
   public static com.google.protobuf.Descriptors.FileDescriptor
       getDescriptor() {
@@ -79,40 +94,42 @@ public final class Scmmessages {
       "Request\022\017\n\007request\030\001 \001(\t\"!\n\013GroupsReply\022" +
       "\022\n\ngroupNames\030\001 \003(\t\"%\n\020GroupTagsRequest\022" +
       "\021\n\tgroupName\030\001 \001(\t\"\"\n\016GroupTagsReply\022\020\n\010" +
-      "tagNames\030\001 \003(\t\"0\n\nTagRequest\022\017\n\007tagName\030" +
-      "\001 \001(\t\022\021\n\tgroupName\030\002 \001(\t\"\233\001\n\010TagReply\022\024\n" +
-      "\014clientHandle\030\001 \001(\t\022\020\n\010itemName\030\002 \001(\t\022\016\n" +
-      "\006active\030\003 \001(\010\022\022\n\naccessPath\030\004 \001(\t\022\021\n\ttim" +
-      "eStamp\030\005 \001(\003\022\020\n\010dataType\030\006 \001(\t\022\r\n\005value\030" +
-      "\007 \001(\t\022\017\n\007quality\030\010 \001(\010\"H\n\023MultipleTagsRe" +
-      "quest\0221\n\ntagRequest\030\001 \003(\0132\035.com.scm.reso" +
-      "urces.TagRequest\"B\n\021MultipleTagsReply\022-\n" +
-      "\010tagReply\030\001 \003(\0132\033.com.scm.resources.TagR" +
-      "eply2\267\003\n\016MessageHandler\022O\n\007connect\022!.com" +
-      ".scm.resources.ConnectRequest\032\037.com.scm." +
-      "resources.ConnectReply\"\000\022O\n\tgetGroups\022 ." +
-      "com.scm.resources.GroupsRequest\032\036.com.sc" +
-      "m.resources.GroupsReply\"\000\022X\n\014getGroupTag" +
-      "s\022#.com.scm.resources.GroupTagsRequest\032!" +
-      ".com.scm.resources.GroupTagsReply\"\000\022F\n\006g" +
-      "etTag\022\035.com.scm.resources.TagRequest\032\033.c" +
-      "om.scm.resources.TagReply\"\000\022a\n\017getMultip" +
-      "leTags\022&.com.scm.resources.MultipleTagsR" +
-      "equest\032$.com.scm.resources.MultipleTagsR" +
-      "eply\"\000B\002P\001b\006proto3"
+      "tagNames\030\001 \003(\t\"@\n\023TagGroupFileRequest\022\027\n" +
+      "\017srcPathTagGroup\030\001 \001(\t\022\020\n\010destPath\030\002 \001(\t" +
+      "\"D\n\026TagGroupTwoFileRequest\022\023\n\013filePathTa" +
+      "g\030\001 \001(\t\022\025\n\rfilePathGroup\030\002 \001(\t\"0\n\nTagReq" +
+      "uest\022\017\n\007tagName\030\001 \001(\t\022\021\n\tgroupName\030\002 \001(\t" +
+      "\"\233\001\n\010TagReply\022\024\n\014clientHandle\030\001 \001(\t\022\020\n\010i" +
+      "temName\030\002 \001(\t\022\016\n\006active\030\003 \001(\010\022\022\n\naccessP" +
+      "ath\030\004 \001(\t\022\021\n\ttimeStamp\030\005 \001(\003\022\020\n\010dataType" +
+      "\030\006 \001(\t\022\r\n\005value\030\007 \001(\t\022\017\n\007quality\030\010 \001(\010\"H" +
+      "\n\023MultipleTagsRequest\0221\n\ntagRequest\030\001 \003(" +
+      "\0132\035.com.scm.resources.TagRequest\"B\n\021Mult" +
+      "ipleTagsReply\022-\n\010tagReply\030\001 \003(\0132\033.com.sc" +
+      "m.resources.TagReply\")\n\026SuccessfulWritin" +
+      "gReply\022\017\n\007success\030\001 \001(\t2\223\005\n\016MessageHandl" +
+      "er\022O\n\007connect\022!.com.scm.resources.Connec" +
+      "tRequest\032\037.com.scm.resources.ConnectRepl" +
+      "y\"\000\022O\n\tgetGroups\022 .com.scm.resources.Gro" +
+      "upsRequest\032\036.com.scm.resources.GroupsRep" +
+      "ly\"\000\022X\n\014getGroupTags\022#.com.scm.resources" +
+      ".GroupTagsRequest\032!.com.scm.resources.Gr" +
+      "oupTagsReply\"\000\022F\n\006getTag\022\035.com.scm.resou" +
+      "rces.TagRequest\032\033.com.scm.resources.TagR" +
+      "eply\"\000\022c\n\017getMultipleTags\022&.com.scm.reso" +
+      "urces.MultipleTagsRequest\032$.com.scm.reso" +
+      "urces.MultipleTagsReply\"\0000\001\022g\n\020readTagsF" +
+      "romFile\022&.com.scm.resources.TagGroupFile" +
+      "Request\032).com.scm.resources.SuccessfulWr" +
+      "itingReply\"\000\022o\n\030readTagsFromSeparateFile" +
+      "\022).com.scm.resources.TagGroupTwoFileRequ" +
+      "est\032$.com.scm.resources.MultipleTagsRepl" +
+      "y\"\0000\001B\002P\001b\006proto3"
     };
-    com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
-        new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
-          public com.google.protobuf.ExtensionRegistry assignDescriptors(
-              com.google.protobuf.Descriptors.FileDescriptor root) {
-            descriptor = root;
-            return null;
-          }
-        };
-    com.google.protobuf.Descriptors.FileDescriptor
+    descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
-        }, assigner);
+        });
     internal_static_com_scm_resources_ConnectRequest_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_com_scm_resources_ConnectRequest_fieldAccessorTable = new
@@ -149,30 +166,48 @@ public final class Scmmessages {
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_com_scm_resources_GroupTagsReply_descriptor,
         new java.lang.String[] { "TagNames", });
-    internal_static_com_scm_resources_TagRequest_descriptor =
+    internal_static_com_scm_resources_TagGroupFileRequest_descriptor =
       getDescriptor().getMessageTypes().get(6);
+    internal_static_com_scm_resources_TagGroupFileRequest_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_com_scm_resources_TagGroupFileRequest_descriptor,
+        new java.lang.String[] { "SrcPathTagGroup", "DestPath", });
+    internal_static_com_scm_resources_TagGroupTwoFileRequest_descriptor =
+      getDescriptor().getMessageTypes().get(7);
+    internal_static_com_scm_resources_TagGroupTwoFileRequest_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_com_scm_resources_TagGroupTwoFileRequest_descriptor,
+        new java.lang.String[] { "FilePathTag", "FilePathGroup", });
+    internal_static_com_scm_resources_TagRequest_descriptor =
+      getDescriptor().getMessageTypes().get(8);
     internal_static_com_scm_resources_TagRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_com_scm_resources_TagRequest_descriptor,
         new java.lang.String[] { "TagName", "GroupName", });
     internal_static_com_scm_resources_TagReply_descriptor =
-      getDescriptor().getMessageTypes().get(7);
+      getDescriptor().getMessageTypes().get(9);
     internal_static_com_scm_resources_TagReply_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_com_scm_resources_TagReply_descriptor,
         new java.lang.String[] { "ClientHandle", "ItemName", "Active", "AccessPath", "TimeStamp", "DataType", "Value", "Quality", });
     internal_static_com_scm_resources_MultipleTagsRequest_descriptor =
-      getDescriptor().getMessageTypes().get(8);
+      getDescriptor().getMessageTypes().get(10);
     internal_static_com_scm_resources_MultipleTagsRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_com_scm_resources_MultipleTagsRequest_descriptor,
         new java.lang.String[] { "TagRequest", });
     internal_static_com_scm_resources_MultipleTagsReply_descriptor =
-      getDescriptor().getMessageTypes().get(9);
+      getDescriptor().getMessageTypes().get(11);
     internal_static_com_scm_resources_MultipleTagsReply_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_com_scm_resources_MultipleTagsReply_descriptor,
         new java.lang.String[] { "TagReply", });
+    internal_static_com_scm_resources_SuccessfulWritingReply_descriptor =
+      getDescriptor().getMessageTypes().get(12);
+    internal_static_com_scm_resources_SuccessfulWritingReply_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_com_scm_resources_SuccessfulWritingReply_descriptor,
+        new java.lang.String[] { "Success", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

@@ -20,6 +20,13 @@ private static final long serialVersionUID = 0L;
   }
 
   @java.lang.Override
+  @SuppressWarnings({"unused"})
+  protected java.lang.Object newInstance(
+      UnusedPrivateParameter unused) {
+    return new GroupsRequest();
+  }
+
+  @java.lang.Override
   public final com.google.protobuf.UnknownFieldSet
   getUnknownFields() {
     return this.unknownFields;
@@ -32,7 +39,6 @@ private static final long serialVersionUID = 0L;
     if (extensionRegistry == null) {
       throw new java.lang.NullPointerException();
     }
-    int mutable_bitField0_ = 0;
     com.google.protobuf.UnknownFieldSet.Builder unknownFields =
         com.google.protobuf.UnknownFieldSet.newBuilder();
     try {
@@ -85,6 +91,7 @@ private static final long serialVersionUID = 0L;
   private volatile java.lang.Object request_;
   /**
    * <code>string request = 1;</code>
+   * @return The request.
    */
   public java.lang.String getRequest() {
     java.lang.Object ref = request_;
@@ -100,6 +107,7 @@ private static final long serialVersionUID = 0L;
   }
   /**
    * <code>string request = 1;</code>
+   * @return The bytes for request.
    */
   public com.google.protobuf.ByteString
       getRequestBytes() {
@@ -159,11 +167,10 @@ private static final long serialVersionUID = 0L;
     }
     com.scm.resources.GroupsRequest other = (com.scm.resources.GroupsRequest) obj;
 
-    boolean result = true;
-    result = result && getRequest()
-        .equals(other.getRequest());
-    result = result && unknownFields.equals(other.unknownFields);
-    return result;
+    if (!getRequest()
+        .equals(other.getRequest())) return false;
+    if (!unknownFields.equals(other.unknownFields)) return false;
+    return true;
   }
 
   @java.lang.Override
@@ -421,6 +428,7 @@ private static final long serialVersionUID = 0L;
     private java.lang.Object request_ = "";
     /**
      * <code>string request = 1;</code>
+     * @return The request.
      */
     public java.lang.String getRequest() {
       java.lang.Object ref = request_;
@@ -436,6 +444,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string request = 1;</code>
+     * @return The bytes for request.
      */
     public com.google.protobuf.ByteString
         getRequestBytes() {
@@ -452,6 +461,8 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string request = 1;</code>
+     * @param value The request to set.
+     * @return This builder for chaining.
      */
     public Builder setRequest(
         java.lang.String value) {
@@ -465,6 +476,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string request = 1;</code>
+     * @return This builder for chaining.
      */
     public Builder clearRequest() {
       
@@ -474,6 +486,8 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string request = 1;</code>
+     * @param value The bytes for request to set.
+     * @return This builder for chaining.
      */
     public Builder setRequestBytes(
         com.google.protobuf.ByteString value) {

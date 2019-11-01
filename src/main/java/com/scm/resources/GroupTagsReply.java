@@ -20,6 +20,13 @@ private static final long serialVersionUID = 0L;
   }
 
   @java.lang.Override
+  @SuppressWarnings({"unused"})
+  protected java.lang.Object newInstance(
+      UnusedPrivateParameter unused) {
+    return new GroupTagsReply();
+  }
+
+  @java.lang.Override
   public final com.google.protobuf.UnknownFieldSet
   getUnknownFields() {
     return this.unknownFields;
@@ -45,7 +52,7 @@ private static final long serialVersionUID = 0L;
             break;
           case 10: {
             java.lang.String s = input.readStringRequireUtf8();
-            if (!((mutable_bitField0_ & 0x00000001) == 0x00000001)) {
+            if (!((mutable_bitField0_ & 0x00000001) != 0)) {
               tagNames_ = new com.google.protobuf.LazyStringArrayList();
               mutable_bitField0_ |= 0x00000001;
             }
@@ -67,7 +74,7 @@ private static final long serialVersionUID = 0L;
       throw new com.google.protobuf.InvalidProtocolBufferException(
           e).setUnfinishedMessage(this);
     } finally {
-      if (((mutable_bitField0_ & 0x00000001) == 0x00000001)) {
+      if (((mutable_bitField0_ & 0x00000001) != 0)) {
         tagNames_ = tagNames_.getUnmodifiableView();
       }
       this.unknownFields = unknownFields.build();
@@ -91,6 +98,7 @@ private static final long serialVersionUID = 0L;
   private com.google.protobuf.LazyStringList tagNames_;
   /**
    * <code>repeated string tagNames = 1;</code>
+   * @return A list containing the tagNames.
    */
   public com.google.protobuf.ProtocolStringList
       getTagNamesList() {
@@ -98,18 +106,23 @@ private static final long serialVersionUID = 0L;
   }
   /**
    * <code>repeated string tagNames = 1;</code>
+   * @return The count of tagNames.
    */
   public int getTagNamesCount() {
     return tagNames_.size();
   }
   /**
    * <code>repeated string tagNames = 1;</code>
+   * @param index The index of the element to return.
+   * @return The tagNames at the given index.
    */
   public java.lang.String getTagNames(int index) {
     return tagNames_.get(index);
   }
   /**
    * <code>repeated string tagNames = 1;</code>
+   * @param index The index of the value to return.
+   * @return The bytes of the tagNames at the given index.
    */
   public com.google.protobuf.ByteString
       getTagNamesBytes(int index) {
@@ -165,11 +178,10 @@ private static final long serialVersionUID = 0L;
     }
     com.scm.resources.GroupTagsReply other = (com.scm.resources.GroupTagsReply) obj;
 
-    boolean result = true;
-    result = result && getTagNamesList()
-        .equals(other.getTagNamesList());
-    result = result && unknownFields.equals(other.unknownFields);
-    return result;
+    if (!getTagNamesList()
+        .equals(other.getTagNamesList())) return false;
+    if (!unknownFields.equals(other.unknownFields)) return false;
+    return true;
   }
 
   @java.lang.Override
@@ -345,7 +357,7 @@ private static final long serialVersionUID = 0L;
     public com.scm.resources.GroupTagsReply buildPartial() {
       com.scm.resources.GroupTagsReply result = new com.scm.resources.GroupTagsReply(this);
       int from_bitField0_ = bitField0_;
-      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+      if (((bitField0_ & 0x00000001) != 0)) {
         tagNames_ = tagNames_.getUnmodifiableView();
         bitField0_ = (bitField0_ & ~0x00000001);
       }
@@ -440,13 +452,14 @@ private static final long serialVersionUID = 0L;
 
     private com.google.protobuf.LazyStringList tagNames_ = com.google.protobuf.LazyStringArrayList.EMPTY;
     private void ensureTagNamesIsMutable() {
-      if (!((bitField0_ & 0x00000001) == 0x00000001)) {
+      if (!((bitField0_ & 0x00000001) != 0)) {
         tagNames_ = new com.google.protobuf.LazyStringArrayList(tagNames_);
         bitField0_ |= 0x00000001;
        }
     }
     /**
      * <code>repeated string tagNames = 1;</code>
+     * @return A list containing the tagNames.
      */
     public com.google.protobuf.ProtocolStringList
         getTagNamesList() {
@@ -454,18 +467,23 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>repeated string tagNames = 1;</code>
+     * @return The count of tagNames.
      */
     public int getTagNamesCount() {
       return tagNames_.size();
     }
     /**
      * <code>repeated string tagNames = 1;</code>
+     * @param index The index of the element to return.
+     * @return The tagNames at the given index.
      */
     public java.lang.String getTagNames(int index) {
       return tagNames_.get(index);
     }
     /**
      * <code>repeated string tagNames = 1;</code>
+     * @param index The index of the value to return.
+     * @return The bytes of the tagNames at the given index.
      */
     public com.google.protobuf.ByteString
         getTagNamesBytes(int index) {
@@ -473,6 +491,9 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>repeated string tagNames = 1;</code>
+     * @param index The index to set the value at.
+     * @param value The tagNames to set.
+     * @return This builder for chaining.
      */
     public Builder setTagNames(
         int index, java.lang.String value) {
@@ -486,6 +507,8 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>repeated string tagNames = 1;</code>
+     * @param value The tagNames to add.
+     * @return This builder for chaining.
      */
     public Builder addTagNames(
         java.lang.String value) {
@@ -499,6 +522,8 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>repeated string tagNames = 1;</code>
+     * @param values The tagNames to add.
+     * @return This builder for chaining.
      */
     public Builder addAllTagNames(
         java.lang.Iterable<java.lang.String> values) {
@@ -510,6 +535,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>repeated string tagNames = 1;</code>
+     * @return This builder for chaining.
      */
     public Builder clearTagNames() {
       tagNames_ = com.google.protobuf.LazyStringArrayList.EMPTY;
@@ -519,6 +545,8 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>repeated string tagNames = 1;</code>
+     * @param value The bytes of the tagNames to add.
+     * @return This builder for chaining.
      */
     public Builder addTagNamesBytes(
         com.google.protobuf.ByteString value) {

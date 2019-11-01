@@ -9,10 +9,12 @@ public interface GroupsRequestOrBuilder extends
 
   /**
    * <code>string request = 1;</code>
+   * @return The request.
    */
   java.lang.String getRequest();
   /**
    * <code>string request = 1;</code>
+   * @return The bytes for request.
    */
   com.google.protobuf.ByteString
       getRequestBytes();

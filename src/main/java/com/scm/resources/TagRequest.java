@@ -21,6 +21,13 @@ private static final long serialVersionUID = 0L;
   }
 
   @java.lang.Override
+  @SuppressWarnings({"unused"})
+  protected java.lang.Object newInstance(
+      UnusedPrivateParameter unused) {
+    return new TagRequest();
+  }
+
+  @java.lang.Override
   public final com.google.protobuf.UnknownFieldSet
   getUnknownFields() {
     return this.unknownFields;
@@ -33,7 +40,6 @@ private static final long serialVersionUID = 0L;
     if (extensionRegistry == null) {
       throw new java.lang.NullPointerException();
     }
-    int mutable_bitField0_ = 0;
     com.google.protobuf.UnknownFieldSet.Builder unknownFields =
         com.google.protobuf.UnknownFieldSet.newBuilder();
     try {
@@ -92,6 +98,7 @@ private static final long serialVersionUID = 0L;
   private volatile java.lang.Object tagName_;
   /**
    * <code>string tagName = 1;</code>
+   * @return The tagName.
    */
   public java.lang.String getTagName() {
     java.lang.Object ref = tagName_;
@@ -107,6 +114,7 @@ private static final long serialVersionUID = 0L;
   }
   /**
    * <code>string tagName = 1;</code>
+   * @return The bytes for tagName.
    */
   public com.google.protobuf.ByteString
       getTagNameBytes() {
@@ -126,6 +134,7 @@ private static final long serialVersionUID = 0L;
   private volatile java.lang.Object groupName_;
   /**
    * <code>string groupName = 2;</code>
+   * @return The groupName.
    */
   public java.lang.String getGroupName() {
     java.lang.Object ref = groupName_;
@@ -141,6 +150,7 @@ private static final long serialVersionUID = 0L;
   }
   /**
    * <code>string groupName = 2;</code>
+   * @return The bytes for groupName.
    */
   public com.google.protobuf.ByteString
       getGroupNameBytes() {
@@ -206,13 +216,12 @@ private static final long serialVersionUID = 0L;
     }
     com.scm.resources.TagRequest other = (com.scm.resources.TagRequest) obj;
 
-    boolean result = true;
-    result = result && getTagName()
-        .equals(other.getTagName());
-    result = result && getGroupName()
-        .equals(other.getGroupName());
-    result = result && unknownFields.equals(other.unknownFields);
-    return result;
+    if (!getTagName()
+        .equals(other.getTagName())) return false;
+    if (!getGroupName()
+        .equals(other.getGroupName())) return false;
+    if (!unknownFields.equals(other.unknownFields)) return false;
+    return true;
   }
 
   @java.lang.Override
@@ -479,6 +488,7 @@ private static final long serialVersionUID = 0L;
     private java.lang.Object tagName_ = "";
     /**
      * <code>string tagName = 1;</code>
+     * @return The tagName.
      */
     public java.lang.String getTagName() {
       java.lang.Object ref = tagName_;
@@ -494,6 +504,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string tagName = 1;</code>
+     * @return The bytes for tagName.
      */
     public com.google.protobuf.ByteString
         getTagNameBytes() {
@@ -510,6 +521,8 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string tagName = 1;</code>
+     * @param value The tagName to set.
+     * @return This builder for chaining.
      */
     public Builder setTagName(
         java.lang.String value) {
@@ -523,6 +536,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string tagName = 1;</code>
+     * @return This builder for chaining.
      */
     public Builder clearTagName() {
       
@@ -532,6 +546,8 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string tagName = 1;</code>
+     * @param value The bytes for tagName to set.
+     * @return This builder for chaining.
      */
     public Builder setTagNameBytes(
         com.google.protobuf.ByteString value) {
@@ -548,6 +564,7 @@ private static final long serialVersionUID = 0L;
     private java.lang.Object groupName_ = "";
     /**
      * <code>string groupName = 2;</code>
+     * @return The groupName.
      */
     public java.lang.String getGroupName() {
       java.lang.Object ref = groupName_;
@@ -563,6 +580,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string groupName = 2;</code>
+     * @return The bytes for groupName.
      */
     public com.google.protobuf.ByteString
         getGroupNameBytes() {
@@ -579,6 +597,8 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string groupName = 2;</code>
+     * @param value The groupName to set.
+     * @return This builder for chaining.
      */
     public Builder setGroupName(
         java.lang.String value) {
@@ -592,6 +612,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string groupName = 2;</code>
+     * @return This builder for chaining.
      */
     public Builder clearGroupName() {
       
@@ -601,6 +622,8 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string groupName = 2;</code>
+     * @param value The bytes for groupName to set.
+     * @return This builder for chaining.
      */
     public Builder setGroupNameBytes(
         com.google.protobuf.ByteString value) {

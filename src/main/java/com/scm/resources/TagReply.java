@@ -24,6 +24,13 @@ private static final long serialVersionUID = 0L;
   }
 
   @java.lang.Override
+  @SuppressWarnings({"unused"})
+  protected java.lang.Object newInstance(
+      UnusedPrivateParameter unused) {
+    return new TagReply();
+  }
+
+  @java.lang.Override
   public final com.google.protobuf.UnknownFieldSet
   getUnknownFields() {
     return this.unknownFields;
@@ -36,7 +43,6 @@ private static final long serialVersionUID = 0L;
     if (extensionRegistry == null) {
       throw new java.lang.NullPointerException();
     }
-    int mutable_bitField0_ = 0;
     com.google.protobuf.UnknownFieldSet.Builder unknownFields =
         com.google.protobuf.UnknownFieldSet.newBuilder();
     try {
@@ -128,6 +134,7 @@ private static final long serialVersionUID = 0L;
   private volatile java.lang.Object clientHandle_;
   /**
    * <code>string clientHandle = 1;</code>
+   * @return The clientHandle.
    */
   public java.lang.String getClientHandle() {
     java.lang.Object ref = clientHandle_;
@@ -143,6 +150,7 @@ private static final long serialVersionUID = 0L;
   }
   /**
    * <code>string clientHandle = 1;</code>
+   * @return The bytes for clientHandle.
    */
   public com.google.protobuf.ByteString
       getClientHandleBytes() {
@@ -162,6 +170,7 @@ private static final long serialVersionUID = 0L;
   private volatile java.lang.Object itemName_;
   /**
    * <code>string itemName = 2;</code>
+   * @return The itemName.
    */
   public java.lang.String getItemName() {
     java.lang.Object ref = itemName_;
@@ -177,6 +186,7 @@ private static final long serialVersionUID = 0L;
   }
   /**
    * <code>string itemName = 2;</code>
+   * @return The bytes for itemName.
    */
   public com.google.protobuf.ByteString
       getItemNameBytes() {
@@ -196,6 +206,7 @@ private static final long serialVersionUID = 0L;
   private boolean active_;
   /**
    * <code>bool active = 3;</code>
+   * @return The active.
    */
   public boolean getActive() {
     return active_;
@@ -205,6 +216,7 @@ private static final long serialVersionUID = 0L;
   private volatile java.lang.Object accessPath_;
   /**
    * <code>string accessPath = 4;</code>
+   * @return The accessPath.
    */
   public java.lang.String getAccessPath() {
     java.lang.Object ref = accessPath_;
@@ -220,6 +232,7 @@ private static final long serialVersionUID = 0L;
   }
   /**
    * <code>string accessPath = 4;</code>
+   * @return The bytes for accessPath.
    */
   public com.google.protobuf.ByteString
       getAccessPathBytes() {
@@ -239,6 +252,7 @@ private static final long serialVersionUID = 0L;
   private long timeStamp_;
   /**
    * <code>int64 timeStamp = 5;</code>
+   * @return The timeStamp.
    */
   public long getTimeStamp() {
     return timeStamp_;
@@ -248,6 +262,7 @@ private static final long serialVersionUID = 0L;
   private volatile java.lang.Object dataType_;
   /**
    * <code>string dataType = 6;</code>
+   * @return The dataType.
    */
   public java.lang.String getDataType() {
     java.lang.Object ref = dataType_;
@@ -263,6 +278,7 @@ private static final long serialVersionUID = 0L;
   }
   /**
    * <code>string dataType = 6;</code>
+   * @return The bytes for dataType.
    */
   public com.google.protobuf.ByteString
       getDataTypeBytes() {
@@ -282,6 +298,7 @@ private static final long serialVersionUID = 0L;
   private volatile java.lang.Object value_;
   /**
    * <code>string value = 7;</code>
+   * @return The value.
    */
   public java.lang.String getValue() {
     java.lang.Object ref = value_;
@@ -297,6 +314,7 @@ private static final long serialVersionUID = 0L;
   }
   /**
    * <code>string value = 7;</code>
+   * @return The bytes for value.
    */
   public com.google.protobuf.ByteString
       getValueBytes() {
@@ -316,6 +334,7 @@ private static final long serialVersionUID = 0L;
   private boolean quality_;
   /**
    * <code>bool quality = 8;</code>
+   * @return The quality.
    */
   public boolean getQuality() {
     return quality_;
@@ -410,25 +429,24 @@ private static final long serialVersionUID = 0L;
     }
     com.scm.resources.TagReply other = (com.scm.resources.TagReply) obj;
 
-    boolean result = true;
-    result = result && getClientHandle()
-        .equals(other.getClientHandle());
-    result = result && getItemName()
-        .equals(other.getItemName());
-    result = result && (getActive()
-        == other.getActive());
-    result = result && getAccessPath()
-        .equals(other.getAccessPath());
-    result = result && (getTimeStamp()
-        == other.getTimeStamp());
-    result = result && getDataType()
-        .equals(other.getDataType());
-    result = result && getValue()
-        .equals(other.getValue());
-    result = result && (getQuality()
-        == other.getQuality());
-    result = result && unknownFields.equals(other.unknownFields);
-    return result;
+    if (!getClientHandle()
+        .equals(other.getClientHandle())) return false;
+    if (!getItemName()
+        .equals(other.getItemName())) return false;
+    if (getActive()
+        != other.getActive()) return false;
+    if (!getAccessPath()
+        .equals(other.getAccessPath())) return false;
+    if (getTimeStamp()
+        != other.getTimeStamp()) return false;
+    if (!getDataType()
+        .equals(other.getDataType())) return false;
+    if (!getValue()
+        .equals(other.getValue())) return false;
+    if (getQuality()
+        != other.getQuality()) return false;
+    if (!unknownFields.equals(other.unknownFields)) return false;
+    return true;
   }
 
   @java.lang.Override
@@ -749,6 +767,7 @@ private static final long serialVersionUID = 0L;
     private java.lang.Object clientHandle_ = "";
     /**
      * <code>string clientHandle = 1;</code>
+     * @return The clientHandle.
      */
     public java.lang.String getClientHandle() {
       java.lang.Object ref = clientHandle_;
@@ -764,6 +783,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string clientHandle = 1;</code>
+     * @return The bytes for clientHandle.
      */
     public com.google.protobuf.ByteString
         getClientHandleBytes() {
@@ -780,6 +800,8 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string clientHandle = 1;</code>
+     * @param value The clientHandle to set.
+     * @return This builder for chaining.
      */
     public Builder setClientHandle(
         java.lang.String value) {
@@ -793,6 +815,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string clientHandle = 1;</code>
+     * @return This builder for chaining.
      */
     public Builder clearClientHandle() {
       
@@ -802,6 +825,8 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string clientHandle = 1;</code>
+     * @param value The bytes for clientHandle to set.
+     * @return This builder for chaining.
      */
     public Builder setClientHandleBytes(
         com.google.protobuf.ByteString value) {
@@ -818,6 +843,7 @@ private static final long serialVersionUID = 0L;
     private java.lang.Object itemName_ = "";
     /**
      * <code>string itemName = 2;</code>
+     * @return The itemName.
      */
     public java.lang.String getItemName() {
       java.lang.Object ref = itemName_;
@@ -833,6 +859,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string itemName = 2;</code>
+     * @return The bytes for itemName.
      */
     public com.google.protobuf.ByteString
         getItemNameBytes() {
@@ -849,6 +876,8 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string itemName = 2;</code>
+     * @param value The itemName to set.
+     * @return This builder for chaining.
      */
     public Builder setItemName(
         java.lang.String value) {
@@ -862,6 +891,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string itemName = 2;</code>
+     * @return This builder for chaining.
      */
     public Builder clearItemName() {
       
@@ -871,6 +901,8 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string itemName = 2;</code>
+     * @param value The bytes for itemName to set.
+     * @return This builder for chaining.
      */
     public Builder setItemNameBytes(
         com.google.protobuf.ByteString value) {
@@ -887,12 +919,15 @@ private static final long serialVersionUID = 0L;
     private boolean active_ ;
     /**
      * <code>bool active = 3;</code>
+     * @return The active.
      */
     public boolean getActive() {
       return active_;
     }
     /**
      * <code>bool active = 3;</code>
+     * @param value The active to set.
+     * @return This builder for chaining.
      */
     public Builder setActive(boolean value) {
       
@@ -902,6 +937,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>bool active = 3;</code>
+     * @return This builder for chaining.
      */
     public Builder clearActive() {
       
@@ -913,6 +949,7 @@ private static final long serialVersionUID = 0L;
     private java.lang.Object accessPath_ = "";
     /**
      * <code>string accessPath = 4;</code>
+     * @return The accessPath.
      */
     public java.lang.String getAccessPath() {
       java.lang.Object ref = accessPath_;
@@ -928,6 +965,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string accessPath = 4;</code>
+     * @return The bytes for accessPath.
      */
     public com.google.protobuf.ByteString
         getAccessPathBytes() {
@@ -944,6 +982,8 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string accessPath = 4;</code>
+     * @param value The accessPath to set.
+     * @return This builder for chaining.
      */
     public Builder setAccessPath(
         java.lang.String value) {
@@ -957,6 +997,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string accessPath = 4;</code>
+     * @return This builder for chaining.
      */
     public Builder clearAccessPath() {
       
@@ -966,6 +1007,8 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string accessPath = 4;</code>
+     * @param value The bytes for accessPath to set.
+     * @return This builder for chaining.
      */
     public Builder setAccessPathBytes(
         com.google.protobuf.ByteString value) {
@@ -982,12 +1025,15 @@ private static final long serialVersionUID = 0L;
     private long timeStamp_ ;
     /**
      * <code>int64 timeStamp = 5;</code>
+     * @return The timeStamp.
      */
     public long getTimeStamp() {
       return timeStamp_;
     }
     /**
      * <code>int64 timeStamp = 5;</code>
+     * @param value The timeStamp to set.
+     * @return This builder for chaining.
      */
     public Builder setTimeStamp(long value) {
       
@@ -997,6 +1043,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>int64 timeStamp = 5;</code>
+     * @return This builder for chaining.
      */
     public Builder clearTimeStamp() {
       
@@ -1008,6 +1055,7 @@ private static final long serialVersionUID = 0L;
     private java.lang.Object dataType_ = "";
     /**
      * <code>string dataType = 6;</code>
+     * @return The dataType.
      */
     public java.lang.String getDataType() {
       java.lang.Object ref = dataType_;
@@ -1023,6 +1071,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string dataType = 6;</code>
+     * @return The bytes for dataType.
      */
     public com.google.protobuf.ByteString
         getDataTypeBytes() {
@@ -1039,6 +1088,8 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string dataType = 6;</code>
+     * @param value The dataType to set.
+     * @return This builder for chaining.
      */
     public Builder setDataType(
         java.lang.String value) {
@@ -1052,6 +1103,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string dataType = 6;</code>
+     * @return This builder for chaining.
      */
     public Builder clearDataType() {
       
@@ -1061,6 +1113,8 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string dataType = 6;</code>
+     * @param value The bytes for dataType to set.
+     * @return This builder for chaining.
      */
     public Builder setDataTypeBytes(
         com.google.protobuf.ByteString value) {
@@ -1077,6 +1131,7 @@ private static final long serialVersionUID = 0L;
     private java.lang.Object value_ = "";
     /**
      * <code>string value = 7;</code>
+     * @return The value.
      */
     public java.lang.String getValue() {
       java.lang.Object ref = value_;
@@ -1092,6 +1147,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string value = 7;</code>
+     * @return The bytes for value.
      */
     public com.google.protobuf.ByteString
         getValueBytes() {
@@ -1108,6 +1164,8 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string value = 7;</code>
+     * @param value The value to set.
+     * @return This builder for chaining.
      */
     public Builder setValue(
         java.lang.String value) {
@@ -1121,6 +1179,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string value = 7;</code>
+     * @return This builder for chaining.
      */
     public Builder clearValue() {
       
@@ -1130,6 +1189,8 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string value = 7;</code>
+     * @param value The bytes for value to set.
+     * @return This builder for chaining.
      */
     public Builder setValueBytes(
         com.google.protobuf.ByteString value) {
@@ -1146,12 +1207,15 @@ private static final long serialVersionUID = 0L;
     private boolean quality_ ;
     /**
      * <code>bool quality = 8;</code>
+     * @return The quality.
      */
     public boolean getQuality() {
       return quality_;
     }
     /**
      * <code>bool quality = 8;</code>
+     * @param value The quality to set.
+     * @return This builder for chaining.
      */
     public Builder setQuality(boolean value) {
       
@@ -1161,6 +1225,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>bool quality = 8;</code>
+     * @return This builder for chaining.
      */
     public Builder clearQuality() {
       

@@ -1615,3 +1615,631 @@ java.io.IOException: An established connection was aborted by the software in yo
 28.10.2019 17:02:54 DEBUG grpc-default-worker-ELG-3-2 io.grpc.netty.NettyServerHandler - [id: 0xc0f24e04, L:/141.212.133.36:50051 - R:/35.3.100.166:52337] OUTBOUND HEADERS: streamId=5 headers=GrpcHttp2OutboundHeaders[:status: 200, content-type: application/grpc, grpc-encoding: identity, grpc-accept-encoding: gzip] streamDependency=0 weight=16 exclusive=false padding=0 endStream=false
 28.10.2019 17:02:54 DEBUG grpc-default-worker-ELG-3-2 io.grpc.netty.NettyServerHandler - [id: 0xc0f24e04, L:/141.212.133.36:50051 - R:/35.3.100.166:52337] OUTBOUND DATA: streamId=5 padding=0 endStream=false length=55 bytes=00000000320a0130120d524649443174696d65725b305d180122094164764d616e4c616228e3f48202320656545f494e543a0233304001
 28.10.2019 17:02:54 DEBUG grpc-default-worker-ELG-3-2 io.grpc.netty.NettyServerHandler - [id: 0xc0f24e04, L:/141.212.133.36:50051 - R:/35.3.100.166:52337] OUTBOUND HEADERS: streamId=5 headers=GrpcHttp2OutboundHeaders[grpc-status: 0] streamDependency=0 weight=16 exclusive=false padding=0 endStream=true
+31.10.2019 20:29:27 DEBUG main io.netty.util.internal.logging.InternalLoggerFactory - Using Log4J as the default logging framework
+31.10.2019 20:29:27 DEBUG main io.netty.util.internal.PlatformDependent - Platform: MacOS
+31.10.2019 20:29:27 DEBUG main io.netty.util.internal.PlatformDependent0 - -Dio.netty.noUnsafe: false
+31.10.2019 20:29:27 DEBUG main io.netty.util.internal.PlatformDependent0 - Java version: 8
+31.10.2019 20:29:27 DEBUG main io.netty.util.internal.PlatformDependent0 - sun.misc.Unsafe.theUnsafe: available
+31.10.2019 20:29:27 DEBUG main io.netty.util.internal.PlatformDependent0 - sun.misc.Unsafe.copyMemory: available
+31.10.2019 20:29:27 DEBUG main io.netty.util.internal.PlatformDependent0 - java.nio.Buffer.address: available
+31.10.2019 20:29:27 DEBUG main io.netty.util.internal.PlatformDependent0 - direct buffer constructor: available
+31.10.2019 20:29:27 DEBUG main io.netty.util.internal.PlatformDependent0 - java.nio.Bits.unaligned: available, true
+31.10.2019 20:29:27 DEBUG main io.netty.util.internal.PlatformDependent0 - jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable prior to Java9
+31.10.2019 20:29:27 DEBUG main io.netty.util.internal.PlatformDependent0 - java.nio.DirectByteBuffer.<init>(long, int): available
+31.10.2019 20:29:27 DEBUG main io.netty.util.internal.PlatformDependent - sun.misc.Unsafe: available
+31.10.2019 20:29:27 DEBUG main io.netty.util.internal.PlatformDependent - -Dio.netty.tmpdir: /var/folders/_l/pdzjcvln5p1bh42l_sh94l2r0000gn/T (java.io.tmpdir)
+31.10.2019 20:29:27 DEBUG main io.netty.util.internal.PlatformDependent - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+31.10.2019 20:29:27 DEBUG main io.netty.util.internal.PlatformDependent - -Dio.netty.maxDirectMemory: 1908932608 bytes
+31.10.2019 20:29:27 DEBUG main io.netty.util.internal.PlatformDependent - -Dio.netty.uninitializedArrayAllocationThreshold: -1
+31.10.2019 20:29:27 DEBUG main io.netty.util.internal.CleanerJava6 - java.nio.ByteBuffer.cleaner(): available
+31.10.2019 20:29:27 DEBUG main io.netty.util.internal.PlatformDependent - -Dio.netty.noPreferDirect: false
+31.10.2019 20:29:28 DEBUG main io.netty.channel.MultithreadEventLoopGroup - -Dio.netty.eventLoopThreads: 8
+31.10.2019 20:29:28 DEBUG main io.netty.channel.nio.NioEventLoop - -Dio.netty.noKeySetOptimization: false
+31.10.2019 20:29:28 DEBUG main io.netty.channel.nio.NioEventLoop - -Dio.netty.selectorAutoRebuildThreshold: 512
+31.10.2019 20:29:28 DEBUG main io.netty.util.internal.PlatformDependent - org.jctools-core.MpscChunkedArrayQueue: available
+31.10.2019 20:29:28 DEBUG grpc-default-executor-0 io.netty.util.ResourceLeakDetector - -Dio.netty.leakDetection.level: simple
+31.10.2019 20:29:28 DEBUG grpc-default-executor-0 io.netty.util.ResourceLeakDetector - -Dio.netty.leakDetection.targetRecords: 4
+31.10.2019 20:29:28 DEBUG grpc-default-executor-0 io.netty.buffer.AbstractByteBuf - -Dio.netty.buffer.checkAccessible: true
+31.10.2019 20:29:28 DEBUG grpc-default-executor-0 io.netty.buffer.AbstractByteBuf - -Dio.netty.buffer.checkBounds: true
+31.10.2019 20:29:28 DEBUG grpc-default-executor-0 io.netty.util.ResourceLeakDetectorFactory - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@64587e0f
+31.10.2019 20:29:28 DEBUG grpc-default-executor-0 io.netty.util.internal.InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+31.10.2019 20:29:28 DEBUG grpc-default-executor-0 io.netty.util.internal.InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+31.10.2019 20:29:28 DEBUG grpc-default-executor-0 io.netty.channel.DefaultChannelId - -Dio.netty.processId: 2636 (auto-detected)
+31.10.2019 20:29:28 DEBUG grpc-default-executor-0 io.netty.util.NetUtil - -Djava.net.preferIPv4Stack: false
+31.10.2019 20:29:28 DEBUG grpc-default-executor-0 io.netty.util.NetUtil - -Djava.net.preferIPv6Addresses: false
+31.10.2019 20:29:28 DEBUG grpc-default-executor-0 io.netty.util.NetUtil - Loopback interface: lo0 (lo0, 0:0:0:0:0:0:0:1%lo0)
+31.10.2019 20:29:28 DEBUG grpc-default-executor-0 io.netty.util.NetUtil - Failed to get SOMAXCONN from sysctl and file /proc/sys/net/core/somaxconn. Default: 128
+31.10.2019 20:29:28 DEBUG grpc-default-executor-0 io.netty.channel.DefaultChannelId - -Dio.netty.machineId: 30:35:ad:ff:fe:ae:c4:d0 (auto-detected)
+31.10.2019 20:29:28 DEBUG grpc-default-executor-0 io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.numHeapArenas: 8
+31.10.2019 20:29:28 DEBUG grpc-default-executor-0 io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.numDirectArenas: 8
+31.10.2019 20:29:28 DEBUG grpc-default-executor-0 io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.pageSize: 8192
+31.10.2019 20:29:28 DEBUG grpc-default-executor-0 io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.maxOrder: 11
+31.10.2019 20:29:28 DEBUG grpc-default-executor-0 io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.chunkSize: 16777216
+31.10.2019 20:29:28 DEBUG grpc-default-executor-0 io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.tinyCacheSize: 512
+31.10.2019 20:29:28 DEBUG grpc-default-executor-0 io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.smallCacheSize: 256
+31.10.2019 20:29:28 DEBUG grpc-default-executor-0 io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.normalCacheSize: 64
+31.10.2019 20:29:28 DEBUG grpc-default-executor-0 io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+31.10.2019 20:29:28 DEBUG grpc-default-executor-0 io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.cacheTrimInterval: 8192
+31.10.2019 20:29:28 DEBUG grpc-default-executor-0 io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.useCacheForAllThreads: true
+31.10.2019 20:29:28 DEBUG grpc-default-executor-0 io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
+31.10.2019 20:29:28 DEBUG grpc-default-executor-0 io.netty.buffer.ByteBufUtil - -Dio.netty.allocator.type: pooled
+31.10.2019 20:29:28 DEBUG grpc-default-executor-0 io.netty.buffer.ByteBufUtil - -Dio.netty.threadLocalDirectBufferSize: 0
+31.10.2019 20:29:28 DEBUG grpc-default-executor-0 io.netty.buffer.ByteBufUtil - -Dio.netty.maxThreadLocalCharBufferSize: 16384
+31.10.2019 20:29:29 DEBUG grpc-default-executor-0 io.netty.util.Recycler - -Dio.netty.recycler.maxCapacityPerThread: 4096
+31.10.2019 20:29:29 DEBUG grpc-default-executor-0 io.netty.util.Recycler - -Dio.netty.recycler.maxSharedCapacityFactor: 2
+31.10.2019 20:29:29 DEBUG grpc-default-executor-0 io.netty.util.Recycler - -Dio.netty.recycler.linkCapacity: 16
+31.10.2019 20:29:29 DEBUG grpc-default-executor-0 io.netty.util.Recycler - -Dio.netty.recycler.ratio: 8
+31.10.2019 20:29:29 DEBUG grpc-default-worker-ELG-1-2 io.grpc.netty.NettyClientHandler - [id: 0xc5439aee, L:/35.3.29.155:58070 - R:/141.212.133.36:50051] OUTBOUND SETTINGS: ack=false settings={ENABLE_PUSH=0, MAX_CONCURRENT_STREAMS=0, INITIAL_WINDOW_SIZE=1048576, MAX_HEADER_LIST_SIZE=8192}
+31.10.2019 20:29:29 DEBUG grpc-default-worker-ELG-1-2 io.grpc.netty.NettyClientHandler - [id: 0xc5439aee, L:/35.3.29.155:58070 - R:/141.212.133.36:50051] OUTBOUND WINDOW_UPDATE: streamId=0 windowSizeIncrement=983041
+31.10.2019 20:29:29 DEBUG grpc-default-worker-ELG-1-2 io.grpc.netty.NettyClientHandler - [id: 0xc5439aee, L:/35.3.29.155:58070 - R:/141.212.133.36:50051] INBOUND SETTINGS: ack=false settings={MAX_CONCURRENT_STREAMS=2147483647, INITIAL_WINDOW_SIZE=1048576, MAX_HEADER_LIST_SIZE=8192}
+31.10.2019 20:29:29 DEBUG grpc-default-worker-ELG-1-2 io.grpc.netty.NettyClientHandler - [id: 0xc5439aee, L:/35.3.29.155:58070 - R:/141.212.133.36:50051] OUTBOUND SETTINGS: ack=true
+31.10.2019 20:29:29 DEBUG grpc-default-worker-ELG-1-2 io.grpc.netty.NettyClientHandler - [id: 0xc5439aee, L:/35.3.29.155:58070 - R:/141.212.133.36:50051] INBOUND WINDOW_UPDATE: streamId=0 windowSizeIncrement=983041
+31.10.2019 20:29:29 DEBUG grpc-default-worker-ELG-1-2 io.grpc.netty.NettyClientHandler - [id: 0xc5439aee, L:/35.3.29.155:58070 - R:/141.212.133.36:50051] INBOUND SETTINGS: ack=true
+31.10.2019 20:29:29 DEBUG grpc-default-worker-ELG-1-2 io.grpc.netty.NettyClientHandler - [id: 0xc5439aee, L:/35.3.29.155:58070 - R:/141.212.133.36:50051] OUTBOUND HEADERS: streamId=3 headers=GrpcHttp2OutboundHeaders[:authority: 141.212.133.36:50051, :path: /com.scm.resources.MessageHandler/connect, :method: POST, :scheme: http, content-type: application/grpc, te: trailers, user-agent: grpc-java-netty/1.20.0, grpc-accept-encoding: gzip] streamDependency=0 weight=16 exclusive=false padding=0 endStream=false
+31.10.2019 20:29:29 DEBUG grpc-default-worker-ELG-1-2 io.grpc.netty.NettyClientHandler - [id: 0xc5439aee, L:/35.3.29.155:58070 - R:/141.212.133.36:50051] OUTBOUND DATA: streamId=3 padding=0 endStream=true length=26 bytes=00000000150a133134312e3231322e3133332e33363530303531
+31.10.2019 20:29:29 DEBUG grpc-default-worker-ELG-1-2 io.grpc.netty.NettyClientHandler - [id: 0xc5439aee, L:/35.3.29.155:58070 - R:/141.212.133.36:50051] INBOUND HEADERS: streamId=3 headers=GrpcHttp2ResponseHeaders[:status: 200, content-type: application/grpc, grpc-encoding: identity, grpc-accept-encoding: gzip] streamDependency=0 weight=16 exclusive=false padding=0 endStream=false
+31.10.2019 20:29:29 DEBUG grpc-default-worker-ELG-1-2 io.grpc.netty.NettyClientHandler - [id: 0xc5439aee, L:/35.3.29.155:58070 - R:/141.212.133.36:50051] INBOUND DATA: streamId=3 padding=0 endStream=false length=7 bytes=00000000020801
+31.10.2019 20:29:29 DEBUG grpc-default-worker-ELG-1-2 io.grpc.netty.NettyClientHandler - [id: 0xc5439aee, L:/35.3.29.155:58070 - R:/141.212.133.36:50051] INBOUND HEADERS: streamId=3 headers=GrpcHttp2ResponseHeaders[grpc-status: 0] streamDependency=0 weight=16 exclusive=false padding=0 endStream=true
+31.10.2019 20:29:42 DEBUG grpc-default-worker-ELG-1-2 io.grpc.netty.NettyClientHandler - [id: 0xc5439aee, L:/35.3.29.155:58070 - R:/141.212.133.36:50051] OUTBOUND HEADERS: streamId=5 headers=GrpcHttp2OutboundHeaders[:authority: 141.212.133.36:50051, :path: /com.scm.resources.MessageHandler/getTag, :method: POST, :scheme: http, content-type: application/grpc, te: trailers, user-agent: grpc-java-netty/1.20.0, grpc-accept-encoding: gzip] streamDependency=0 weight=16 exclusive=false padding=0 endStream=false
+31.10.2019 20:29:42 DEBUG grpc-default-worker-ELG-1-2 io.grpc.netty.NettyClientHandler - [id: 0xc5439aee, L:/35.3.29.155:58070 - R:/141.212.133.36:50051] OUTBOUND DATA: streamId=5 padding=0 endStream=true length=26 bytes=00000000150a0852464944315b305d12094164764d616e4c6162
+31.10.2019 20:29:44 DEBUG grpc-default-worker-ELG-1-2 io.grpc.netty.NettyClientHandler - [id: 0xc5439aee, L:/35.3.29.155:58070 - R:/141.212.133.36:50051] INBOUND HEADERS: streamId=5 headers=GrpcHttp2ResponseHeaders[:status: 200, content-type: application/grpc, grpc-status: 2] streamDependency=0 weight=16 exclusive=false padding=0 endStream=true
+31.10.2019 20:29:44 DEBUG grpc-default-worker-ELG-1-2 io.grpc.netty.NettyClientHandler - [id: 0xc5439aee, L:/35.3.29.155:58070 - R:/141.212.133.36:50051] OUTBOUND RST_STREAM: streamId=5 errorCode=8
+31.10.2019 20:29:53 DEBUG main io.netty.util.internal.logging.InternalLoggerFactory - Using Log4J as the default logging framework
+31.10.2019 20:29:53 DEBUG main io.netty.util.internal.PlatformDependent - Platform: MacOS
+31.10.2019 20:29:53 DEBUG main io.netty.util.internal.PlatformDependent0 - -Dio.netty.noUnsafe: false
+31.10.2019 20:29:53 DEBUG main io.netty.util.internal.PlatformDependent0 - Java version: 8
+31.10.2019 20:29:53 DEBUG main io.netty.util.internal.PlatformDependent0 - sun.misc.Unsafe.theUnsafe: available
+31.10.2019 20:29:53 DEBUG main io.netty.util.internal.PlatformDependent0 - sun.misc.Unsafe.copyMemory: available
+31.10.2019 20:29:53 DEBUG main io.netty.util.internal.PlatformDependent0 - java.nio.Buffer.address: available
+31.10.2019 20:29:53 DEBUG main io.netty.util.internal.PlatformDependent0 - direct buffer constructor: available
+31.10.2019 20:29:53 DEBUG main io.netty.util.internal.PlatformDependent0 - java.nio.Bits.unaligned: available, true
+31.10.2019 20:29:53 DEBUG main io.netty.util.internal.PlatformDependent0 - jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable prior to Java9
+31.10.2019 20:29:53 DEBUG main io.netty.util.internal.PlatformDependent0 - java.nio.DirectByteBuffer.<init>(long, int): available
+31.10.2019 20:29:53 DEBUG main io.netty.util.internal.PlatformDependent - sun.misc.Unsafe: available
+31.10.2019 20:29:53 DEBUG main io.netty.util.internal.PlatformDependent - -Dio.netty.tmpdir: /var/folders/_l/pdzjcvln5p1bh42l_sh94l2r0000gn/T (java.io.tmpdir)
+31.10.2019 20:29:53 DEBUG main io.netty.util.internal.PlatformDependent - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+31.10.2019 20:29:53 DEBUG main io.netty.util.internal.PlatformDependent - -Dio.netty.maxDirectMemory: 1908932608 bytes
+31.10.2019 20:29:53 DEBUG main io.netty.util.internal.PlatformDependent - -Dio.netty.uninitializedArrayAllocationThreshold: -1
+31.10.2019 20:29:53 DEBUG main io.netty.util.internal.CleanerJava6 - java.nio.ByteBuffer.cleaner(): available
+31.10.2019 20:29:53 DEBUG main io.netty.util.internal.PlatformDependent - -Dio.netty.noPreferDirect: false
+31.10.2019 20:29:53 DEBUG main io.netty.channel.MultithreadEventLoopGroup - -Dio.netty.eventLoopThreads: 8
+31.10.2019 20:29:53 DEBUG main io.netty.channel.nio.NioEventLoop - -Dio.netty.noKeySetOptimization: false
+31.10.2019 20:29:53 DEBUG main io.netty.channel.nio.NioEventLoop - -Dio.netty.selectorAutoRebuildThreshold: 512
+31.10.2019 20:29:53 DEBUG main io.netty.util.internal.PlatformDependent - org.jctools-core.MpscChunkedArrayQueue: available
+31.10.2019 20:29:53 DEBUG grpc-default-executor-0 io.netty.util.ResourceLeakDetector - -Dio.netty.leakDetection.level: simple
+31.10.2019 20:29:53 DEBUG grpc-default-executor-0 io.netty.util.ResourceLeakDetector - -Dio.netty.leakDetection.targetRecords: 4
+31.10.2019 20:29:53 DEBUG grpc-default-executor-0 io.netty.buffer.AbstractByteBuf - -Dio.netty.buffer.checkAccessible: true
+31.10.2019 20:29:53 DEBUG grpc-default-executor-0 io.netty.buffer.AbstractByteBuf - -Dio.netty.buffer.checkBounds: true
+31.10.2019 20:29:53 DEBUG grpc-default-executor-0 io.netty.util.ResourceLeakDetectorFactory - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@4d31d312
+31.10.2019 20:29:53 DEBUG grpc-default-executor-0 io.netty.util.internal.InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+31.10.2019 20:29:53 DEBUG grpc-default-executor-0 io.netty.util.internal.InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+31.10.2019 20:29:53 DEBUG grpc-default-executor-0 io.netty.channel.DefaultChannelId - -Dio.netty.processId: 2638 (auto-detected)
+31.10.2019 20:29:53 DEBUG grpc-default-executor-0 io.netty.util.NetUtil - -Djava.net.preferIPv4Stack: false
+31.10.2019 20:29:53 DEBUG grpc-default-executor-0 io.netty.util.NetUtil - -Djava.net.preferIPv6Addresses: false
+31.10.2019 20:29:53 DEBUG grpc-default-executor-0 io.netty.util.NetUtil - Loopback interface: lo0 (lo0, 0:0:0:0:0:0:0:1%lo0)
+31.10.2019 20:29:53 DEBUG grpc-default-executor-0 io.netty.util.NetUtil - Failed to get SOMAXCONN from sysctl and file /proc/sys/net/core/somaxconn. Default: 128
+31.10.2019 20:29:53 DEBUG grpc-default-executor-0 io.netty.channel.DefaultChannelId - -Dio.netty.machineId: 30:35:ad:ff:fe:ae:c4:d0 (auto-detected)
+31.10.2019 20:29:53 DEBUG grpc-default-executor-0 io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.numHeapArenas: 8
+31.10.2019 20:29:53 DEBUG grpc-default-executor-0 io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.numDirectArenas: 8
+31.10.2019 20:29:53 DEBUG grpc-default-executor-0 io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.pageSize: 8192
+31.10.2019 20:29:53 DEBUG grpc-default-executor-0 io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.maxOrder: 11
+31.10.2019 20:29:53 DEBUG grpc-default-executor-0 io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.chunkSize: 16777216
+31.10.2019 20:29:53 DEBUG grpc-default-executor-0 io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.tinyCacheSize: 512
+31.10.2019 20:29:53 DEBUG grpc-default-executor-0 io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.smallCacheSize: 256
+31.10.2019 20:29:53 DEBUG grpc-default-executor-0 io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.normalCacheSize: 64
+31.10.2019 20:29:53 DEBUG grpc-default-executor-0 io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+31.10.2019 20:29:53 DEBUG grpc-default-executor-0 io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.cacheTrimInterval: 8192
+31.10.2019 20:29:53 DEBUG grpc-default-executor-0 io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.useCacheForAllThreads: true
+31.10.2019 20:29:53 DEBUG grpc-default-executor-0 io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
+31.10.2019 20:29:53 DEBUG grpc-default-executor-0 io.netty.buffer.ByteBufUtil - -Dio.netty.allocator.type: pooled
+31.10.2019 20:29:53 DEBUG grpc-default-executor-0 io.netty.buffer.ByteBufUtil - -Dio.netty.threadLocalDirectBufferSize: 0
+31.10.2019 20:29:53 DEBUG grpc-default-executor-0 io.netty.buffer.ByteBufUtil - -Dio.netty.maxThreadLocalCharBufferSize: 16384
+31.10.2019 20:29:54 DEBUG grpc-default-executor-0 io.netty.util.Recycler - -Dio.netty.recycler.maxCapacityPerThread: 4096
+31.10.2019 20:29:54 DEBUG grpc-default-executor-0 io.netty.util.Recycler - -Dio.netty.recycler.maxSharedCapacityFactor: 2
+31.10.2019 20:29:54 DEBUG grpc-default-executor-0 io.netty.util.Recycler - -Dio.netty.recycler.linkCapacity: 16
+31.10.2019 20:29:54 DEBUG grpc-default-executor-0 io.netty.util.Recycler - -Dio.netty.recycler.ratio: 8
+31.10.2019 20:29:54 DEBUG grpc-default-worker-ELG-1-2 io.grpc.netty.NettyClientHandler - [id: 0x9f464c74, L:/35.3.29.155:58073 - R:/141.212.133.36:50051] OUTBOUND SETTINGS: ack=false settings={ENABLE_PUSH=0, MAX_CONCURRENT_STREAMS=0, INITIAL_WINDOW_SIZE=1048576, MAX_HEADER_LIST_SIZE=8192}
+31.10.2019 20:29:54 DEBUG grpc-default-worker-ELG-1-2 io.grpc.netty.NettyClientHandler - [id: 0x9f464c74, L:/35.3.29.155:58073 - R:/141.212.133.36:50051] OUTBOUND WINDOW_UPDATE: streamId=0 windowSizeIncrement=983041
+31.10.2019 20:29:54 DEBUG grpc-default-worker-ELG-1-2 io.grpc.netty.NettyClientHandler - [id: 0x9f464c74, L:/35.3.29.155:58073 - R:/141.212.133.36:50051] INBOUND SETTINGS: ack=false settings={MAX_CONCURRENT_STREAMS=2147483647, INITIAL_WINDOW_SIZE=1048576, MAX_HEADER_LIST_SIZE=8192}
+31.10.2019 20:29:54 DEBUG grpc-default-worker-ELG-1-2 io.grpc.netty.NettyClientHandler - [id: 0x9f464c74, L:/35.3.29.155:58073 - R:/141.212.133.36:50051] OUTBOUND SETTINGS: ack=true
+31.10.2019 20:29:54 DEBUG grpc-default-worker-ELG-1-2 io.grpc.netty.NettyClientHandler - [id: 0x9f464c74, L:/35.3.29.155:58073 - R:/141.212.133.36:50051] INBOUND WINDOW_UPDATE: streamId=0 windowSizeIncrement=983041
+31.10.2019 20:29:54 DEBUG grpc-default-worker-ELG-1-2 io.grpc.netty.NettyClientHandler - [id: 0x9f464c74, L:/35.3.29.155:58073 - R:/141.212.133.36:50051] INBOUND SETTINGS: ack=true
+31.10.2019 20:29:54 DEBUG grpc-default-worker-ELG-1-2 io.grpc.netty.NettyClientHandler - [id: 0x9f464c74, L:/35.3.29.155:58073 - R:/141.212.133.36:50051] OUTBOUND HEADERS: streamId=3 headers=GrpcHttp2OutboundHeaders[:authority: 141.212.133.36:50051, :path: /com.scm.resources.MessageHandler/connect, :method: POST, :scheme: http, content-type: application/grpc, te: trailers, user-agent: grpc-java-netty/1.20.0, grpc-accept-encoding: gzip] streamDependency=0 weight=16 exclusive=false padding=0 endStream=false
+31.10.2019 20:29:54 DEBUG grpc-default-worker-ELG-1-2 io.grpc.netty.NettyClientHandler - [id: 0x9f464c74, L:/35.3.29.155:58073 - R:/141.212.133.36:50051] OUTBOUND DATA: streamId=3 padding=0 endStream=true length=26 bytes=00000000150a133134312e3231322e3133332e33363530303531
+31.10.2019 20:29:54 DEBUG grpc-default-worker-ELG-1-2 io.grpc.netty.NettyClientHandler - [id: 0x9f464c74, L:/35.3.29.155:58073 - R:/141.212.133.36:50051] INBOUND HEADERS: streamId=3 headers=GrpcHttp2ResponseHeaders[:status: 200, content-type: application/grpc, grpc-encoding: identity, grpc-accept-encoding: gzip] streamDependency=0 weight=16 exclusive=false padding=0 endStream=false
+31.10.2019 20:29:54 DEBUG grpc-default-worker-ELG-1-2 io.grpc.netty.NettyClientHandler - [id: 0x9f464c74, L:/35.3.29.155:58073 - R:/141.212.133.36:50051] INBOUND DATA: streamId=3 padding=0 endStream=false length=7 bytes=00000000020801
+31.10.2019 20:29:54 DEBUG grpc-default-worker-ELG-1-2 io.grpc.netty.NettyClientHandler - [id: 0x9f464c74, L:/35.3.29.155:58073 - R:/141.212.133.36:50051] INBOUND HEADERS: streamId=3 headers=GrpcHttp2ResponseHeaders[grpc-status: 0] streamDependency=0 weight=16 exclusive=false padding=0 endStream=true
+31.10.2019 20:30:14 DEBUG grpc-default-worker-ELG-1-2 io.grpc.netty.NettyClientHandler - [id: 0x9f464c74, L:/35.3.29.155:58073 - R:/141.212.133.36:50051] OUTBOUND HEADERS: streamId=5 headers=GrpcHttp2OutboundHeaders[:authority: 141.212.133.36:50051, :path: /com.scm.resources.MessageHandler/getTag, :method: POST, :scheme: http, content-type: application/grpc, te: trailers, user-agent: grpc-java-netty/1.20.0, grpc-accept-encoding: gzip] streamDependency=0 weight=16 exclusive=false padding=0 endStream=false
+31.10.2019 20:30:14 DEBUG grpc-default-worker-ELG-1-2 io.grpc.netty.NettyClientHandler - [id: 0x9f464c74, L:/35.3.29.155:58073 - R:/141.212.133.36:50051] OUTBOUND DATA: streamId=5 padding=0 endStream=true length=22 bytes=00000000110a09434e4331426f6f6c731204434e4331
+31.10.2019 20:30:14 DEBUG grpc-default-worker-ELG-1-2 io.grpc.netty.NettyClientHandler - [id: 0x9f464c74, L:/35.3.29.155:58073 - R:/141.212.133.36:50051] INBOUND HEADERS: streamId=5 headers=GrpcHttp2ResponseHeaders[:status: 200, content-type: application/grpc, grpc-status: 2] streamDependency=0 weight=16 exclusive=false padding=0 endStream=true
+31.10.2019 20:30:14 DEBUG grpc-default-worker-ELG-1-2 io.grpc.netty.NettyClientHandler - [id: 0x9f464c74, L:/35.3.29.155:58073 - R:/141.212.133.36:50051] OUTBOUND RST_STREAM: streamId=5 errorCode=8
+31.10.2019 20:30:25 DEBUG main io.netty.util.internal.logging.InternalLoggerFactory - Using Log4J as the default logging framework
+31.10.2019 20:30:25 DEBUG main io.netty.util.internal.PlatformDependent - Platform: MacOS
+31.10.2019 20:30:25 DEBUG main io.netty.util.internal.PlatformDependent0 - -Dio.netty.noUnsafe: false
+31.10.2019 20:30:25 DEBUG main io.netty.util.internal.PlatformDependent0 - Java version: 8
+31.10.2019 20:30:25 DEBUG main io.netty.util.internal.PlatformDependent0 - sun.misc.Unsafe.theUnsafe: available
+31.10.2019 20:30:25 DEBUG main io.netty.util.internal.PlatformDependent0 - sun.misc.Unsafe.copyMemory: available
+31.10.2019 20:30:25 DEBUG main io.netty.util.internal.PlatformDependent0 - java.nio.Buffer.address: available
+31.10.2019 20:30:25 DEBUG main io.netty.util.internal.PlatformDependent0 - direct buffer constructor: available
+31.10.2019 20:30:25 DEBUG main io.netty.util.internal.PlatformDependent0 - java.nio.Bits.unaligned: available, true
+31.10.2019 20:30:25 DEBUG main io.netty.util.internal.PlatformDependent0 - jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable prior to Java9
+31.10.2019 20:30:25 DEBUG main io.netty.util.internal.PlatformDependent0 - java.nio.DirectByteBuffer.<init>(long, int): available
+31.10.2019 20:30:25 DEBUG main io.netty.util.internal.PlatformDependent - sun.misc.Unsafe: available
+31.10.2019 20:30:25 DEBUG main io.netty.util.internal.PlatformDependent - -Dio.netty.tmpdir: /var/folders/_l/pdzjcvln5p1bh42l_sh94l2r0000gn/T (java.io.tmpdir)
+31.10.2019 20:30:25 DEBUG main io.netty.util.internal.PlatformDependent - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+31.10.2019 20:30:25 DEBUG main io.netty.util.internal.PlatformDependent - -Dio.netty.maxDirectMemory: 1908932608 bytes
+31.10.2019 20:30:25 DEBUG main io.netty.util.internal.PlatformDependent - -Dio.netty.uninitializedArrayAllocationThreshold: -1
+31.10.2019 20:30:25 DEBUG main io.netty.util.internal.CleanerJava6 - java.nio.ByteBuffer.cleaner(): available
+31.10.2019 20:30:25 DEBUG main io.netty.util.internal.PlatformDependent - -Dio.netty.noPreferDirect: false
+31.10.2019 20:30:25 DEBUG main io.netty.channel.MultithreadEventLoopGroup - -Dio.netty.eventLoopThreads: 8
+31.10.2019 20:30:25 DEBUG main io.netty.channel.nio.NioEventLoop - -Dio.netty.noKeySetOptimization: false
+31.10.2019 20:30:25 DEBUG main io.netty.channel.nio.NioEventLoop - -Dio.netty.selectorAutoRebuildThreshold: 512
+31.10.2019 20:30:25 DEBUG main io.netty.util.internal.PlatformDependent - org.jctools-core.MpscChunkedArrayQueue: available
+31.10.2019 20:30:25 DEBUG grpc-default-executor-0 io.netty.util.ResourceLeakDetector - -Dio.netty.leakDetection.level: simple
+31.10.2019 20:30:25 DEBUG grpc-default-executor-0 io.netty.util.ResourceLeakDetector - -Dio.netty.leakDetection.targetRecords: 4
+31.10.2019 20:30:25 DEBUG grpc-default-executor-0 io.netty.buffer.AbstractByteBuf - -Dio.netty.buffer.checkAccessible: true
+31.10.2019 20:30:25 DEBUG grpc-default-executor-0 io.netty.buffer.AbstractByteBuf - -Dio.netty.buffer.checkBounds: true
+31.10.2019 20:30:25 DEBUG grpc-default-executor-0 io.netty.util.ResourceLeakDetectorFactory - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@1a7b85c6
+31.10.2019 20:30:25 DEBUG grpc-default-executor-0 io.netty.util.internal.InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+31.10.2019 20:30:25 DEBUG grpc-default-executor-0 io.netty.util.internal.InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+31.10.2019 20:30:25 DEBUG grpc-default-executor-0 io.netty.channel.DefaultChannelId - -Dio.netty.processId: 2640 (auto-detected)
+31.10.2019 20:30:25 DEBUG grpc-default-executor-0 io.netty.util.NetUtil - -Djava.net.preferIPv4Stack: false
+31.10.2019 20:30:25 DEBUG grpc-default-executor-0 io.netty.util.NetUtil - -Djava.net.preferIPv6Addresses: false
+31.10.2019 20:30:25 DEBUG grpc-default-executor-0 io.netty.util.NetUtil - Loopback interface: lo0 (lo0, 0:0:0:0:0:0:0:1%lo0)
+31.10.2019 20:30:25 DEBUG grpc-default-executor-0 io.netty.util.NetUtil - Failed to get SOMAXCONN from sysctl and file /proc/sys/net/core/somaxconn. Default: 128
+31.10.2019 20:30:25 DEBUG grpc-default-executor-0 io.netty.channel.DefaultChannelId - -Dio.netty.machineId: 30:35:ad:ff:fe:ae:c4:d0 (auto-detected)
+31.10.2019 20:30:25 DEBUG grpc-default-executor-0 io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.numHeapArenas: 8
+31.10.2019 20:30:25 DEBUG grpc-default-executor-0 io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.numDirectArenas: 8
+31.10.2019 20:30:25 DEBUG grpc-default-executor-0 io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.pageSize: 8192
+31.10.2019 20:30:25 DEBUG grpc-default-executor-0 io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.maxOrder: 11
+31.10.2019 20:30:25 DEBUG grpc-default-executor-0 io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.chunkSize: 16777216
+31.10.2019 20:30:25 DEBUG grpc-default-executor-0 io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.tinyCacheSize: 512
+31.10.2019 20:30:25 DEBUG grpc-default-executor-0 io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.smallCacheSize: 256
+31.10.2019 20:30:25 DEBUG grpc-default-executor-0 io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.normalCacheSize: 64
+31.10.2019 20:30:25 DEBUG grpc-default-executor-0 io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+31.10.2019 20:30:25 DEBUG grpc-default-executor-0 io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.cacheTrimInterval: 8192
+31.10.2019 20:30:25 DEBUG grpc-default-executor-0 io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.useCacheForAllThreads: true
+31.10.2019 20:30:25 DEBUG grpc-default-executor-0 io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
+31.10.2019 20:30:25 DEBUG grpc-default-executor-0 io.netty.buffer.ByteBufUtil - -Dio.netty.allocator.type: pooled
+31.10.2019 20:30:25 DEBUG grpc-default-executor-0 io.netty.buffer.ByteBufUtil - -Dio.netty.threadLocalDirectBufferSize: 0
+31.10.2019 20:30:25 DEBUG grpc-default-executor-0 io.netty.buffer.ByteBufUtil - -Dio.netty.maxThreadLocalCharBufferSize: 16384
+31.10.2019 20:30:25 DEBUG grpc-default-executor-0 io.netty.util.Recycler - -Dio.netty.recycler.maxCapacityPerThread: 4096
+31.10.2019 20:30:25 DEBUG grpc-default-executor-0 io.netty.util.Recycler - -Dio.netty.recycler.maxSharedCapacityFactor: 2
+31.10.2019 20:30:25 DEBUG grpc-default-executor-0 io.netty.util.Recycler - -Dio.netty.recycler.linkCapacity: 16
+31.10.2019 20:30:25 DEBUG grpc-default-executor-0 io.netty.util.Recycler - -Dio.netty.recycler.ratio: 8
+31.10.2019 20:30:25 DEBUG grpc-default-worker-ELG-1-2 io.grpc.netty.NettyClientHandler - [id: 0x9d6157b3, L:/35.3.29.155:58076 - R:/141.212.133.36:50051] OUTBOUND SETTINGS: ack=false settings={ENABLE_PUSH=0, MAX_CONCURRENT_STREAMS=0, INITIAL_WINDOW_SIZE=1048576, MAX_HEADER_LIST_SIZE=8192}
+31.10.2019 20:30:25 DEBUG grpc-default-worker-ELG-1-2 io.grpc.netty.NettyClientHandler - [id: 0x9d6157b3, L:/35.3.29.155:58076 - R:/141.212.133.36:50051] OUTBOUND WINDOW_UPDATE: streamId=0 windowSizeIncrement=983041
+31.10.2019 20:30:25 DEBUG grpc-default-worker-ELG-1-2 io.grpc.netty.NettyClientHandler - [id: 0x9d6157b3, L:/35.3.29.155:58076 - R:/141.212.133.36:50051] INBOUND SETTINGS: ack=false settings={MAX_CONCURRENT_STREAMS=2147483647, INITIAL_WINDOW_SIZE=1048576, MAX_HEADER_LIST_SIZE=8192}
+31.10.2019 20:30:25 DEBUG grpc-default-worker-ELG-1-2 io.grpc.netty.NettyClientHandler - [id: 0x9d6157b3, L:/35.3.29.155:58076 - R:/141.212.133.36:50051] OUTBOUND SETTINGS: ack=true
+31.10.2019 20:30:25 DEBUG grpc-default-worker-ELG-1-2 io.grpc.netty.NettyClientHandler - [id: 0x9d6157b3, L:/35.3.29.155:58076 - R:/141.212.133.36:50051] INBOUND WINDOW_UPDATE: streamId=0 windowSizeIncrement=983041
+31.10.2019 20:30:25 DEBUG grpc-default-worker-ELG-1-2 io.grpc.netty.NettyClientHandler - [id: 0x9d6157b3, L:/35.3.29.155:58076 - R:/141.212.133.36:50051] INBOUND SETTINGS: ack=true
+31.10.2019 20:30:25 DEBUG grpc-default-worker-ELG-1-2 io.grpc.netty.NettyClientHandler - [id: 0x9d6157b3, L:/35.3.29.155:58076 - R:/141.212.133.36:50051] OUTBOUND HEADERS: streamId=3 headers=GrpcHttp2OutboundHeaders[:authority: 141.212.133.36:50051, :path: /com.scm.resources.MessageHandler/connect, :method: POST, :scheme: http, content-type: application/grpc, te: trailers, user-agent: grpc-java-netty/1.20.0, grpc-accept-encoding: gzip] streamDependency=0 weight=16 exclusive=false padding=0 endStream=false
+31.10.2019 20:30:25 DEBUG grpc-default-worker-ELG-1-2 io.grpc.netty.NettyClientHandler - [id: 0x9d6157b3, L:/35.3.29.155:58076 - R:/141.212.133.36:50051] OUTBOUND DATA: streamId=3 padding=0 endStream=true length=26 bytes=00000000150a133134312e3231322e3133332e33363530303531
+31.10.2019 20:30:25 DEBUG grpc-default-worker-ELG-1-2 io.grpc.netty.NettyClientHandler - [id: 0x9d6157b3, L:/35.3.29.155:58076 - R:/141.212.133.36:50051] INBOUND HEADERS: streamId=3 headers=GrpcHttp2ResponseHeaders[:status: 200, content-type: application/grpc, grpc-encoding: identity, grpc-accept-encoding: gzip] streamDependency=0 weight=16 exclusive=false padding=0 endStream=false
+31.10.2019 20:30:25 DEBUG grpc-default-worker-ELG-1-2 io.grpc.netty.NettyClientHandler - [id: 0x9d6157b3, L:/35.3.29.155:58076 - R:/141.212.133.36:50051] INBOUND DATA: streamId=3 padding=0 endStream=false length=7 bytes=00000000020801
+31.10.2019 20:30:25 DEBUG grpc-default-worker-ELG-1-2 io.grpc.netty.NettyClientHandler - [id: 0x9d6157b3, L:/35.3.29.155:58076 - R:/141.212.133.36:50051] INBOUND HEADERS: streamId=3 headers=GrpcHttp2ResponseHeaders[grpc-status: 0] streamDependency=0 weight=16 exclusive=false padding=0 endStream=true
+31.10.2019 20:30:38 DEBUG grpc-default-worker-ELG-1-2 io.grpc.netty.NettyClientHandler - [id: 0x9d6157b3, L:/35.3.29.155:58076 - R:/141.212.133.36:50051] OUTBOUND HEADERS: streamId=5 headers=GrpcHttp2OutboundHeaders[:authority: 141.212.133.36:50051, :path: /com.scm.resources.MessageHandler/getTag, :method: POST, :scheme: http, content-type: application/grpc, te: trailers, user-agent: grpc-java-netty/1.20.0, grpc-accept-encoding: gzip] streamDependency=0 weight=16 exclusive=false padding=0 endStream=false
+31.10.2019 20:30:38 DEBUG grpc-default-worker-ELG-1-2 io.grpc.netty.NettyClientHandler - [id: 0x9d6157b3, L:/35.3.29.155:58076 - R:/141.212.133.36:50051] OUTBOUND DATA: streamId=5 padding=0 endStream=true length=31 bytes=000000001a0a0d5246494474696d6572315b305d12094164764d616e4c6162
+31.10.2019 20:30:38 DEBUG grpc-default-worker-ELG-1-2 io.grpc.netty.NettyClientHandler - [id: 0x9d6157b3, L:/35.3.29.155:58076 - R:/141.212.133.36:50051] INBOUND HEADERS: streamId=5 headers=GrpcHttp2ResponseHeaders[:status: 200, content-type: application/grpc, grpc-status: 2] streamDependency=0 weight=16 exclusive=false padding=0 endStream=true
+31.10.2019 20:30:38 DEBUG grpc-default-worker-ELG-1-2 io.grpc.netty.NettyClientHandler - [id: 0x9d6157b3, L:/35.3.29.155:58076 - R:/141.212.133.36:50051] OUTBOUND RST_STREAM: streamId=5 errorCode=8
+31.10.2019 20:30:41 DEBUG main io.netty.util.internal.logging.InternalLoggerFactory - Using Log4J as the default logging framework
+31.10.2019 20:30:41 DEBUG main io.netty.util.internal.PlatformDependent - Platform: MacOS
+31.10.2019 20:30:41 DEBUG main io.netty.util.internal.PlatformDependent0 - -Dio.netty.noUnsafe: false
+31.10.2019 20:30:41 DEBUG main io.netty.util.internal.PlatformDependent0 - Java version: 8
+31.10.2019 20:30:41 DEBUG main io.netty.util.internal.PlatformDependent0 - sun.misc.Unsafe.theUnsafe: available
+31.10.2019 20:30:41 DEBUG main io.netty.util.internal.PlatformDependent0 - sun.misc.Unsafe.copyMemory: available
+31.10.2019 20:30:41 DEBUG main io.netty.util.internal.PlatformDependent0 - java.nio.Buffer.address: available
+31.10.2019 20:30:41 DEBUG main io.netty.util.internal.PlatformDependent0 - direct buffer constructor: available
+31.10.2019 20:30:41 DEBUG main io.netty.util.internal.PlatformDependent0 - java.nio.Bits.unaligned: available, true
+31.10.2019 20:30:41 DEBUG main io.netty.util.internal.PlatformDependent0 - jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable prior to Java9
+31.10.2019 20:30:41 DEBUG main io.netty.util.internal.PlatformDependent0 - java.nio.DirectByteBuffer.<init>(long, int): available
+31.10.2019 20:30:41 DEBUG main io.netty.util.internal.PlatformDependent - sun.misc.Unsafe: available
+31.10.2019 20:30:41 DEBUG main io.netty.util.internal.PlatformDependent - -Dio.netty.tmpdir: /var/folders/_l/pdzjcvln5p1bh42l_sh94l2r0000gn/T (java.io.tmpdir)
+31.10.2019 20:30:41 DEBUG main io.netty.util.internal.PlatformDependent - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+31.10.2019 20:30:41 DEBUG main io.netty.util.internal.PlatformDependent - -Dio.netty.maxDirectMemory: 1908932608 bytes
+31.10.2019 20:30:41 DEBUG main io.netty.util.internal.PlatformDependent - -Dio.netty.uninitializedArrayAllocationThreshold: -1
+31.10.2019 20:30:41 DEBUG main io.netty.util.internal.CleanerJava6 - java.nio.ByteBuffer.cleaner(): available
+31.10.2019 20:30:41 DEBUG main io.netty.util.internal.PlatformDependent - -Dio.netty.noPreferDirect: false
+31.10.2019 20:30:41 DEBUG main io.netty.channel.MultithreadEventLoopGroup - -Dio.netty.eventLoopThreads: 8
+31.10.2019 20:30:41 DEBUG main io.netty.channel.nio.NioEventLoop - -Dio.netty.noKeySetOptimization: false
+31.10.2019 20:30:41 DEBUG main io.netty.channel.nio.NioEventLoop - -Dio.netty.selectorAutoRebuildThreshold: 512
+31.10.2019 20:30:41 DEBUG main io.netty.util.internal.PlatformDependent - org.jctools-core.MpscChunkedArrayQueue: available
+31.10.2019 20:30:41 DEBUG grpc-default-executor-0 io.netty.util.ResourceLeakDetector - -Dio.netty.leakDetection.level: simple
+31.10.2019 20:30:41 DEBUG grpc-default-executor-0 io.netty.util.ResourceLeakDetector - -Dio.netty.leakDetection.targetRecords: 4
+31.10.2019 20:30:41 DEBUG grpc-default-executor-0 io.netty.buffer.AbstractByteBuf - -Dio.netty.buffer.checkAccessible: true
+31.10.2019 20:30:41 DEBUG grpc-default-executor-0 io.netty.buffer.AbstractByteBuf - -Dio.netty.buffer.checkBounds: true
+31.10.2019 20:30:41 DEBUG grpc-default-executor-0 io.netty.util.ResourceLeakDetectorFactory - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@64587e0f
+31.10.2019 20:30:41 DEBUG grpc-default-executor-0 io.netty.util.internal.InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+31.10.2019 20:30:41 DEBUG grpc-default-executor-0 io.netty.util.internal.InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+31.10.2019 20:30:41 DEBUG grpc-default-executor-0 io.netty.channel.DefaultChannelId - -Dio.netty.processId: 2641 (auto-detected)
+31.10.2019 20:30:41 DEBUG grpc-default-executor-0 io.netty.util.NetUtil - -Djava.net.preferIPv4Stack: false
+31.10.2019 20:30:41 DEBUG grpc-default-executor-0 io.netty.util.NetUtil - -Djava.net.preferIPv6Addresses: false
+31.10.2019 20:30:41 DEBUG grpc-default-executor-0 io.netty.util.NetUtil - Loopback interface: lo0 (lo0, 0:0:0:0:0:0:0:1%lo0)
+31.10.2019 20:30:41 DEBUG grpc-default-executor-0 io.netty.util.NetUtil - Failed to get SOMAXCONN from sysctl and file /proc/sys/net/core/somaxconn. Default: 128
+31.10.2019 20:30:41 DEBUG grpc-default-executor-0 io.netty.channel.DefaultChannelId - -Dio.netty.machineId: 30:35:ad:ff:fe:ae:c4:d0 (auto-detected)
+31.10.2019 20:30:41 DEBUG grpc-default-executor-0 io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.numHeapArenas: 8
+31.10.2019 20:30:41 DEBUG grpc-default-executor-0 io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.numDirectArenas: 8
+31.10.2019 20:30:41 DEBUG grpc-default-executor-0 io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.pageSize: 8192
+31.10.2019 20:30:41 DEBUG grpc-default-executor-0 io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.maxOrder: 11
+31.10.2019 20:30:41 DEBUG grpc-default-executor-0 io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.chunkSize: 16777216
+31.10.2019 20:30:41 DEBUG grpc-default-executor-0 io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.tinyCacheSize: 512
+31.10.2019 20:30:41 DEBUG grpc-default-executor-0 io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.smallCacheSize: 256
+31.10.2019 20:30:41 DEBUG grpc-default-executor-0 io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.normalCacheSize: 64
+31.10.2019 20:30:41 DEBUG grpc-default-executor-0 io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+31.10.2019 20:30:41 DEBUG grpc-default-executor-0 io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.cacheTrimInterval: 8192
+31.10.2019 20:30:41 DEBUG grpc-default-executor-0 io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.useCacheForAllThreads: true
+31.10.2019 20:30:41 DEBUG grpc-default-executor-0 io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
+31.10.2019 20:30:41 DEBUG grpc-default-executor-0 io.netty.buffer.ByteBufUtil - -Dio.netty.allocator.type: pooled
+31.10.2019 20:30:41 DEBUG grpc-default-executor-0 io.netty.buffer.ByteBufUtil - -Dio.netty.threadLocalDirectBufferSize: 0
+31.10.2019 20:30:41 DEBUG grpc-default-executor-0 io.netty.buffer.ByteBufUtil - -Dio.netty.maxThreadLocalCharBufferSize: 16384
+31.10.2019 20:30:41 DEBUG grpc-default-executor-0 io.netty.util.Recycler - -Dio.netty.recycler.maxCapacityPerThread: 4096
+31.10.2019 20:30:41 DEBUG grpc-default-executor-0 io.netty.util.Recycler - -Dio.netty.recycler.maxSharedCapacityFactor: 2
+31.10.2019 20:30:41 DEBUG grpc-default-executor-0 io.netty.util.Recycler - -Dio.netty.recycler.linkCapacity: 16
+31.10.2019 20:30:41 DEBUG grpc-default-executor-0 io.netty.util.Recycler - -Dio.netty.recycler.ratio: 8
+31.10.2019 20:30:41 DEBUG grpc-default-worker-ELG-1-2 io.grpc.netty.NettyClientHandler - [id: 0xb536e57b, L:/35.3.29.155:58077 - R:/141.212.133.36:50051] OUTBOUND SETTINGS: ack=false settings={ENABLE_PUSH=0, MAX_CONCURRENT_STREAMS=0, INITIAL_WINDOW_SIZE=1048576, MAX_HEADER_LIST_SIZE=8192}
+31.10.2019 20:30:41 DEBUG grpc-default-worker-ELG-1-2 io.grpc.netty.NettyClientHandler - [id: 0xb536e57b, L:/35.3.29.155:58077 - R:/141.212.133.36:50051] OUTBOUND WINDOW_UPDATE: streamId=0 windowSizeIncrement=983041
+31.10.2019 20:30:41 DEBUG grpc-default-worker-ELG-1-2 io.grpc.netty.NettyClientHandler - [id: 0xb536e57b, L:/35.3.29.155:58077 - R:/141.212.133.36:50051] INBOUND SETTINGS: ack=false settings={MAX_CONCURRENT_STREAMS=2147483647, INITIAL_WINDOW_SIZE=1048576, MAX_HEADER_LIST_SIZE=8192}
+31.10.2019 20:30:41 DEBUG grpc-default-worker-ELG-1-2 io.grpc.netty.NettyClientHandler - [id: 0xb536e57b, L:/35.3.29.155:58077 - R:/141.212.133.36:50051] OUTBOUND SETTINGS: ack=true
+31.10.2019 20:30:41 DEBUG grpc-default-worker-ELG-1-2 io.grpc.netty.NettyClientHandler - [id: 0xb536e57b, L:/35.3.29.155:58077 - R:/141.212.133.36:50051] INBOUND WINDOW_UPDATE: streamId=0 windowSizeIncrement=983041
+31.10.2019 20:30:41 DEBUG grpc-default-worker-ELG-1-2 io.grpc.netty.NettyClientHandler - [id: 0xb536e57b, L:/35.3.29.155:58077 - R:/141.212.133.36:50051] INBOUND SETTINGS: ack=true
+31.10.2019 20:30:41 DEBUG grpc-default-worker-ELG-1-2 io.grpc.netty.NettyClientHandler - [id: 0xb536e57b, L:/35.3.29.155:58077 - R:/141.212.133.36:50051] OUTBOUND HEADERS: streamId=3 headers=GrpcHttp2OutboundHeaders[:authority: 141.212.133.36:50051, :path: /com.scm.resources.MessageHandler/connect, :method: POST, :scheme: http, content-type: application/grpc, te: trailers, user-agent: grpc-java-netty/1.20.0, grpc-accept-encoding: gzip] streamDependency=0 weight=16 exclusive=false padding=0 endStream=false
+31.10.2019 20:30:41 DEBUG grpc-default-worker-ELG-1-2 io.grpc.netty.NettyClientHandler - [id: 0xb536e57b, L:/35.3.29.155:58077 - R:/141.212.133.36:50051] OUTBOUND DATA: streamId=3 padding=0 endStream=true length=26 bytes=00000000150a133134312e3231322e3133332e33363530303531
+31.10.2019 20:30:41 DEBUG grpc-default-worker-ELG-1-2 io.grpc.netty.NettyClientHandler - [id: 0xb536e57b, L:/35.3.29.155:58077 - R:/141.212.133.36:50051] INBOUND HEADERS: streamId=3 headers=GrpcHttp2ResponseHeaders[:status: 200, content-type: application/grpc, grpc-encoding: identity, grpc-accept-encoding: gzip] streamDependency=0 weight=16 exclusive=false padding=0 endStream=false
+31.10.2019 20:30:41 DEBUG grpc-default-worker-ELG-1-2 io.grpc.netty.NettyClientHandler - [id: 0xb536e57b, L:/35.3.29.155:58077 - R:/141.212.133.36:50051] INBOUND DATA: streamId=3 padding=0 endStream=false length=7 bytes=00000000020801
+31.10.2019 20:30:41 DEBUG grpc-default-worker-ELG-1-2 io.grpc.netty.NettyClientHandler - [id: 0xb536e57b, L:/35.3.29.155:58077 - R:/141.212.133.36:50051] INBOUND HEADERS: streamId=3 headers=GrpcHttp2ResponseHeaders[grpc-status: 0] streamDependency=0 weight=16 exclusive=false padding=0 endStream=true
+31.10.2019 20:34:25 DEBUG main io.netty.util.internal.logging.InternalLoggerFactory - Using Log4J as the default logging framework
+31.10.2019 20:34:25 DEBUG main io.netty.util.internal.PlatformDependent - Platform: MacOS
+31.10.2019 20:34:25 DEBUG main io.netty.util.internal.PlatformDependent0 - -Dio.netty.noUnsafe: false
+31.10.2019 20:34:25 DEBUG main io.netty.util.internal.PlatformDependent0 - Java version: 8
+31.10.2019 20:34:25 DEBUG main io.netty.util.internal.PlatformDependent0 - sun.misc.Unsafe.theUnsafe: available
+31.10.2019 20:34:25 DEBUG main io.netty.util.internal.PlatformDependent0 - sun.misc.Unsafe.copyMemory: available
+31.10.2019 20:34:25 DEBUG main io.netty.util.internal.PlatformDependent0 - java.nio.Buffer.address: available
+31.10.2019 20:34:25 DEBUG main io.netty.util.internal.PlatformDependent0 - direct buffer constructor: available
+31.10.2019 20:34:25 DEBUG main io.netty.util.internal.PlatformDependent0 - java.nio.Bits.unaligned: available, true
+31.10.2019 20:34:25 DEBUG main io.netty.util.internal.PlatformDependent0 - jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable prior to Java9
+31.10.2019 20:34:25 DEBUG main io.netty.util.internal.PlatformDependent0 - java.nio.DirectByteBuffer.<init>(long, int): available
+31.10.2019 20:34:25 DEBUG main io.netty.util.internal.PlatformDependent - sun.misc.Unsafe: available
+31.10.2019 20:34:25 DEBUG main io.netty.util.internal.PlatformDependent - -Dio.netty.tmpdir: /var/folders/_l/pdzjcvln5p1bh42l_sh94l2r0000gn/T (java.io.tmpdir)
+31.10.2019 20:34:25 DEBUG main io.netty.util.internal.PlatformDependent - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+31.10.2019 20:34:25 DEBUG main io.netty.util.internal.PlatformDependent - -Dio.netty.maxDirectMemory: 1908932608 bytes
+31.10.2019 20:34:25 DEBUG main io.netty.util.internal.PlatformDependent - -Dio.netty.uninitializedArrayAllocationThreshold: -1
+31.10.2019 20:34:25 DEBUG main io.netty.util.internal.CleanerJava6 - java.nio.ByteBuffer.cleaner(): available
+31.10.2019 20:34:25 DEBUG main io.netty.util.internal.PlatformDependent - -Dio.netty.noPreferDirect: false
+31.10.2019 20:34:25 DEBUG main io.netty.channel.MultithreadEventLoopGroup - -Dio.netty.eventLoopThreads: 8
+31.10.2019 20:34:25 DEBUG main io.netty.channel.nio.NioEventLoop - -Dio.netty.noKeySetOptimization: false
+31.10.2019 20:34:25 DEBUG main io.netty.channel.nio.NioEventLoop - -Dio.netty.selectorAutoRebuildThreshold: 512
+31.10.2019 20:34:25 DEBUG main io.netty.util.internal.PlatformDependent - org.jctools-core.MpscChunkedArrayQueue: available
+31.10.2019 20:34:26 DEBUG grpc-default-executor-0 io.netty.util.ResourceLeakDetector - -Dio.netty.leakDetection.level: simple
+31.10.2019 20:34:26 DEBUG grpc-default-executor-0 io.netty.util.ResourceLeakDetector - -Dio.netty.leakDetection.targetRecords: 4
+31.10.2019 20:34:26 DEBUG grpc-default-executor-0 io.netty.buffer.AbstractByteBuf - -Dio.netty.buffer.checkAccessible: true
+31.10.2019 20:34:26 DEBUG grpc-default-executor-0 io.netty.buffer.AbstractByteBuf - -Dio.netty.buffer.checkBounds: true
+31.10.2019 20:34:26 DEBUG grpc-default-executor-0 io.netty.util.ResourceLeakDetectorFactory - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@7eb51429
+31.10.2019 20:34:26 DEBUG grpc-default-executor-0 io.netty.util.internal.InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+31.10.2019 20:34:26 DEBUG grpc-default-executor-0 io.netty.util.internal.InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+31.10.2019 20:34:26 DEBUG grpc-default-executor-0 io.netty.channel.DefaultChannelId - -Dio.netty.processId: 2644 (auto-detected)
+31.10.2019 20:34:26 DEBUG grpc-default-executor-0 io.netty.util.NetUtil - -Djava.net.preferIPv4Stack: false
+31.10.2019 20:34:26 DEBUG grpc-default-executor-0 io.netty.util.NetUtil - -Djava.net.preferIPv6Addresses: false
+31.10.2019 20:34:26 DEBUG grpc-default-executor-0 io.netty.util.NetUtil - Loopback interface: lo0 (lo0, 0:0:0:0:0:0:0:1%lo0)
+31.10.2019 20:34:26 DEBUG grpc-default-executor-0 io.netty.util.NetUtil - Failed to get SOMAXCONN from sysctl and file /proc/sys/net/core/somaxconn. Default: 128
+31.10.2019 20:34:26 DEBUG grpc-default-executor-0 io.netty.channel.DefaultChannelId - -Dio.netty.machineId: 30:35:ad:ff:fe:ae:c4:d0 (auto-detected)
+31.10.2019 20:34:26 DEBUG grpc-default-executor-0 io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.numHeapArenas: 8
+31.10.2019 20:34:26 DEBUG grpc-default-executor-0 io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.numDirectArenas: 8
+31.10.2019 20:34:26 DEBUG grpc-default-executor-0 io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.pageSize: 8192
+31.10.2019 20:34:26 DEBUG grpc-default-executor-0 io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.maxOrder: 11
+31.10.2019 20:34:26 DEBUG grpc-default-executor-0 io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.chunkSize: 16777216
+31.10.2019 20:34:26 DEBUG grpc-default-executor-0 io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.tinyCacheSize: 512
+31.10.2019 20:34:26 DEBUG grpc-default-executor-0 io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.smallCacheSize: 256
+31.10.2019 20:34:26 DEBUG grpc-default-executor-0 io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.normalCacheSize: 64
+31.10.2019 20:34:26 DEBUG grpc-default-executor-0 io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+31.10.2019 20:34:26 DEBUG grpc-default-executor-0 io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.cacheTrimInterval: 8192
+31.10.2019 20:34:26 DEBUG grpc-default-executor-0 io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.useCacheForAllThreads: true
+31.10.2019 20:34:26 DEBUG grpc-default-executor-0 io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
+31.10.2019 20:34:26 DEBUG grpc-default-executor-0 io.netty.buffer.ByteBufUtil - -Dio.netty.allocator.type: pooled
+31.10.2019 20:34:26 DEBUG grpc-default-executor-0 io.netty.buffer.ByteBufUtil - -Dio.netty.threadLocalDirectBufferSize: 0
+31.10.2019 20:34:26 DEBUG grpc-default-executor-0 io.netty.buffer.ByteBufUtil - -Dio.netty.maxThreadLocalCharBufferSize: 16384
+31.10.2019 20:34:26 DEBUG grpc-default-executor-0 io.netty.util.Recycler - -Dio.netty.recycler.maxCapacityPerThread: 4096
+31.10.2019 20:34:26 DEBUG grpc-default-executor-0 io.netty.util.Recycler - -Dio.netty.recycler.maxSharedCapacityFactor: 2
+31.10.2019 20:34:26 DEBUG grpc-default-executor-0 io.netty.util.Recycler - -Dio.netty.recycler.linkCapacity: 16
+31.10.2019 20:34:26 DEBUG grpc-default-executor-0 io.netty.util.Recycler - -Dio.netty.recycler.ratio: 8
+31.10.2019 20:34:26 DEBUG grpc-default-worker-ELG-1-2 io.grpc.netty.NettyClientHandler - [id: 0x6e3784af, L:/35.3.29.155:58095 - R:/141.212.133.36:50051] OUTBOUND SETTINGS: ack=false settings={ENABLE_PUSH=0, MAX_CONCURRENT_STREAMS=0, INITIAL_WINDOW_SIZE=1048576, MAX_HEADER_LIST_SIZE=8192}
+31.10.2019 20:34:26 DEBUG grpc-default-worker-ELG-1-2 io.grpc.netty.NettyClientHandler - [id: 0x6e3784af, L:/35.3.29.155:58095 - R:/141.212.133.36:50051] OUTBOUND WINDOW_UPDATE: streamId=0 windowSizeIncrement=983041
+31.10.2019 20:34:26 DEBUG grpc-default-worker-ELG-1-2 io.grpc.netty.NettyClientHandler - [id: 0x6e3784af, L:/35.3.29.155:58095 - R:/141.212.133.36:50051] INBOUND SETTINGS: ack=false settings={MAX_CONCURRENT_STREAMS=2147483647, INITIAL_WINDOW_SIZE=1048576, MAX_HEADER_LIST_SIZE=8192}
+31.10.2019 20:34:26 DEBUG grpc-default-worker-ELG-1-2 io.grpc.netty.NettyClientHandler - [id: 0x6e3784af, L:/35.3.29.155:58095 - R:/141.212.133.36:50051] OUTBOUND SETTINGS: ack=true
+31.10.2019 20:34:26 DEBUG grpc-default-worker-ELG-1-2 io.grpc.netty.NettyClientHandler - [id: 0x6e3784af, L:/35.3.29.155:58095 - R:/141.212.133.36:50051] INBOUND WINDOW_UPDATE: streamId=0 windowSizeIncrement=983041
+31.10.2019 20:34:26 DEBUG grpc-default-worker-ELG-1-2 io.grpc.netty.NettyClientHandler - [id: 0x6e3784af, L:/35.3.29.155:58095 - R:/141.212.133.36:50051] INBOUND SETTINGS: ack=true
+31.10.2019 20:34:26 DEBUG grpc-default-worker-ELG-1-2 io.grpc.netty.NettyClientHandler - [id: 0x6e3784af, L:/35.3.29.155:58095 - R:/141.212.133.36:50051] OUTBOUND HEADERS: streamId=3 headers=GrpcHttp2OutboundHeaders[:authority: 141.212.133.36:50051, :path: /com.scm.resources.MessageHandler/connect, :method: POST, :scheme: http, content-type: application/grpc, te: trailers, user-agent: grpc-java-netty/1.20.0, grpc-accept-encoding: gzip] streamDependency=0 weight=16 exclusive=false padding=0 endStream=false
+31.10.2019 20:34:26 DEBUG grpc-default-worker-ELG-1-2 io.grpc.netty.NettyClientHandler - [id: 0x6e3784af, L:/35.3.29.155:58095 - R:/141.212.133.36:50051] OUTBOUND DATA: streamId=3 padding=0 endStream=true length=26 bytes=00000000150a133134312e3231322e3133332e33363530303531
+31.10.2019 20:34:26 DEBUG grpc-default-worker-ELG-1-2 io.grpc.netty.NettyClientHandler - [id: 0x6e3784af, L:/35.3.29.155:58095 - R:/141.212.133.36:50051] INBOUND HEADERS: streamId=3 headers=GrpcHttp2ResponseHeaders[:status: 200, content-type: application/grpc, grpc-encoding: identity, grpc-accept-encoding: gzip] streamDependency=0 weight=16 exclusive=false padding=0 endStream=false
+31.10.2019 20:34:26 DEBUG grpc-default-worker-ELG-1-2 io.grpc.netty.NettyClientHandler - [id: 0x6e3784af, L:/35.3.29.155:58095 - R:/141.212.133.36:50051] INBOUND DATA: streamId=3 padding=0 endStream=false length=7 bytes=00000000020801
+31.10.2019 20:34:26 DEBUG grpc-default-worker-ELG-1-2 io.grpc.netty.NettyClientHandler - [id: 0x6e3784af, L:/35.3.29.155:58095 - R:/141.212.133.36:50051] INBOUND HEADERS: streamId=3 headers=GrpcHttp2ResponseHeaders[grpc-status: 0] streamDependency=0 weight=16 exclusive=false padding=0 endStream=true
+31.10.2019 20:34:45 DEBUG grpc-default-worker-ELG-1-2 io.grpc.netty.NettyClientHandler - [id: 0x6e3784af, L:/35.3.29.155:58095 - R:/141.212.133.36:50051] OUTBOUND HEADERS: streamId=5 headers=GrpcHttp2OutboundHeaders[:authority: 141.212.133.36:50051, :path: /com.scm.resources.MessageHandler/getTag, :method: POST, :scheme: http, content-type: application/grpc, te: trailers, user-agent: grpc-java-netty/1.20.0, grpc-accept-encoding: gzip] streamDependency=0 weight=16 exclusive=false padding=0 endStream=false
+31.10.2019 20:34:45 DEBUG grpc-default-worker-ELG-1-2 io.grpc.netty.NettyClientHandler - [id: 0x6e3784af, L:/35.3.29.155:58095 - R:/141.212.133.36:50051] OUTBOUND DATA: streamId=5 padding=0 endStream=true length=27 bytes=00000000160a0e425546464552315b305d2e4c454e1204434e4321
+31.10.2019 20:34:46 DEBUG grpc-default-worker-ELG-1-2 io.grpc.netty.NettyClientHandler - [id: 0x6e3784af, L:/35.3.29.155:58095 - R:/141.212.133.36:50051] INBOUND HEADERS: streamId=5 headers=GrpcHttp2ResponseHeaders[:status: 200, content-type: application/grpc, grpc-status: 2] streamDependency=0 weight=16 exclusive=false padding=0 endStream=true
+31.10.2019 20:34:46 DEBUG grpc-default-worker-ELG-1-2 io.grpc.netty.NettyClientHandler - [id: 0x6e3784af, L:/35.3.29.155:58095 - R:/141.212.133.36:50051] OUTBOUND RST_STREAM: streamId=5 errorCode=8
+31.10.2019 20:34:48 DEBUG main io.netty.util.internal.logging.InternalLoggerFactory - Using Log4J as the default logging framework
+31.10.2019 20:34:48 DEBUG main io.netty.util.internal.PlatformDependent - Platform: MacOS
+31.10.2019 20:34:48 DEBUG main io.netty.util.internal.PlatformDependent0 - -Dio.netty.noUnsafe: false
+31.10.2019 20:34:48 DEBUG main io.netty.util.internal.PlatformDependent0 - Java version: 8
+31.10.2019 20:34:48 DEBUG main io.netty.util.internal.PlatformDependent0 - sun.misc.Unsafe.theUnsafe: available
+31.10.2019 20:34:48 DEBUG main io.netty.util.internal.PlatformDependent0 - sun.misc.Unsafe.copyMemory: available
+31.10.2019 20:34:48 DEBUG main io.netty.util.internal.PlatformDependent0 - java.nio.Buffer.address: available
+31.10.2019 20:34:48 DEBUG main io.netty.util.internal.PlatformDependent0 - direct buffer constructor: available
+31.10.2019 20:34:48 DEBUG main io.netty.util.internal.PlatformDependent0 - java.nio.Bits.unaligned: available, true
+31.10.2019 20:34:48 DEBUG main io.netty.util.internal.PlatformDependent0 - jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable prior to Java9
+31.10.2019 20:34:48 DEBUG main io.netty.util.internal.PlatformDependent0 - java.nio.DirectByteBuffer.<init>(long, int): available
+31.10.2019 20:34:48 DEBUG main io.netty.util.internal.PlatformDependent - sun.misc.Unsafe: available
+31.10.2019 20:34:48 DEBUG main io.netty.util.internal.PlatformDependent - -Dio.netty.tmpdir: /var/folders/_l/pdzjcvln5p1bh42l_sh94l2r0000gn/T (java.io.tmpdir)
+31.10.2019 20:34:48 DEBUG main io.netty.util.internal.PlatformDependent - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+31.10.2019 20:34:48 DEBUG main io.netty.util.internal.PlatformDependent - -Dio.netty.maxDirectMemory: 1908932608 bytes
+31.10.2019 20:34:48 DEBUG main io.netty.util.internal.PlatformDependent - -Dio.netty.uninitializedArrayAllocationThreshold: -1
+31.10.2019 20:34:48 DEBUG main io.netty.util.internal.CleanerJava6 - java.nio.ByteBuffer.cleaner(): available
+31.10.2019 20:34:48 DEBUG main io.netty.util.internal.PlatformDependent - -Dio.netty.noPreferDirect: false
+31.10.2019 20:34:48 DEBUG main io.netty.channel.MultithreadEventLoopGroup - -Dio.netty.eventLoopThreads: 8
+31.10.2019 20:34:48 DEBUG main io.netty.channel.nio.NioEventLoop - -Dio.netty.noKeySetOptimization: false
+31.10.2019 20:34:48 DEBUG main io.netty.channel.nio.NioEventLoop - -Dio.netty.selectorAutoRebuildThreshold: 512
+31.10.2019 20:34:48 DEBUG main io.netty.util.internal.PlatformDependent - org.jctools-core.MpscChunkedArrayQueue: available
+31.10.2019 20:34:48 DEBUG grpc-default-executor-0 io.netty.util.ResourceLeakDetector - -Dio.netty.leakDetection.level: simple
+31.10.2019 20:34:48 DEBUG grpc-default-executor-0 io.netty.util.ResourceLeakDetector - -Dio.netty.leakDetection.targetRecords: 4
+31.10.2019 20:34:48 DEBUG grpc-default-executor-0 io.netty.buffer.AbstractByteBuf - -Dio.netty.buffer.checkAccessible: true
+31.10.2019 20:34:48 DEBUG grpc-default-executor-0 io.netty.buffer.AbstractByteBuf - -Dio.netty.buffer.checkBounds: true
+31.10.2019 20:34:48 DEBUG grpc-default-executor-0 io.netty.util.ResourceLeakDetectorFactory - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@4d31d312
+31.10.2019 20:34:48 DEBUG grpc-default-executor-0 io.netty.util.internal.InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+31.10.2019 20:34:48 DEBUG grpc-default-executor-0 io.netty.util.internal.InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+31.10.2019 20:34:48 DEBUG grpc-default-executor-0 io.netty.channel.DefaultChannelId - -Dio.netty.processId: 2646 (auto-detected)
+31.10.2019 20:34:48 DEBUG grpc-default-executor-0 io.netty.util.NetUtil - -Djava.net.preferIPv4Stack: false
+31.10.2019 20:34:48 DEBUG grpc-default-executor-0 io.netty.util.NetUtil - -Djava.net.preferIPv6Addresses: false
+31.10.2019 20:34:48 DEBUG grpc-default-executor-0 io.netty.util.NetUtil - Loopback interface: lo0 (lo0, 0:0:0:0:0:0:0:1%lo0)
+31.10.2019 20:34:48 DEBUG grpc-default-executor-0 io.netty.util.NetUtil - Failed to get SOMAXCONN from sysctl and file /proc/sys/net/core/somaxconn. Default: 128
+31.10.2019 20:34:48 DEBUG grpc-default-executor-0 io.netty.channel.DefaultChannelId - -Dio.netty.machineId: 30:35:ad:ff:fe:ae:c4:d0 (auto-detected)
+31.10.2019 20:34:48 DEBUG grpc-default-executor-0 io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.numHeapArenas: 8
+31.10.2019 20:34:48 DEBUG grpc-default-executor-0 io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.numDirectArenas: 8
+31.10.2019 20:34:48 DEBUG grpc-default-executor-0 io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.pageSize: 8192
+31.10.2019 20:34:48 DEBUG grpc-default-executor-0 io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.maxOrder: 11
+31.10.2019 20:34:48 DEBUG grpc-default-executor-0 io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.chunkSize: 16777216
+31.10.2019 20:34:48 DEBUG grpc-default-executor-0 io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.tinyCacheSize: 512
+31.10.2019 20:34:48 DEBUG grpc-default-executor-0 io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.smallCacheSize: 256
+31.10.2019 20:34:48 DEBUG grpc-default-executor-0 io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.normalCacheSize: 64
+31.10.2019 20:34:48 DEBUG grpc-default-executor-0 io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+31.10.2019 20:34:48 DEBUG grpc-default-executor-0 io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.cacheTrimInterval: 8192
+31.10.2019 20:34:48 DEBUG grpc-default-executor-0 io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.useCacheForAllThreads: true
+31.10.2019 20:34:48 DEBUG grpc-default-executor-0 io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
+31.10.2019 20:34:48 DEBUG grpc-default-executor-0 io.netty.buffer.ByteBufUtil - -Dio.netty.allocator.type: pooled
+31.10.2019 20:34:48 DEBUG grpc-default-executor-0 io.netty.buffer.ByteBufUtil - -Dio.netty.threadLocalDirectBufferSize: 0
+31.10.2019 20:34:48 DEBUG grpc-default-executor-0 io.netty.buffer.ByteBufUtil - -Dio.netty.maxThreadLocalCharBufferSize: 16384
+31.10.2019 20:34:48 DEBUG grpc-default-executor-0 io.netty.util.Recycler - -Dio.netty.recycler.maxCapacityPerThread: 4096
+31.10.2019 20:34:48 DEBUG grpc-default-executor-0 io.netty.util.Recycler - -Dio.netty.recycler.maxSharedCapacityFactor: 2
+31.10.2019 20:34:48 DEBUG grpc-default-executor-0 io.netty.util.Recycler - -Dio.netty.recycler.linkCapacity: 16
+31.10.2019 20:34:48 DEBUG grpc-default-executor-0 io.netty.util.Recycler - -Dio.netty.recycler.ratio: 8
+31.10.2019 20:34:48 DEBUG grpc-default-worker-ELG-1-2 io.grpc.netty.NettyClientHandler - [id: 0x1ef90ea0, L:/35.3.29.155:58096 - R:/141.212.133.36:50051] OUTBOUND SETTINGS: ack=false settings={ENABLE_PUSH=0, MAX_CONCURRENT_STREAMS=0, INITIAL_WINDOW_SIZE=1048576, MAX_HEADER_LIST_SIZE=8192}
+31.10.2019 20:34:48 DEBUG grpc-default-worker-ELG-1-2 io.grpc.netty.NettyClientHandler - [id: 0x1ef90ea0, L:/35.3.29.155:58096 - R:/141.212.133.36:50051] OUTBOUND WINDOW_UPDATE: streamId=0 windowSizeIncrement=983041
+31.10.2019 20:34:48 DEBUG grpc-default-worker-ELG-1-2 io.grpc.netty.NettyClientHandler - [id: 0x1ef90ea0, L:/35.3.29.155:58096 - R:/141.212.133.36:50051] INBOUND SETTINGS: ack=false settings={MAX_CONCURRENT_STREAMS=2147483647, INITIAL_WINDOW_SIZE=1048576, MAX_HEADER_LIST_SIZE=8192}
+31.10.2019 20:34:48 DEBUG grpc-default-worker-ELG-1-2 io.grpc.netty.NettyClientHandler - [id: 0x1ef90ea0, L:/35.3.29.155:58096 - R:/141.212.133.36:50051] OUTBOUND SETTINGS: ack=true
+31.10.2019 20:34:48 DEBUG grpc-default-worker-ELG-1-2 io.grpc.netty.NettyClientHandler - [id: 0x1ef90ea0, L:/35.3.29.155:58096 - R:/141.212.133.36:50051] INBOUND WINDOW_UPDATE: streamId=0 windowSizeIncrement=983041
+31.10.2019 20:34:48 DEBUG grpc-default-worker-ELG-1-2 io.grpc.netty.NettyClientHandler - [id: 0x1ef90ea0, L:/35.3.29.155:58096 - R:/141.212.133.36:50051] INBOUND SETTINGS: ack=true
+31.10.2019 20:34:48 DEBUG grpc-default-worker-ELG-1-2 io.grpc.netty.NettyClientHandler - [id: 0x1ef90ea0, L:/35.3.29.155:58096 - R:/141.212.133.36:50051] OUTBOUND HEADERS: streamId=3 headers=GrpcHttp2OutboundHeaders[:authority: 141.212.133.36:50051, :path: /com.scm.resources.MessageHandler/connect, :method: POST, :scheme: http, content-type: application/grpc, te: trailers, user-agent: grpc-java-netty/1.20.0, grpc-accept-encoding: gzip] streamDependency=0 weight=16 exclusive=false padding=0 endStream=false
+31.10.2019 20:34:48 DEBUG grpc-default-worker-ELG-1-2 io.grpc.netty.NettyClientHandler - [id: 0x1ef90ea0, L:/35.3.29.155:58096 - R:/141.212.133.36:50051] OUTBOUND DATA: streamId=3 padding=0 endStream=true length=26 bytes=00000000150a133134312e3231322e3133332e33363530303531
+31.10.2019 20:34:48 DEBUG grpc-default-worker-ELG-1-2 io.grpc.netty.NettyClientHandler - [id: 0x1ef90ea0, L:/35.3.29.155:58096 - R:/141.212.133.36:50051] INBOUND HEADERS: streamId=3 headers=GrpcHttp2ResponseHeaders[:status: 200, content-type: application/grpc, grpc-encoding: identity, grpc-accept-encoding: gzip] streamDependency=0 weight=16 exclusive=false padding=0 endStream=false
+31.10.2019 20:34:48 DEBUG grpc-default-worker-ELG-1-2 io.grpc.netty.NettyClientHandler - [id: 0x1ef90ea0, L:/35.3.29.155:58096 - R:/141.212.133.36:50051] INBOUND DATA: streamId=3 padding=0 endStream=false length=7 bytes=00000000020801
+31.10.2019 20:34:48 DEBUG grpc-default-worker-ELG-1-2 io.grpc.netty.NettyClientHandler - [id: 0x1ef90ea0, L:/35.3.29.155:58096 - R:/141.212.133.36:50051] INBOUND HEADERS: streamId=3 headers=GrpcHttp2ResponseHeaders[grpc-status: 0] streamDependency=0 weight=16 exclusive=false padding=0 endStream=true
+31.10.2019 20:34:58 DEBUG grpc-default-worker-ELG-1-2 io.grpc.netty.NettyClientHandler - [id: 0x1ef90ea0, L:/35.3.29.155:58096 - R:/141.212.133.36:50051] OUTBOUND HEADERS: streamId=5 headers=GrpcHttp2OutboundHeaders[:authority: 141.212.133.36:50051, :path: /com.scm.resources.MessageHandler/getTag, :method: POST, :scheme: http, content-type: application/grpc, te: trailers, user-agent: grpc-java-netty/1.20.0, grpc-accept-encoding: gzip] streamDependency=0 weight=16 exclusive=false padding=0 endStream=false
+31.10.2019 20:34:58 DEBUG grpc-default-worker-ELG-1-2 io.grpc.netty.NettyClientHandler - [id: 0x1ef90ea0, L:/35.3.29.155:58096 - R:/141.212.133.36:50051] OUTBOUND DATA: streamId=5 padding=0 endStream=true length=27 bytes=00000000160a0e425546464552315b305d2e4c454e1204434e4331
+31.10.2019 20:34:58 DEBUG grpc-default-worker-ELG-1-2 io.grpc.netty.NettyClientHandler - [id: 0x1ef90ea0, L:/35.3.29.155:58096 - R:/141.212.133.36:50051] INBOUND HEADERS: streamId=5 headers=GrpcHttp2ResponseHeaders[:status: 200, content-type: application/grpc, grpc-status: 2] streamDependency=0 weight=16 exclusive=false padding=0 endStream=true
+31.10.2019 20:34:58 DEBUG grpc-default-worker-ELG-1-2 io.grpc.netty.NettyClientHandler - [id: 0x1ef90ea0, L:/35.3.29.155:58096 - R:/141.212.133.36:50051] OUTBOUND RST_STREAM: streamId=5 errorCode=8
+31.10.2019 20:36:08 DEBUG main io.netty.util.internal.logging.InternalLoggerFactory - Using Log4J as the default logging framework
+31.10.2019 20:36:08 DEBUG main io.netty.util.internal.PlatformDependent - Platform: MacOS
+31.10.2019 20:36:08 DEBUG main io.netty.util.internal.PlatformDependent0 - -Dio.netty.noUnsafe: false
+31.10.2019 20:36:08 DEBUG main io.netty.util.internal.PlatformDependent0 - Java version: 8
+31.10.2019 20:36:08 DEBUG main io.netty.util.internal.PlatformDependent0 - sun.misc.Unsafe.theUnsafe: available
+31.10.2019 20:36:08 DEBUG main io.netty.util.internal.PlatformDependent0 - sun.misc.Unsafe.copyMemory: available
+31.10.2019 20:36:08 DEBUG main io.netty.util.internal.PlatformDependent0 - java.nio.Buffer.address: available
+31.10.2019 20:36:08 DEBUG main io.netty.util.internal.PlatformDependent0 - direct buffer constructor: available
+31.10.2019 20:36:08 DEBUG main io.netty.util.internal.PlatformDependent0 - java.nio.Bits.unaligned: available, true
+31.10.2019 20:36:08 DEBUG main io.netty.util.internal.PlatformDependent0 - jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable prior to Java9
+31.10.2019 20:36:08 DEBUG main io.netty.util.internal.PlatformDependent0 - java.nio.DirectByteBuffer.<init>(long, int): available
+31.10.2019 20:36:08 DEBUG main io.netty.util.internal.PlatformDependent - sun.misc.Unsafe: available
+31.10.2019 20:36:08 DEBUG main io.netty.util.internal.PlatformDependent - -Dio.netty.tmpdir: /var/folders/_l/pdzjcvln5p1bh42l_sh94l2r0000gn/T (java.io.tmpdir)
+31.10.2019 20:36:08 DEBUG main io.netty.util.internal.PlatformDependent - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+31.10.2019 20:36:08 DEBUG main io.netty.util.internal.PlatformDependent - -Dio.netty.maxDirectMemory: 1908932608 bytes
+31.10.2019 20:36:08 DEBUG main io.netty.util.internal.PlatformDependent - -Dio.netty.uninitializedArrayAllocationThreshold: -1
+31.10.2019 20:36:08 DEBUG main io.netty.util.internal.CleanerJava6 - java.nio.ByteBuffer.cleaner(): available
+31.10.2019 20:36:08 DEBUG main io.netty.util.internal.PlatformDependent - -Dio.netty.noPreferDirect: false
+31.10.2019 20:36:08 DEBUG main io.netty.channel.MultithreadEventLoopGroup - -Dio.netty.eventLoopThreads: 8
+31.10.2019 20:36:08 DEBUG main io.netty.channel.nio.NioEventLoop - -Dio.netty.noKeySetOptimization: false
+31.10.2019 20:36:08 DEBUG main io.netty.channel.nio.NioEventLoop - -Dio.netty.selectorAutoRebuildThreshold: 512
+31.10.2019 20:36:08 DEBUG main io.netty.util.internal.PlatformDependent - org.jctools-core.MpscChunkedArrayQueue: available
+31.10.2019 20:36:08 DEBUG grpc-default-executor-0 io.netty.util.ResourceLeakDetector - -Dio.netty.leakDetection.level: simple
+31.10.2019 20:36:08 DEBUG grpc-default-executor-0 io.netty.util.ResourceLeakDetector - -Dio.netty.leakDetection.targetRecords: 4
+31.10.2019 20:36:08 DEBUG grpc-default-executor-0 io.netty.buffer.AbstractByteBuf - -Dio.netty.buffer.checkAccessible: true
+31.10.2019 20:36:08 DEBUG grpc-default-executor-0 io.netty.buffer.AbstractByteBuf - -Dio.netty.buffer.checkBounds: true
+31.10.2019 20:36:08 DEBUG grpc-default-executor-0 io.netty.util.ResourceLeakDetectorFactory - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@7eb51429
+31.10.2019 20:36:09 DEBUG grpc-default-executor-0 io.netty.util.internal.InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+31.10.2019 20:36:09 DEBUG grpc-default-executor-0 io.netty.util.internal.InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+31.10.2019 20:36:09 DEBUG grpc-default-executor-0 io.netty.channel.DefaultChannelId - -Dio.netty.processId: 2651 (auto-detected)
+31.10.2019 20:36:09 DEBUG grpc-default-executor-0 io.netty.util.NetUtil - -Djava.net.preferIPv4Stack: false
+31.10.2019 20:36:09 DEBUG grpc-default-executor-0 io.netty.util.NetUtil - -Djava.net.preferIPv6Addresses: false
+31.10.2019 20:36:09 DEBUG grpc-default-executor-0 io.netty.util.NetUtil - Loopback interface: lo0 (lo0, 0:0:0:0:0:0:0:1%lo0)
+31.10.2019 20:36:09 DEBUG grpc-default-executor-0 io.netty.util.NetUtil - Failed to get SOMAXCONN from sysctl and file /proc/sys/net/core/somaxconn. Default: 128
+31.10.2019 20:36:09 DEBUG grpc-default-executor-0 io.netty.channel.DefaultChannelId - -Dio.netty.machineId: 30:35:ad:ff:fe:ae:c4:d0 (auto-detected)
+31.10.2019 20:36:09 DEBUG grpc-default-executor-0 io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.numHeapArenas: 8
+31.10.2019 20:36:09 DEBUG grpc-default-executor-0 io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.numDirectArenas: 8
+31.10.2019 20:36:09 DEBUG grpc-default-executor-0 io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.pageSize: 8192
+31.10.2019 20:36:09 DEBUG grpc-default-executor-0 io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.maxOrder: 11
+31.10.2019 20:36:09 DEBUG grpc-default-executor-0 io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.chunkSize: 16777216
+31.10.2019 20:36:09 DEBUG grpc-default-executor-0 io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.tinyCacheSize: 512
+31.10.2019 20:36:09 DEBUG grpc-default-executor-0 io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.smallCacheSize: 256
+31.10.2019 20:36:09 DEBUG grpc-default-executor-0 io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.normalCacheSize: 64
+31.10.2019 20:36:09 DEBUG grpc-default-executor-0 io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+31.10.2019 20:36:09 DEBUG grpc-default-executor-0 io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.cacheTrimInterval: 8192
+31.10.2019 20:36:09 DEBUG grpc-default-executor-0 io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.useCacheForAllThreads: true
+31.10.2019 20:36:09 DEBUG grpc-default-executor-0 io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
+31.10.2019 20:36:09 DEBUG grpc-default-executor-0 io.netty.buffer.ByteBufUtil - -Dio.netty.allocator.type: pooled
+31.10.2019 20:36:09 DEBUG grpc-default-executor-0 io.netty.buffer.ByteBufUtil - -Dio.netty.threadLocalDirectBufferSize: 0
+31.10.2019 20:36:09 DEBUG grpc-default-executor-0 io.netty.buffer.ByteBufUtil - -Dio.netty.maxThreadLocalCharBufferSize: 16384
+31.10.2019 20:36:09 DEBUG grpc-default-executor-0 io.netty.util.Recycler - -Dio.netty.recycler.maxCapacityPerThread: 4096
+31.10.2019 20:36:09 DEBUG grpc-default-executor-0 io.netty.util.Recycler - -Dio.netty.recycler.maxSharedCapacityFactor: 2
+31.10.2019 20:36:09 DEBUG grpc-default-executor-0 io.netty.util.Recycler - -Dio.netty.recycler.linkCapacity: 16
+31.10.2019 20:36:09 DEBUG grpc-default-executor-0 io.netty.util.Recycler - -Dio.netty.recycler.ratio: 8
+31.10.2019 20:36:09 DEBUG grpc-default-worker-ELG-1-2 io.grpc.netty.NettyClientHandler - [id: 0xbe9c792b, L:/35.3.29.155:58098 - R:/141.212.133.36:50051] OUTBOUND SETTINGS: ack=false settings={ENABLE_PUSH=0, MAX_CONCURRENT_STREAMS=0, INITIAL_WINDOW_SIZE=1048576, MAX_HEADER_LIST_SIZE=8192}
+31.10.2019 20:36:09 DEBUG grpc-default-worker-ELG-1-2 io.grpc.netty.NettyClientHandler - [id: 0xbe9c792b, L:/35.3.29.155:58098 - R:/141.212.133.36:50051] OUTBOUND WINDOW_UPDATE: streamId=0 windowSizeIncrement=983041
+31.10.2019 20:36:09 DEBUG grpc-default-worker-ELG-1-2 io.grpc.netty.NettyClientHandler - [id: 0xbe9c792b, L:/35.3.29.155:58098 - R:/141.212.133.36:50051] INBOUND SETTINGS: ack=false settings={MAX_CONCURRENT_STREAMS=2147483647, INITIAL_WINDOW_SIZE=1048576, MAX_HEADER_LIST_SIZE=8192}
+31.10.2019 20:36:09 DEBUG grpc-default-worker-ELG-1-2 io.grpc.netty.NettyClientHandler - [id: 0xbe9c792b, L:/35.3.29.155:58098 - R:/141.212.133.36:50051] OUTBOUND SETTINGS: ack=true
+31.10.2019 20:36:09 DEBUG grpc-default-worker-ELG-1-2 io.grpc.netty.NettyClientHandler - [id: 0xbe9c792b, L:/35.3.29.155:58098 - R:/141.212.133.36:50051] INBOUND WINDOW_UPDATE: streamId=0 windowSizeIncrement=983041
+31.10.2019 20:36:09 DEBUG grpc-default-worker-ELG-1-2 io.grpc.netty.NettyClientHandler - [id: 0xbe9c792b, L:/35.3.29.155:58098 - R:/141.212.133.36:50051] INBOUND SETTINGS: ack=true
+31.10.2019 20:36:09 DEBUG grpc-default-worker-ELG-1-2 io.grpc.netty.NettyClientHandler - [id: 0xbe9c792b, L:/35.3.29.155:58098 - R:/141.212.133.36:50051] OUTBOUND HEADERS: streamId=3 headers=GrpcHttp2OutboundHeaders[:authority: 141.212.133.36:50051, :path: /com.scm.resources.MessageHandler/connect, :method: POST, :scheme: http, content-type: application/grpc, te: trailers, user-agent: grpc-java-netty/1.20.0, grpc-accept-encoding: gzip] streamDependency=0 weight=16 exclusive=false padding=0 endStream=false
+31.10.2019 20:36:09 DEBUG grpc-default-worker-ELG-1-2 io.grpc.netty.NettyClientHandler - [id: 0xbe9c792b, L:/35.3.29.155:58098 - R:/141.212.133.36:50051] OUTBOUND DATA: streamId=3 padding=0 endStream=true length=26 bytes=00000000150a133134312e3231322e3133332e33363530303531
+31.10.2019 20:36:09 DEBUG grpc-default-worker-ELG-1-2 io.grpc.netty.NettyClientHandler - [id: 0xbe9c792b, L:/35.3.29.155:58098 - R:/141.212.133.36:50051] INBOUND HEADERS: streamId=3 headers=GrpcHttp2ResponseHeaders[:status: 200, content-type: application/grpc, grpc-encoding: identity, grpc-accept-encoding: gzip] streamDependency=0 weight=16 exclusive=false padding=0 endStream=false
+31.10.2019 20:36:09 DEBUG grpc-default-worker-ELG-1-2 io.grpc.netty.NettyClientHandler - [id: 0xbe9c792b, L:/35.3.29.155:58098 - R:/141.212.133.36:50051] INBOUND DATA: streamId=3 padding=0 endStream=false length=7 bytes=00000000020801
+31.10.2019 20:36:09 DEBUG grpc-default-worker-ELG-1-2 io.grpc.netty.NettyClientHandler - [id: 0xbe9c792b, L:/35.3.29.155:58098 - R:/141.212.133.36:50051] INBOUND HEADERS: streamId=3 headers=GrpcHttp2ResponseHeaders[grpc-status: 0] streamDependency=0 weight=16 exclusive=false padding=0 endStream=true
+31.10.2019 20:36:51 DEBUG grpc-default-worker-ELG-1-2 io.grpc.netty.NettyClientHandler - [id: 0xbe9c792b, L:/35.3.29.155:58098 - R:/141.212.133.36:50051] OUTBOUND HEADERS: streamId=5 headers=GrpcHttp2OutboundHeaders[:authority: 141.212.133.36:50051, :path: /com.scm.resources.MessageHandler/getTag, :method: POST, :scheme: http, content-type: application/grpc, te: trailers, user-agent: grpc-java-netty/1.20.0, grpc-accept-encoding: gzip] streamDependency=0 weight=16 exclusive=false padding=0 endStream=false
+31.10.2019 20:36:51 DEBUG grpc-default-worker-ELG-1-2 io.grpc.netty.NettyClientHandler - [id: 0xbe9c792b, L:/35.3.29.155:58098 - R:/141.212.133.36:50051] OUTBOUND DATA: streamId=5 padding=0 endStream=true length=46 bytes=00000000290a1c43315f4e3031313a492e536c6f7453746174757342697473305f333112094164764d616e4c6162
+31.10.2019 20:36:51 DEBUG grpc-default-worker-ELG-1-2 io.grpc.netty.NettyClientHandler - [id: 0xbe9c792b, L:/35.3.29.155:58098 - R:/141.212.133.36:50051] INBOUND HEADERS: streamId=5 headers=GrpcHttp2ResponseHeaders[:status: 200, content-type: application/grpc, grpc-status: 2] streamDependency=0 weight=16 exclusive=false padding=0 endStream=true
+31.10.2019 20:36:51 DEBUG grpc-default-worker-ELG-1-2 io.grpc.netty.NettyClientHandler - [id: 0xbe9c792b, L:/35.3.29.155:58098 - R:/141.212.133.36:50051] OUTBOUND RST_STREAM: streamId=5 errorCode=8
+31.10.2019 20:39:26 DEBUG main io.netty.util.internal.logging.InternalLoggerFactory - Using Log4J as the default logging framework
+31.10.2019 20:39:26 DEBUG main io.netty.util.internal.PlatformDependent - Platform: MacOS
+31.10.2019 20:39:26 DEBUG main io.netty.util.internal.PlatformDependent0 - -Dio.netty.noUnsafe: false
+31.10.2019 20:39:26 DEBUG main io.netty.util.internal.PlatformDependent0 - Java version: 8
+31.10.2019 20:39:26 DEBUG main io.netty.util.internal.PlatformDependent0 - sun.misc.Unsafe.theUnsafe: available
+31.10.2019 20:39:26 DEBUG main io.netty.util.internal.PlatformDependent0 - sun.misc.Unsafe.copyMemory: available
+31.10.2019 20:39:26 DEBUG main io.netty.util.internal.PlatformDependent0 - java.nio.Buffer.address: available
+31.10.2019 20:39:26 DEBUG main io.netty.util.internal.PlatformDependent0 - direct buffer constructor: available
+31.10.2019 20:39:27 DEBUG main io.netty.util.internal.PlatformDependent0 - java.nio.Bits.unaligned: available, true
+31.10.2019 20:39:27 DEBUG main io.netty.util.internal.PlatformDependent0 - jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable prior to Java9
+31.10.2019 20:39:27 DEBUG main io.netty.util.internal.PlatformDependent0 - java.nio.DirectByteBuffer.<init>(long, int): available
+31.10.2019 20:39:27 DEBUG main io.netty.util.internal.PlatformDependent - sun.misc.Unsafe: available
+31.10.2019 20:39:27 DEBUG main io.netty.util.internal.PlatformDependent - -Dio.netty.tmpdir: /var/folders/_l/pdzjcvln5p1bh42l_sh94l2r0000gn/T (java.io.tmpdir)
+31.10.2019 20:39:27 DEBUG main io.netty.util.internal.PlatformDependent - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+31.10.2019 20:39:27 DEBUG main io.netty.util.internal.PlatformDependent - -Dio.netty.maxDirectMemory: 1908932608 bytes
+31.10.2019 20:39:27 DEBUG main io.netty.util.internal.PlatformDependent - -Dio.netty.uninitializedArrayAllocationThreshold: -1
+31.10.2019 20:39:27 DEBUG main io.netty.util.internal.CleanerJava6 - java.nio.ByteBuffer.cleaner(): available
+31.10.2019 20:39:27 DEBUG main io.netty.util.internal.PlatformDependent - -Dio.netty.noPreferDirect: false
+31.10.2019 20:39:27 DEBUG main io.netty.channel.MultithreadEventLoopGroup - -Dio.netty.eventLoopThreads: 8
+31.10.2019 20:39:27 DEBUG main io.netty.channel.nio.NioEventLoop - -Dio.netty.noKeySetOptimization: false
+31.10.2019 20:39:27 DEBUG main io.netty.channel.nio.NioEventLoop - -Dio.netty.selectorAutoRebuildThreshold: 512
+31.10.2019 20:39:27 DEBUG main io.netty.util.internal.PlatformDependent - org.jctools-core.MpscChunkedArrayQueue: available
+31.10.2019 20:39:27 DEBUG grpc-default-executor-0 io.netty.util.ResourceLeakDetector - -Dio.netty.leakDetection.level: simple
+31.10.2019 20:39:27 DEBUG grpc-default-executor-0 io.netty.util.ResourceLeakDetector - -Dio.netty.leakDetection.targetRecords: 4
+31.10.2019 20:39:27 DEBUG grpc-default-executor-0 io.netty.buffer.AbstractByteBuf - -Dio.netty.buffer.checkAccessible: true
+31.10.2019 20:39:27 DEBUG grpc-default-executor-0 io.netty.buffer.AbstractByteBuf - -Dio.netty.buffer.checkBounds: true
+31.10.2019 20:39:27 DEBUG grpc-default-executor-0 io.netty.util.ResourceLeakDetectorFactory - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@1a7b85c6
+31.10.2019 20:39:27 DEBUG grpc-default-executor-0 io.netty.util.internal.InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+31.10.2019 20:39:27 DEBUG grpc-default-executor-0 io.netty.util.internal.InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+31.10.2019 20:39:27 DEBUG grpc-default-executor-0 io.netty.channel.DefaultChannelId - -Dio.netty.processId: 2653 (auto-detected)
+31.10.2019 20:39:27 DEBUG grpc-default-executor-0 io.netty.util.NetUtil - -Djava.net.preferIPv4Stack: false
+31.10.2019 20:39:27 DEBUG grpc-default-executor-0 io.netty.util.NetUtil - -Djava.net.preferIPv6Addresses: false
+31.10.2019 20:39:27 DEBUG grpc-default-executor-0 io.netty.util.NetUtil - Loopback interface: lo0 (lo0, 0:0:0:0:0:0:0:1%lo0)
+31.10.2019 20:39:27 DEBUG grpc-default-executor-0 io.netty.util.NetUtil - Failed to get SOMAXCONN from sysctl and file /proc/sys/net/core/somaxconn. Default: 128
+31.10.2019 20:39:27 DEBUG grpc-default-executor-0 io.netty.channel.DefaultChannelId - -Dio.netty.machineId: 30:35:ad:ff:fe:ae:c4:d0 (auto-detected)
+31.10.2019 20:39:27 DEBUG grpc-default-executor-0 io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.numHeapArenas: 8
+31.10.2019 20:39:27 DEBUG grpc-default-executor-0 io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.numDirectArenas: 8
+31.10.2019 20:39:27 DEBUG grpc-default-executor-0 io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.pageSize: 8192
+31.10.2019 20:39:27 DEBUG grpc-default-executor-0 io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.maxOrder: 11
+31.10.2019 20:39:27 DEBUG grpc-default-executor-0 io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.chunkSize: 16777216
+31.10.2019 20:39:27 DEBUG grpc-default-executor-0 io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.tinyCacheSize: 512
+31.10.2019 20:39:27 DEBUG grpc-default-executor-0 io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.smallCacheSize: 256
+31.10.2019 20:39:27 DEBUG grpc-default-executor-0 io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.normalCacheSize: 64
+31.10.2019 20:39:27 DEBUG grpc-default-executor-0 io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+31.10.2019 20:39:27 DEBUG grpc-default-executor-0 io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.cacheTrimInterval: 8192
+31.10.2019 20:39:27 DEBUG grpc-default-executor-0 io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.useCacheForAllThreads: true
+31.10.2019 20:39:27 DEBUG grpc-default-executor-0 io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
+31.10.2019 20:39:27 DEBUG grpc-default-executor-0 io.netty.buffer.ByteBufUtil - -Dio.netty.allocator.type: pooled
+31.10.2019 20:39:27 DEBUG grpc-default-executor-0 io.netty.buffer.ByteBufUtil - -Dio.netty.threadLocalDirectBufferSize: 0
+31.10.2019 20:39:27 DEBUG grpc-default-executor-0 io.netty.buffer.ByteBufUtil - -Dio.netty.maxThreadLocalCharBufferSize: 16384
+31.10.2019 20:39:27 DEBUG grpc-default-executor-0 io.netty.util.Recycler - -Dio.netty.recycler.maxCapacityPerThread: 4096
+31.10.2019 20:39:27 DEBUG grpc-default-executor-0 io.netty.util.Recycler - -Dio.netty.recycler.maxSharedCapacityFactor: 2
+31.10.2019 20:39:27 DEBUG grpc-default-executor-0 io.netty.util.Recycler - -Dio.netty.recycler.linkCapacity: 16
+31.10.2019 20:39:27 DEBUG grpc-default-executor-0 io.netty.util.Recycler - -Dio.netty.recycler.ratio: 8
+31.10.2019 20:39:27 DEBUG grpc-default-worker-ELG-1-2 io.grpc.netty.NettyClientHandler - [id: 0xc5c7a6ee, L:/35.3.29.155:58105 - R:/141.212.133.36:50051] OUTBOUND SETTINGS: ack=false settings={ENABLE_PUSH=0, MAX_CONCURRENT_STREAMS=0, INITIAL_WINDOW_SIZE=1048576, MAX_HEADER_LIST_SIZE=8192}
+31.10.2019 20:39:27 DEBUG grpc-default-worker-ELG-1-2 io.grpc.netty.NettyClientHandler - [id: 0xc5c7a6ee, L:/35.3.29.155:58105 - R:/141.212.133.36:50051] OUTBOUND WINDOW_UPDATE: streamId=0 windowSizeIncrement=983041
+31.10.2019 20:39:27 DEBUG grpc-default-worker-ELG-1-2 io.grpc.netty.NettyClientHandler - [id: 0xc5c7a6ee, L:/35.3.29.155:58105 - R:/141.212.133.36:50051] INBOUND SETTINGS: ack=false settings={MAX_CONCURRENT_STREAMS=2147483647, INITIAL_WINDOW_SIZE=1048576, MAX_HEADER_LIST_SIZE=8192}
+31.10.2019 20:39:27 DEBUG grpc-default-worker-ELG-1-2 io.grpc.netty.NettyClientHandler - [id: 0xc5c7a6ee, L:/35.3.29.155:58105 - R:/141.212.133.36:50051] OUTBOUND SETTINGS: ack=true
+31.10.2019 20:39:27 DEBUG grpc-default-worker-ELG-1-2 io.grpc.netty.NettyClientHandler - [id: 0xc5c7a6ee, L:/35.3.29.155:58105 - R:/141.212.133.36:50051] INBOUND WINDOW_UPDATE: streamId=0 windowSizeIncrement=983041
+31.10.2019 20:39:27 DEBUG grpc-default-worker-ELG-1-2 io.grpc.netty.NettyClientHandler - [id: 0xc5c7a6ee, L:/35.3.29.155:58105 - R:/141.212.133.36:50051] INBOUND SETTINGS: ack=true
+31.10.2019 20:39:27 DEBUG grpc-default-worker-ELG-1-2 io.grpc.netty.NettyClientHandler - [id: 0xc5c7a6ee, L:/35.3.29.155:58105 - R:/141.212.133.36:50051] OUTBOUND HEADERS: streamId=3 headers=GrpcHttp2OutboundHeaders[:authority: 141.212.133.36:50051, :path: /com.scm.resources.MessageHandler/connect, :method: POST, :scheme: http, content-type: application/grpc, te: trailers, user-agent: grpc-java-netty/1.20.0, grpc-accept-encoding: gzip] streamDependency=0 weight=16 exclusive=false padding=0 endStream=false
+31.10.2019 20:39:27 DEBUG grpc-default-worker-ELG-1-2 io.grpc.netty.NettyClientHandler - [id: 0xc5c7a6ee, L:/35.3.29.155:58105 - R:/141.212.133.36:50051] OUTBOUND DATA: streamId=3 padding=0 endStream=true length=26 bytes=00000000150a133134312e3231322e3133332e33363530303531
+31.10.2019 20:39:27 DEBUG grpc-default-worker-ELG-1-2 io.grpc.netty.NettyClientHandler - [id: 0xc5c7a6ee, L:/35.3.29.155:58105 - R:/141.212.133.36:50051] INBOUND HEADERS: streamId=3 headers=GrpcHttp2ResponseHeaders[:status: 200, content-type: application/grpc, grpc-encoding: identity, grpc-accept-encoding: gzip] streamDependency=0 weight=16 exclusive=false padding=0 endStream=false
+31.10.2019 20:39:27 DEBUG grpc-default-worker-ELG-1-2 io.grpc.netty.NettyClientHandler - [id: 0xc5c7a6ee, L:/35.3.29.155:58105 - R:/141.212.133.36:50051] INBOUND DATA: streamId=3 padding=0 endStream=false length=7 bytes=00000000020801
+31.10.2019 20:39:27 DEBUG grpc-default-worker-ELG-1-2 io.grpc.netty.NettyClientHandler - [id: 0xc5c7a6ee, L:/35.3.29.155:58105 - R:/141.212.133.36:50051] INBOUND HEADERS: streamId=3 headers=GrpcHttp2ResponseHeaders[grpc-status: 0] streamDependency=0 weight=16 exclusive=false padding=0 endStream=true
+31.10.2019 20:40:06 DEBUG grpc-default-worker-ELG-1-2 io.grpc.netty.NettyClientHandler - [id: 0xc5c7a6ee, L:/35.3.29.155:58105 - R:/141.212.133.36:50051] OUTBOUND HEADERS: streamId=5 headers=GrpcHttp2OutboundHeaders[:authority: 141.212.133.36:50051, :path: /com.scm.resources.MessageHandler/getTag, :method: POST, :scheme: http, content-type: application/grpc, te: trailers, user-agent: grpc-java-netty/1.20.0, grpc-accept-encoding: gzip] streamDependency=0 weight=16 exclusive=false padding=0 endStream=false
+31.10.2019 20:40:06 DEBUG grpc-default-worker-ELG-1-2 io.grpc.netty.NettyClientHandler - [id: 0xc5c7a6ee, L:/35.3.29.155:58105 - R:/141.212.133.36:50051] OUTBOUND DATA: streamId=5 padding=0 endStream=true length=25 bytes=00000000140a0c434e433174696d65725b305d1204434e4331
+31.10.2019 20:40:06 DEBUG grpc-default-worker-ELG-1-2 io.grpc.netty.NettyClientHandler - [id: 0xc5c7a6ee, L:/35.3.29.155:58105 - R:/141.212.133.36:50051] INBOUND HEADERS: streamId=5 headers=GrpcHttp2ResponseHeaders[:status: 200, content-type: application/grpc, grpc-status: 2] streamDependency=0 weight=16 exclusive=false padding=0 endStream=true
+31.10.2019 20:40:06 DEBUG grpc-default-worker-ELG-1-2 io.grpc.netty.NettyClientHandler - [id: 0xc5c7a6ee, L:/35.3.29.155:58105 - R:/141.212.133.36:50051] OUTBOUND RST_STREAM: streamId=5 errorCode=8
+31.10.2019 20:46:53 DEBUG main io.netty.util.internal.logging.InternalLoggerFactory - Using Log4J as the default logging framework
+31.10.2019 20:46:53 DEBUG main io.netty.util.internal.PlatformDependent - Platform: MacOS
+31.10.2019 20:46:53 DEBUG main io.netty.util.internal.PlatformDependent0 - -Dio.netty.noUnsafe: false
+31.10.2019 20:46:53 DEBUG main io.netty.util.internal.PlatformDependent0 - Java version: 8
+31.10.2019 20:46:53 DEBUG main io.netty.util.internal.PlatformDependent0 - sun.misc.Unsafe.theUnsafe: available
+31.10.2019 20:46:53 DEBUG main io.netty.util.internal.PlatformDependent0 - sun.misc.Unsafe.copyMemory: available
+31.10.2019 20:46:53 DEBUG main io.netty.util.internal.PlatformDependent0 - java.nio.Buffer.address: available
+31.10.2019 20:46:53 DEBUG main io.netty.util.internal.PlatformDependent0 - direct buffer constructor: available
+31.10.2019 20:46:53 DEBUG main io.netty.util.internal.PlatformDependent0 - java.nio.Bits.unaligned: available, true
+31.10.2019 20:46:53 DEBUG main io.netty.util.internal.PlatformDependent0 - jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable prior to Java9
+31.10.2019 20:46:53 DEBUG main io.netty.util.internal.PlatformDependent0 - java.nio.DirectByteBuffer.<init>(long, int): available
+31.10.2019 20:46:53 DEBUG main io.netty.util.internal.PlatformDependent - sun.misc.Unsafe: available
+31.10.2019 20:46:53 DEBUG main io.netty.util.internal.PlatformDependent - -Dio.netty.tmpdir: /var/folders/_l/pdzjcvln5p1bh42l_sh94l2r0000gn/T (java.io.tmpdir)
+31.10.2019 20:46:53 DEBUG main io.netty.util.internal.PlatformDependent - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+31.10.2019 20:46:53 DEBUG main io.netty.util.internal.PlatformDependent - -Dio.netty.maxDirectMemory: 1908932608 bytes
+31.10.2019 20:46:53 DEBUG main io.netty.util.internal.PlatformDependent - -Dio.netty.uninitializedArrayAllocationThreshold: -1
+31.10.2019 20:46:53 DEBUG main io.netty.util.internal.CleanerJava6 - java.nio.ByteBuffer.cleaner(): available
+31.10.2019 20:46:53 DEBUG main io.netty.util.internal.PlatformDependent - -Dio.netty.noPreferDirect: false
+31.10.2019 20:46:53 DEBUG main io.netty.channel.MultithreadEventLoopGroup - -Dio.netty.eventLoopThreads: 8
+31.10.2019 20:46:53 DEBUG main io.netty.channel.nio.NioEventLoop - -Dio.netty.noKeySetOptimization: false
+31.10.2019 20:46:53 DEBUG main io.netty.channel.nio.NioEventLoop - -Dio.netty.selectorAutoRebuildThreshold: 512
+31.10.2019 20:46:53 DEBUG main io.netty.util.internal.PlatformDependent - org.jctools-core.MpscChunkedArrayQueue: available
+31.10.2019 20:46:54 DEBUG grpc-default-executor-0 io.netty.util.ResourceLeakDetector - -Dio.netty.leakDetection.level: simple
+31.10.2019 20:46:54 DEBUG grpc-default-executor-0 io.netty.util.ResourceLeakDetector - -Dio.netty.leakDetection.targetRecords: 4
+31.10.2019 20:46:54 DEBUG grpc-default-executor-0 io.netty.buffer.AbstractByteBuf - -Dio.netty.buffer.checkAccessible: true
+31.10.2019 20:46:54 DEBUG grpc-default-executor-0 io.netty.buffer.AbstractByteBuf - -Dio.netty.buffer.checkBounds: true
+31.10.2019 20:46:54 DEBUG grpc-default-executor-0 io.netty.util.ResourceLeakDetectorFactory - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@4d31d312
+31.10.2019 20:46:54 DEBUG grpc-default-executor-0 io.netty.util.internal.InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+31.10.2019 20:46:54 DEBUG grpc-default-executor-0 io.netty.util.internal.InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+31.10.2019 20:46:54 DEBUG grpc-default-executor-0 io.netty.channel.DefaultChannelId - -Dio.netty.processId: 2655 (auto-detected)
+31.10.2019 20:46:54 DEBUG grpc-default-executor-0 io.netty.util.NetUtil - -Djava.net.preferIPv4Stack: false
+31.10.2019 20:46:54 DEBUG grpc-default-executor-0 io.netty.util.NetUtil - -Djava.net.preferIPv6Addresses: false
+31.10.2019 20:46:54 DEBUG grpc-default-executor-0 io.netty.util.NetUtil - Loopback interface: lo0 (lo0, 0:0:0:0:0:0:0:1%lo0)
+31.10.2019 20:46:54 DEBUG grpc-default-executor-0 io.netty.util.NetUtil - Failed to get SOMAXCONN from sysctl and file /proc/sys/net/core/somaxconn. Default: 128
+31.10.2019 20:46:54 DEBUG grpc-default-executor-0 io.netty.channel.DefaultChannelId - -Dio.netty.machineId: 30:35:ad:ff:fe:ae:c4:d0 (auto-detected)
+31.10.2019 20:46:54 DEBUG grpc-default-executor-0 io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.numHeapArenas: 8
+31.10.2019 20:46:54 DEBUG grpc-default-executor-0 io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.numDirectArenas: 8
+31.10.2019 20:46:54 DEBUG grpc-default-executor-0 io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.pageSize: 8192
+31.10.2019 20:46:54 DEBUG grpc-default-executor-0 io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.maxOrder: 11
+31.10.2019 20:46:54 DEBUG grpc-default-executor-0 io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.chunkSize: 16777216
+31.10.2019 20:46:54 DEBUG grpc-default-executor-0 io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.tinyCacheSize: 512
+31.10.2019 20:46:54 DEBUG grpc-default-executor-0 io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.smallCacheSize: 256
+31.10.2019 20:46:54 DEBUG grpc-default-executor-0 io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.normalCacheSize: 64
+31.10.2019 20:46:54 DEBUG grpc-default-executor-0 io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+31.10.2019 20:46:54 DEBUG grpc-default-executor-0 io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.cacheTrimInterval: 8192
+31.10.2019 20:46:54 DEBUG grpc-default-executor-0 io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.useCacheForAllThreads: true
+31.10.2019 20:46:54 DEBUG grpc-default-executor-0 io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
+31.10.2019 20:46:54 DEBUG grpc-default-executor-0 io.netty.buffer.ByteBufUtil - -Dio.netty.allocator.type: pooled
+31.10.2019 20:46:54 DEBUG grpc-default-executor-0 io.netty.buffer.ByteBufUtil - -Dio.netty.threadLocalDirectBufferSize: 0
+31.10.2019 20:46:54 DEBUG grpc-default-executor-0 io.netty.buffer.ByteBufUtil - -Dio.netty.maxThreadLocalCharBufferSize: 16384
+31.10.2019 20:46:54 DEBUG grpc-default-executor-0 io.netty.util.Recycler - -Dio.netty.recycler.maxCapacityPerThread: 4096
+31.10.2019 20:46:54 DEBUG grpc-default-executor-0 io.netty.util.Recycler - -Dio.netty.recycler.maxSharedCapacityFactor: 2
+31.10.2019 20:46:54 DEBUG grpc-default-executor-0 io.netty.util.Recycler - -Dio.netty.recycler.linkCapacity: 16
+31.10.2019 20:46:54 DEBUG grpc-default-executor-0 io.netty.util.Recycler - -Dio.netty.recycler.ratio: 8
+31.10.2019 20:46:54 DEBUG grpc-default-worker-ELG-1-2 io.grpc.netty.NettyClientHandler - [id: 0x83c1e45a, L:/35.3.29.155:58125 - R:/141.212.133.36:50051] OUTBOUND SETTINGS: ack=false settings={ENABLE_PUSH=0, MAX_CONCURRENT_STREAMS=0, INITIAL_WINDOW_SIZE=1048576, MAX_HEADER_LIST_SIZE=8192}
+31.10.2019 20:46:54 DEBUG grpc-default-worker-ELG-1-2 io.grpc.netty.NettyClientHandler - [id: 0x83c1e45a, L:/35.3.29.155:58125 - R:/141.212.133.36:50051] OUTBOUND WINDOW_UPDATE: streamId=0 windowSizeIncrement=983041
+31.10.2019 20:46:54 DEBUG grpc-default-worker-ELG-1-2 io.grpc.netty.NettyClientHandler - [id: 0x83c1e45a, L:/35.3.29.155:58125 - R:/141.212.133.36:50051] INBOUND SETTINGS: ack=false settings={MAX_CONCURRENT_STREAMS=2147483647, INITIAL_WINDOW_SIZE=1048576, MAX_HEADER_LIST_SIZE=8192}
+31.10.2019 20:46:54 DEBUG grpc-default-worker-ELG-1-2 io.grpc.netty.NettyClientHandler - [id: 0x83c1e45a, L:/35.3.29.155:58125 - R:/141.212.133.36:50051] OUTBOUND SETTINGS: ack=true
+31.10.2019 20:46:54 DEBUG grpc-default-worker-ELG-1-2 io.grpc.netty.NettyClientHandler - [id: 0x83c1e45a, L:/35.3.29.155:58125 - R:/141.212.133.36:50051] INBOUND WINDOW_UPDATE: streamId=0 windowSizeIncrement=983041
+31.10.2019 20:46:54 DEBUG grpc-default-worker-ELG-1-2 io.grpc.netty.NettyClientHandler - [id: 0x83c1e45a, L:/35.3.29.155:58125 - R:/141.212.133.36:50051] INBOUND SETTINGS: ack=true
+31.10.2019 20:46:55 DEBUG grpc-default-worker-ELG-1-2 io.grpc.netty.NettyClientHandler - [id: 0x83c1e45a, L:/35.3.29.155:58125 - R:/141.212.133.36:50051] OUTBOUND HEADERS: streamId=3 headers=GrpcHttp2OutboundHeaders[:authority: 141.212.133.36:50051, :path: /com.scm.resources.MessageHandler/connect, :method: POST, :scheme: http, content-type: application/grpc, te: trailers, user-agent: grpc-java-netty/1.20.0, grpc-accept-encoding: gzip] streamDependency=0 weight=16 exclusive=false padding=0 endStream=false
+31.10.2019 20:46:55 DEBUG grpc-default-worker-ELG-1-2 io.grpc.netty.NettyClientHandler - [id: 0x83c1e45a, L:/35.3.29.155:58125 - R:/141.212.133.36:50051] OUTBOUND DATA: streamId=3 padding=0 endStream=true length=26 bytes=00000000150a133134312e3231322e3133332e33363530303531
+31.10.2019 20:46:55 DEBUG grpc-default-worker-ELG-1-2 io.grpc.netty.NettyClientHandler - [id: 0x83c1e45a, L:/35.3.29.155:58125 - R:/141.212.133.36:50051] INBOUND HEADERS: streamId=3 headers=GrpcHttp2ResponseHeaders[:status: 200, content-type: application/grpc, grpc-encoding: identity, grpc-accept-encoding: gzip] streamDependency=0 weight=16 exclusive=false padding=0 endStream=false
+31.10.2019 20:46:55 DEBUG grpc-default-worker-ELG-1-2 io.grpc.netty.NettyClientHandler - [id: 0x83c1e45a, L:/35.3.29.155:58125 - R:/141.212.133.36:50051] INBOUND DATA: streamId=3 padding=0 endStream=false length=7 bytes=00000000020801
+31.10.2019 20:46:55 DEBUG grpc-default-worker-ELG-1-2 io.grpc.netty.NettyClientHandler - [id: 0x83c1e45a, L:/35.3.29.155:58125 - R:/141.212.133.36:50051] INBOUND HEADERS: streamId=3 headers=GrpcHttp2ResponseHeaders[grpc-status: 0] streamDependency=0 weight=16 exclusive=false padding=0 endStream=true
+31.10.2019 20:47:17 DEBUG grpc-default-worker-ELG-1-2 io.grpc.netty.NettyClientHandler - [id: 0x83c1e45a, L:/35.3.29.155:58125 - R:/141.212.133.36:50051] OUTBOUND HEADERS: streamId=5 headers=GrpcHttp2OutboundHeaders[:authority: 141.212.133.36:50051, :path: /com.scm.resources.MessageHandler/getTag, :method: POST, :scheme: http, content-type: application/grpc, te: trailers, user-agent: grpc-java-netty/1.20.0, grpc-accept-encoding: gzip] streamDependency=0 weight=16 exclusive=false padding=0 endStream=false
+31.10.2019 20:47:17 DEBUG grpc-default-worker-ELG-1-2 io.grpc.netty.NettyClientHandler - [id: 0x83c1e45a, L:/35.3.29.155:58125 - R:/141.212.133.36:50051] OUTBOUND DATA: streamId=5 padding=0 endStream=true length=24 bytes=00000000130a0b444154415b305d2e4c454e1204434e4331
+31.10.2019 20:47:18 DEBUG grpc-default-worker-ELG-1-2 io.grpc.netty.NettyClientHandler - [id: 0x83c1e45a, L:/35.3.29.155:58125 - R:/141.212.133.36:50051] INBOUND HEADERS: streamId=5 headers=GrpcHttp2ResponseHeaders[:status: 200, content-type: application/grpc, grpc-encoding: identity, grpc-accept-encoding: gzip] streamDependency=0 weight=16 exclusive=false padding=0 endStream=false
+31.10.2019 20:47:18 DEBUG grpc-default-worker-ELG-1-2 io.grpc.netty.NettyClientHandler - [id: 0x83c1e45a, L:/35.3.29.155:58125 - R:/141.212.133.36:50051] INBOUND DATA: streamId=5 padding=0 endStream=false length=47 bytes=000000002a0a0130120b444154415b305d2e4c454e18012204434e433128e3f48202320656545f494e543a01304001
+31.10.2019 20:47:18 DEBUG grpc-default-worker-ELG-1-2 io.grpc.netty.NettyClientHandler - [id: 0x83c1e45a, L:/35.3.29.155:58125 - R:/141.212.133.36:50051] INBOUND HEADERS: streamId=5 headers=GrpcHttp2ResponseHeaders[grpc-status: 0] streamDependency=0 weight=16 exclusive=false padding=0 endStream=true
+31.10.2019 20:47:31 DEBUG grpc-default-worker-ELG-1-2 io.grpc.netty.NettyClientHandler - [id: 0x83c1e45a, L:/35.3.29.155:58125 - R:/141.212.133.36:50051] OUTBOUND HEADERS: streamId=7 headers=GrpcHttp2OutboundHeaders[:authority: 141.212.133.36:50051, :path: /com.scm.resources.MessageHandler/getTag, :method: POST, :scheme: http, content-type: application/grpc, te: trailers, user-agent: grpc-java-netty/1.20.0, grpc-accept-encoding: gzip] streamDependency=0 weight=16 exclusive=false padding=0 endStream=false
+31.10.2019 20:47:31 DEBUG grpc-default-worker-ELG-1-2 io.grpc.netty.NettyClientHandler - [id: 0x83c1e45a, L:/35.3.29.155:58125 - R:/141.212.133.36:50051] OUTBOUND DATA: streamId=7 padding=0 endStream=true length=28 bytes=00000000170a0f46726f6d43656c6c342e426f6f6c731204434e4331
+31.10.2019 20:47:32 DEBUG grpc-default-worker-ELG-1-2 io.grpc.netty.NettyClientHandler - [id: 0x83c1e45a, L:/35.3.29.155:58125 - R:/141.212.133.36:50051] INBOUND HEADERS: streamId=7 headers=GrpcHttp2ResponseHeaders[:status: 200, content-type: application/grpc, grpc-encoding: identity, grpc-accept-encoding: gzip] streamDependency=0 weight=16 exclusive=false padding=0 endStream=false
+31.10.2019 20:47:32 DEBUG grpc-default-worker-ELG-1-2 io.grpc.netty.NettyClientHandler - [id: 0x83c1e45a, L:/35.3.29.155:58125 - R:/141.212.133.36:50051] INBOUND DATA: streamId=7 padding=0 endStream=false length=51 bytes=000000002e0a0130120f46726f6d43656c6c342e426f6f6c7318012204434e433128e3f48202320656545f494e543a01304001
+31.10.2019 20:47:32 DEBUG grpc-default-worker-ELG-1-2 io.grpc.netty.NettyClientHandler - [id: 0x83c1e45a, L:/35.3.29.155:58125 - R:/141.212.133.36:50051] INBOUND HEADERS: streamId=7 headers=GrpcHttp2ResponseHeaders[grpc-status: 0] streamDependency=0 weight=16 exclusive=false padding=0 endStream=true
+31.10.2019 20:47:48 DEBUG grpc-default-worker-ELG-1-2 io.grpc.netty.NettyClientHandler - [id: 0x83c1e45a, L:/35.3.29.155:58125 - R:/141.212.133.36:50051] OUTBOUND HEADERS: streamId=9 headers=GrpcHttp2OutboundHeaders[:authority: 141.212.133.36:50051, :path: /com.scm.resources.MessageHandler/getTag, :method: POST, :scheme: http, content-type: application/grpc, te: trailers, user-agent: grpc-java-netty/1.20.0, grpc-accept-encoding: gzip] streamDependency=0 weight=16 exclusive=false padding=0 endStream=false
+31.10.2019 20:47:48 DEBUG grpc-default-worker-ELG-1-2 io.grpc.netty.NettyClientHandler - [id: 0x83c1e45a, L:/35.3.29.155:58125 - R:/141.212.133.36:50051] OUTBOUND DATA: streamId=9 padding=0 endStream=true length=28 bytes=00000000170a0f59312e4443427573564f6c746167651204434e4331
+31.10.2019 20:47:51 DEBUG grpc-default-worker-ELG-1-2 io.grpc.netty.NettyClientHandler - [id: 0x83c1e45a, L:/35.3.29.155:58125 - R:/141.212.133.36:50051] INBOUND HEADERS: streamId=9 headers=GrpcHttp2ResponseHeaders[:status: 200, content-type: application/grpc, grpc-encoding: identity, grpc-accept-encoding: gzip] streamDependency=0 weight=16 exclusive=false padding=0 endStream=false
+31.10.2019 20:47:51 DEBUG grpc-default-worker-ELG-1-2 io.grpc.netty.NettyClientHandler - [id: 0x83c1e45a, L:/35.3.29.155:58125 - R:/141.212.133.36:50051] INBOUND DATA: streamId=9 padding=0 endStream=false length=57 bytes=00000000340a0130120f59312e4443427573564f6c7461676518012204434e433128e3f48202320556545f52343a083332312e383239344001
+31.10.2019 20:47:51 DEBUG grpc-default-worker-ELG-1-2 io.grpc.netty.NettyClientHandler - [id: 0x83c1e45a, L:/35.3.29.155:58125 - R:/141.212.133.36:50051] INBOUND HEADERS: streamId=9 headers=GrpcHttp2ResponseHeaders[grpc-status: 0] streamDependency=0 weight=16 exclusive=false padding=0 endStream=true

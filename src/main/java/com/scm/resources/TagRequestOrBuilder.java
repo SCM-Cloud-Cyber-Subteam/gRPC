@@ -9,20 +9,24 @@ public interface TagRequestOrBuilder extends
 
   /**
    * <code>string tagName = 1;</code>
+   * @return The tagName.
    */
   java.lang.String getTagName();
   /**
    * <code>string tagName = 1;</code>
+   * @return The bytes for tagName.
    */
   com.google.protobuf.ByteString
       getTagNameBytes();
 
   /**
    * <code>string groupName = 2;</code>
+   * @return The groupName.
    */
   java.lang.String getGroupName();
   /**
    * <code>string groupName = 2;</code>
+   * @return The bytes for groupName.
    */
   com.google.protobuf.ByteString
       getGroupNameBytes();

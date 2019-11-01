@@ -4,26 +4,26 @@
 package com.scm.resources;
 
 /**
- * Protobuf type {@code com.scm.resources.GroupsReply}
+ * Protobuf type {@code com.scm.resources.SuccessfulWritingReply}
  */
-public  final class GroupsReply extends
+public  final class SuccessfulWritingReply extends
     com.google.protobuf.GeneratedMessageV3 implements
-    // @@protoc_insertion_point(message_implements:com.scm.resources.GroupsReply)
-    GroupsReplyOrBuilder {
+    // @@protoc_insertion_point(message_implements:com.scm.resources.SuccessfulWritingReply)
+    SuccessfulWritingReplyOrBuilder {
 private static final long serialVersionUID = 0L;
-  // Use GroupsReply.newBuilder() to construct.
-  private GroupsReply(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+  // Use SuccessfulWritingReply.newBuilder() to construct.
+  private SuccessfulWritingReply(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
   }
-  private GroupsReply() {
-    groupNames_ = com.google.protobuf.LazyStringArrayList.EMPTY;
+  private SuccessfulWritingReply() {
+    success_ = "";
   }
 
   @java.lang.Override
   @SuppressWarnings({"unused"})
   protected java.lang.Object newInstance(
       UnusedPrivateParameter unused) {
-    return new GroupsReply();
+    return new SuccessfulWritingReply();
   }
 
   @java.lang.Override
@@ -31,7 +31,7 @@ private static final long serialVersionUID = 0L;
   getUnknownFields() {
     return this.unknownFields;
   }
-  private GroupsReply(
+  private SuccessfulWritingReply(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
@@ -39,7 +39,6 @@ private static final long serialVersionUID = 0L;
     if (extensionRegistry == null) {
       throw new java.lang.NullPointerException();
     }
-    int mutable_bitField0_ = 0;
     com.google.protobuf.UnknownFieldSet.Builder unknownFields =
         com.google.protobuf.UnknownFieldSet.newBuilder();
     try {
@@ -52,11 +51,8 @@ private static final long serialVersionUID = 0L;
             break;
           case 10: {
             java.lang.String s = input.readStringRequireUtf8();
-            if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-              groupNames_ = new com.google.protobuf.LazyStringArrayList();
-              mutable_bitField0_ |= 0x00000001;
-            }
-            groupNames_.add(s);
+
+            success_ = s;
             break;
           }
           default: {
@@ -74,59 +70,57 @@ private static final long serialVersionUID = 0L;
       throw new com.google.protobuf.InvalidProtocolBufferException(
           e).setUnfinishedMessage(this);
     } finally {
-      if (((mutable_bitField0_ & 0x00000001) != 0)) {
-        groupNames_ = groupNames_.getUnmodifiableView();
-      }
       this.unknownFields = unknownFields.build();
       makeExtensionsImmutable();
     }
   }
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return com.scm.resources.Scmmessages.internal_static_com_scm_resources_GroupsReply_descriptor;
+    return com.scm.resources.Scmmessages.internal_static_com_scm_resources_SuccessfulWritingReply_descriptor;
   }
 
   @java.lang.Override
   protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return com.scm.resources.Scmmessages.internal_static_com_scm_resources_GroupsReply_fieldAccessorTable
+    return com.scm.resources.Scmmessages.internal_static_com_scm_resources_SuccessfulWritingReply_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            com.scm.resources.GroupsReply.class, com.scm.resources.GroupsReply.Builder.class);
+            com.scm.resources.SuccessfulWritingReply.class, com.scm.resources.SuccessfulWritingReply.Builder.class);
   }
 
-  public static final int GROUPNAMES_FIELD_NUMBER = 1;
-  private com.google.protobuf.LazyStringList groupNames_;
+  public static final int SUCCESS_FIELD_NUMBER = 1;
+  private volatile java.lang.Object success_;
   /**
-   * <code>repeated string groupNames = 1;</code>
-   * @return A list containing the groupNames.
+   * <code>string success = 1;</code>
+   * @return The success.
    */
-  public com.google.protobuf.ProtocolStringList
-      getGroupNamesList() {
-    return groupNames_;
+  public java.lang.String getSuccess() {
+    java.lang.Object ref = success_;
+    if (ref instanceof java.lang.String) {
+      return (java.lang.String) ref;
+    } else {
+      com.google.protobuf.ByteString bs = 
+          (com.google.protobuf.ByteString) ref;
+      java.lang.String s = bs.toStringUtf8();
+      success_ = s;
+      return s;
+    }
   }
   /**
-   * <code>repeated string groupNames = 1;</code>
-   * @return The count of groupNames.
-   */
-  public int getGroupNamesCount() {
-    return groupNames_.size();
-  }
-  /**
-   * <code>repeated string groupNames = 1;</code>
-   * @param index The index of the element to return.
-   * @return The groupNames at the given index.
-   */
-  public java.lang.String getGroupNames(int index) {
-    return groupNames_.get(index);
-  }
-  /**
-   * <code>repeated string groupNames = 1;</code>
-   * @param index The index of the value to return.
-   * @return The bytes of the groupNames at the given index.
+   * <code>string success = 1;</code>
+   * @return The bytes for success.
    */
   public com.google.protobuf.ByteString
-      getGroupNamesBytes(int index) {
-    return groupNames_.getByteString(index);
+      getSuccessBytes() {
+    java.lang.Object ref = success_;
+    if (ref instanceof java.lang.String) {
+      com.google.protobuf.ByteString b = 
+          com.google.protobuf.ByteString.copyFromUtf8(
+              (java.lang.String) ref);
+      success_ = b;
+      return b;
+    } else {
+      return (com.google.protobuf.ByteString) ref;
+    }
   }
 
   private byte memoizedIsInitialized = -1;
@@ -143,8 +137,8 @@ private static final long serialVersionUID = 0L;
   @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
-    for (int i = 0; i < groupNames_.size(); i++) {
-      com.google.protobuf.GeneratedMessageV3.writeString(output, 1, groupNames_.getRaw(i));
+    if (!getSuccessBytes().isEmpty()) {
+      com.google.protobuf.GeneratedMessageV3.writeString(output, 1, success_);
     }
     unknownFields.writeTo(output);
   }
@@ -155,13 +149,8 @@ private static final long serialVersionUID = 0L;
     if (size != -1) return size;
 
     size = 0;
-    {
-      int dataSize = 0;
-      for (int i = 0; i < groupNames_.size(); i++) {
-        dataSize += computeStringSizeNoTag(groupNames_.getRaw(i));
-      }
-      size += dataSize;
-      size += 1 * getGroupNamesList().size();
+    if (!getSuccessBytes().isEmpty()) {
+      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, success_);
     }
     size += unknownFields.getSerializedSize();
     memoizedSize = size;
@@ -173,13 +162,13 @@ private static final long serialVersionUID = 0L;
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof com.scm.resources.GroupsReply)) {
+    if (!(obj instanceof com.scm.resources.SuccessfulWritingReply)) {
       return super.equals(obj);
     }
-    com.scm.resources.GroupsReply other = (com.scm.resources.GroupsReply) obj;
+    com.scm.resources.SuccessfulWritingReply other = (com.scm.resources.SuccessfulWritingReply) obj;
 
-    if (!getGroupNamesList()
-        .equals(other.getGroupNamesList())) return false;
+    if (!getSuccess()
+        .equals(other.getSuccess())) return false;
     if (!unknownFields.equals(other.unknownFields)) return false;
     return true;
   }
@@ -191,78 +180,76 @@ private static final long serialVersionUID = 0L;
     }
     int hash = 41;
     hash = (19 * hash) + getDescriptor().hashCode();
-    if (getGroupNamesCount() > 0) {
-      hash = (37 * hash) + GROUPNAMES_FIELD_NUMBER;
-      hash = (53 * hash) + getGroupNamesList().hashCode();
-    }
+    hash = (37 * hash) + SUCCESS_FIELD_NUMBER;
+    hash = (53 * hash) + getSuccess().hashCode();
     hash = (29 * hash) + unknownFields.hashCode();
     memoizedHashCode = hash;
     return hash;
   }
 
-  public static com.scm.resources.GroupsReply parseFrom(
+  public static com.scm.resources.SuccessfulWritingReply parseFrom(
       java.nio.ByteBuffer data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.scm.resources.GroupsReply parseFrom(
+  public static com.scm.resources.SuccessfulWritingReply parseFrom(
       java.nio.ByteBuffer data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.scm.resources.GroupsReply parseFrom(
+  public static com.scm.resources.SuccessfulWritingReply parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.scm.resources.GroupsReply parseFrom(
+  public static com.scm.resources.SuccessfulWritingReply parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.scm.resources.GroupsReply parseFrom(byte[] data)
+  public static com.scm.resources.SuccessfulWritingReply parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.scm.resources.GroupsReply parseFrom(
+  public static com.scm.resources.SuccessfulWritingReply parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.scm.resources.GroupsReply parseFrom(java.io.InputStream input)
+  public static com.scm.resources.SuccessfulWritingReply parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.scm.resources.GroupsReply parseFrom(
+  public static com.scm.resources.SuccessfulWritingReply parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.scm.resources.GroupsReply parseDelimitedFrom(java.io.InputStream input)
+  public static com.scm.resources.SuccessfulWritingReply parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static com.scm.resources.GroupsReply parseDelimitedFrom(
+  public static com.scm.resources.SuccessfulWritingReply parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.scm.resources.GroupsReply parseFrom(
+  public static com.scm.resources.SuccessfulWritingReply parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.scm.resources.GroupsReply parseFrom(
+  public static com.scm.resources.SuccessfulWritingReply parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -275,7 +262,7 @@ private static final long serialVersionUID = 0L;
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(com.scm.resources.GroupsReply prototype) {
+  public static Builder newBuilder(com.scm.resources.SuccessfulWritingReply prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
   @java.lang.Override
@@ -291,26 +278,26 @@ private static final long serialVersionUID = 0L;
     return builder;
   }
   /**
-   * Protobuf type {@code com.scm.resources.GroupsReply}
+   * Protobuf type {@code com.scm.resources.SuccessfulWritingReply}
    */
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-      // @@protoc_insertion_point(builder_implements:com.scm.resources.GroupsReply)
-      com.scm.resources.GroupsReplyOrBuilder {
+      // @@protoc_insertion_point(builder_implements:com.scm.resources.SuccessfulWritingReply)
+      com.scm.resources.SuccessfulWritingReplyOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.scm.resources.Scmmessages.internal_static_com_scm_resources_GroupsReply_descriptor;
+      return com.scm.resources.Scmmessages.internal_static_com_scm_resources_SuccessfulWritingReply_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.scm.resources.Scmmessages.internal_static_com_scm_resources_GroupsReply_fieldAccessorTable
+      return com.scm.resources.Scmmessages.internal_static_com_scm_resources_SuccessfulWritingReply_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.scm.resources.GroupsReply.class, com.scm.resources.GroupsReply.Builder.class);
+              com.scm.resources.SuccessfulWritingReply.class, com.scm.resources.SuccessfulWritingReply.Builder.class);
     }
 
-    // Construct using com.scm.resources.GroupsReply.newBuilder()
+    // Construct using com.scm.resources.SuccessfulWritingReply.newBuilder()
     private Builder() {
       maybeForceBuilderInitialization();
     }
@@ -328,25 +315,25 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public Builder clear() {
       super.clear();
-      groupNames_ = com.google.protobuf.LazyStringArrayList.EMPTY;
-      bitField0_ = (bitField0_ & ~0x00000001);
+      success_ = "";
+
       return this;
     }
 
     @java.lang.Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return com.scm.resources.Scmmessages.internal_static_com_scm_resources_GroupsReply_descriptor;
+      return com.scm.resources.Scmmessages.internal_static_com_scm_resources_SuccessfulWritingReply_descriptor;
     }
 
     @java.lang.Override
-    public com.scm.resources.GroupsReply getDefaultInstanceForType() {
-      return com.scm.resources.GroupsReply.getDefaultInstance();
+    public com.scm.resources.SuccessfulWritingReply getDefaultInstanceForType() {
+      return com.scm.resources.SuccessfulWritingReply.getDefaultInstance();
     }
 
     @java.lang.Override
-    public com.scm.resources.GroupsReply build() {
-      com.scm.resources.GroupsReply result = buildPartial();
+    public com.scm.resources.SuccessfulWritingReply build() {
+      com.scm.resources.SuccessfulWritingReply result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
@@ -354,14 +341,9 @@ private static final long serialVersionUID = 0L;
     }
 
     @java.lang.Override
-    public com.scm.resources.GroupsReply buildPartial() {
-      com.scm.resources.GroupsReply result = new com.scm.resources.GroupsReply(this);
-      int from_bitField0_ = bitField0_;
-      if (((bitField0_ & 0x00000001) != 0)) {
-        groupNames_ = groupNames_.getUnmodifiableView();
-        bitField0_ = (bitField0_ & ~0x00000001);
-      }
-      result.groupNames_ = groupNames_;
+    public com.scm.resources.SuccessfulWritingReply buildPartial() {
+      com.scm.resources.SuccessfulWritingReply result = new com.scm.resources.SuccessfulWritingReply(this);
+      result.success_ = success_;
       onBuilt();
       return result;
     }
@@ -400,24 +382,18 @@ private static final long serialVersionUID = 0L;
     }
     @java.lang.Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof com.scm.resources.GroupsReply) {
-        return mergeFrom((com.scm.resources.GroupsReply)other);
+      if (other instanceof com.scm.resources.SuccessfulWritingReply) {
+        return mergeFrom((com.scm.resources.SuccessfulWritingReply)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(com.scm.resources.GroupsReply other) {
-      if (other == com.scm.resources.GroupsReply.getDefaultInstance()) return this;
-      if (!other.groupNames_.isEmpty()) {
-        if (groupNames_.isEmpty()) {
-          groupNames_ = other.groupNames_;
-          bitField0_ = (bitField0_ & ~0x00000001);
-        } else {
-          ensureGroupNamesIsMutable();
-          groupNames_.addAll(other.groupNames_);
-        }
+    public Builder mergeFrom(com.scm.resources.SuccessfulWritingReply other) {
+      if (other == com.scm.resources.SuccessfulWritingReply.getDefaultInstance()) return this;
+      if (!other.getSuccess().isEmpty()) {
+        success_ = other.success_;
         onChanged();
       }
       this.mergeUnknownFields(other.unknownFields);
@@ -435,11 +411,11 @@ private static final long serialVersionUID = 0L;
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      com.scm.resources.GroupsReply parsedMessage = null;
+      com.scm.resources.SuccessfulWritingReply parsedMessage = null;
       try {
         parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
       } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        parsedMessage = (com.scm.resources.GroupsReply) e.getUnfinishedMessage();
+        parsedMessage = (com.scm.resources.SuccessfulWritingReply) e.getUnfinishedMessage();
         throw e.unwrapIOException();
       } finally {
         if (parsedMessage != null) {
@@ -448,114 +424,79 @@ private static final long serialVersionUID = 0L;
       }
       return this;
     }
-    private int bitField0_;
 
-    private com.google.protobuf.LazyStringList groupNames_ = com.google.protobuf.LazyStringArrayList.EMPTY;
-    private void ensureGroupNamesIsMutable() {
-      if (!((bitField0_ & 0x00000001) != 0)) {
-        groupNames_ = new com.google.protobuf.LazyStringArrayList(groupNames_);
-        bitField0_ |= 0x00000001;
-       }
-    }
+    private java.lang.Object success_ = "";
     /**
-     * <code>repeated string groupNames = 1;</code>
-     * @return A list containing the groupNames.
+     * <code>string success = 1;</code>
+     * @return The success.
      */
-    public com.google.protobuf.ProtocolStringList
-        getGroupNamesList() {
-      return groupNames_.getUnmodifiableView();
+    public java.lang.String getSuccess() {
+      java.lang.Object ref = success_;
+      if (!(ref instanceof java.lang.String)) {
+        com.google.protobuf.ByteString bs =
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        success_ = s;
+        return s;
+      } else {
+        return (java.lang.String) ref;
+      }
     }
     /**
-     * <code>repeated string groupNames = 1;</code>
-     * @return The count of groupNames.
-     */
-    public int getGroupNamesCount() {
-      return groupNames_.size();
-    }
-    /**
-     * <code>repeated string groupNames = 1;</code>
-     * @param index The index of the element to return.
-     * @return The groupNames at the given index.
-     */
-    public java.lang.String getGroupNames(int index) {
-      return groupNames_.get(index);
-    }
-    /**
-     * <code>repeated string groupNames = 1;</code>
-     * @param index The index of the value to return.
-     * @return The bytes of the groupNames at the given index.
+     * <code>string success = 1;</code>
+     * @return The bytes for success.
      */
     public com.google.protobuf.ByteString
-        getGroupNamesBytes(int index) {
-      return groupNames_.getByteString(index);
+        getSuccessBytes() {
+      java.lang.Object ref = success_;
+      if (ref instanceof String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        success_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
     }
     /**
-     * <code>repeated string groupNames = 1;</code>
-     * @param index The index to set the value at.
-     * @param value The groupNames to set.
+     * <code>string success = 1;</code>
+     * @param value The success to set.
      * @return This builder for chaining.
      */
-    public Builder setGroupNames(
-        int index, java.lang.String value) {
-      if (value == null) {
-    throw new NullPointerException();
-  }
-  ensureGroupNamesIsMutable();
-      groupNames_.set(index, value);
-      onChanged();
-      return this;
-    }
-    /**
-     * <code>repeated string groupNames = 1;</code>
-     * @param value The groupNames to add.
-     * @return This builder for chaining.
-     */
-    public Builder addGroupNames(
+    public Builder setSuccess(
         java.lang.String value) {
       if (value == null) {
     throw new NullPointerException();
   }
-  ensureGroupNamesIsMutable();
-      groupNames_.add(value);
+  
+      success_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>repeated string groupNames = 1;</code>
-     * @param values The groupNames to add.
+     * <code>string success = 1;</code>
      * @return This builder for chaining.
      */
-    public Builder addAllGroupNames(
-        java.lang.Iterable<java.lang.String> values) {
-      ensureGroupNamesIsMutable();
-      com.google.protobuf.AbstractMessageLite.Builder.addAll(
-          values, groupNames_);
+    public Builder clearSuccess() {
+      
+      success_ = getDefaultInstance().getSuccess();
       onChanged();
       return this;
     }
     /**
-     * <code>repeated string groupNames = 1;</code>
+     * <code>string success = 1;</code>
+     * @param value The bytes for success to set.
      * @return This builder for chaining.
      */
-    public Builder clearGroupNames() {
-      groupNames_ = com.google.protobuf.LazyStringArrayList.EMPTY;
-      bitField0_ = (bitField0_ & ~0x00000001);
-      onChanged();
-      return this;
-    }
-    /**
-     * <code>repeated string groupNames = 1;</code>
-     * @param value The bytes of the groupNames to add.
-     * @return This builder for chaining.
-     */
-    public Builder addGroupNamesBytes(
+    public Builder setSuccessBytes(
         com.google.protobuf.ByteString value) {
       if (value == null) {
     throw new NullPointerException();
   }
   checkByteStringIsUtf8(value);
-      ensureGroupNamesIsMutable();
-      groupNames_.add(value);
+      
+      success_ = value;
       onChanged();
       return this;
     }
@@ -572,41 +513,41 @@ private static final long serialVersionUID = 0L;
     }
 
 
-    // @@protoc_insertion_point(builder_scope:com.scm.resources.GroupsReply)
+    // @@protoc_insertion_point(builder_scope:com.scm.resources.SuccessfulWritingReply)
   }
 
-  // @@protoc_insertion_point(class_scope:com.scm.resources.GroupsReply)
-  private static final com.scm.resources.GroupsReply DEFAULT_INSTANCE;
+  // @@protoc_insertion_point(class_scope:com.scm.resources.SuccessfulWritingReply)
+  private static final com.scm.resources.SuccessfulWritingReply DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new com.scm.resources.GroupsReply();
+    DEFAULT_INSTANCE = new com.scm.resources.SuccessfulWritingReply();
   }
 
-  public static com.scm.resources.GroupsReply getDefaultInstance() {
+  public static com.scm.resources.SuccessfulWritingReply getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
-  private static final com.google.protobuf.Parser<GroupsReply>
-      PARSER = new com.google.protobuf.AbstractParser<GroupsReply>() {
+  private static final com.google.protobuf.Parser<SuccessfulWritingReply>
+      PARSER = new com.google.protobuf.AbstractParser<SuccessfulWritingReply>() {
     @java.lang.Override
-    public GroupsReply parsePartialFrom(
+    public SuccessfulWritingReply parsePartialFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
-      return new GroupsReply(input, extensionRegistry);
+      return new SuccessfulWritingReply(input, extensionRegistry);
     }
   };
 
-  public static com.google.protobuf.Parser<GroupsReply> parser() {
+  public static com.google.protobuf.Parser<SuccessfulWritingReply> parser() {
     return PARSER;
   }
 
   @java.lang.Override
-  public com.google.protobuf.Parser<GroupsReply> getParserForType() {
+  public com.google.protobuf.Parser<SuccessfulWritingReply> getParserForType() {
     return PARSER;
   }
 
   @java.lang.Override
-  public com.scm.resources.GroupsReply getDefaultInstanceForType() {
+  public com.scm.resources.SuccessfulWritingReply getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

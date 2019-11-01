@@ -4,26 +4,27 @@
 package com.scm.resources;
 
 /**
- * Protobuf type {@code com.scm.resources.ConnectRequest}
+ * Protobuf type {@code com.scm.resources.TagGroupTwoFileRequest}
  */
-public  final class ConnectRequest extends
+public  final class TagGroupTwoFileRequest extends
     com.google.protobuf.GeneratedMessageV3 implements
-    // @@protoc_insertion_point(message_implements:com.scm.resources.ConnectRequest)
-    ConnectRequestOrBuilder {
+    // @@protoc_insertion_point(message_implements:com.scm.resources.TagGroupTwoFileRequest)
+    TagGroupTwoFileRequestOrBuilder {
 private static final long serialVersionUID = 0L;
-  // Use ConnectRequest.newBuilder() to construct.
-  private ConnectRequest(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+  // Use TagGroupTwoFileRequest.newBuilder() to construct.
+  private TagGroupTwoFileRequest(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
   }
-  private ConnectRequest() {
-    server_ = "";
+  private TagGroupTwoFileRequest() {
+    filePathTag_ = "";
+    filePathGroup_ = "";
   }
 
   @java.lang.Override
   @SuppressWarnings({"unused"})
   protected java.lang.Object newInstance(
       UnusedPrivateParameter unused) {
-    return new ConnectRequest();
+    return new TagGroupTwoFileRequest();
   }
 
   @java.lang.Override
@@ -31,7 +32,7 @@ private static final long serialVersionUID = 0L;
   getUnknownFields() {
     return this.unknownFields;
   }
-  private ConnectRequest(
+  private TagGroupTwoFileRequest(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
@@ -52,7 +53,13 @@ private static final long serialVersionUID = 0L;
           case 10: {
             java.lang.String s = input.readStringRequireUtf8();
 
-            server_ = s;
+            filePathTag_ = s;
+            break;
+          }
+          case 18: {
+            java.lang.String s = input.readStringRequireUtf8();
+
+            filePathGroup_ = s;
             break;
           }
           default: {
@@ -76,47 +83,83 @@ private static final long serialVersionUID = 0L;
   }
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return com.scm.resources.Scmmessages.internal_static_com_scm_resources_ConnectRequest_descriptor;
+    return com.scm.resources.Scmmessages.internal_static_com_scm_resources_TagGroupTwoFileRequest_descriptor;
   }
 
   @java.lang.Override
   protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return com.scm.resources.Scmmessages.internal_static_com_scm_resources_ConnectRequest_fieldAccessorTable
+    return com.scm.resources.Scmmessages.internal_static_com_scm_resources_TagGroupTwoFileRequest_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            com.scm.resources.ConnectRequest.class, com.scm.resources.ConnectRequest.Builder.class);
+            com.scm.resources.TagGroupTwoFileRequest.class, com.scm.resources.TagGroupTwoFileRequest.Builder.class);
   }
 
-  public static final int SERVER_FIELD_NUMBER = 1;
-  private volatile java.lang.Object server_;
+  public static final int FILEPATHTAG_FIELD_NUMBER = 1;
+  private volatile java.lang.Object filePathTag_;
   /**
-   * <code>string server = 1;</code>
-   * @return The server.
+   * <code>string filePathTag = 1;</code>
+   * @return The filePathTag.
    */
-  public java.lang.String getServer() {
-    java.lang.Object ref = server_;
+  public java.lang.String getFilePathTag() {
+    java.lang.Object ref = filePathTag_;
     if (ref instanceof java.lang.String) {
       return (java.lang.String) ref;
     } else {
       com.google.protobuf.ByteString bs = 
           (com.google.protobuf.ByteString) ref;
       java.lang.String s = bs.toStringUtf8();
-      server_ = s;
+      filePathTag_ = s;
       return s;
     }
   }
   /**
-   * <code>string server = 1;</code>
-   * @return The bytes for server.
+   * <code>string filePathTag = 1;</code>
+   * @return The bytes for filePathTag.
    */
   public com.google.protobuf.ByteString
-      getServerBytes() {
-    java.lang.Object ref = server_;
+      getFilePathTagBytes() {
+    java.lang.Object ref = filePathTag_;
     if (ref instanceof java.lang.String) {
       com.google.protobuf.ByteString b = 
           com.google.protobuf.ByteString.copyFromUtf8(
               (java.lang.String) ref);
-      server_ = b;
+      filePathTag_ = b;
+      return b;
+    } else {
+      return (com.google.protobuf.ByteString) ref;
+    }
+  }
+
+  public static final int FILEPATHGROUP_FIELD_NUMBER = 2;
+  private volatile java.lang.Object filePathGroup_;
+  /**
+   * <code>string filePathGroup = 2;</code>
+   * @return The filePathGroup.
+   */
+  public java.lang.String getFilePathGroup() {
+    java.lang.Object ref = filePathGroup_;
+    if (ref instanceof java.lang.String) {
+      return (java.lang.String) ref;
+    } else {
+      com.google.protobuf.ByteString bs = 
+          (com.google.protobuf.ByteString) ref;
+      java.lang.String s = bs.toStringUtf8();
+      filePathGroup_ = s;
+      return s;
+    }
+  }
+  /**
+   * <code>string filePathGroup = 2;</code>
+   * @return The bytes for filePathGroup.
+   */
+  public com.google.protobuf.ByteString
+      getFilePathGroupBytes() {
+    java.lang.Object ref = filePathGroup_;
+    if (ref instanceof java.lang.String) {
+      com.google.protobuf.ByteString b = 
+          com.google.protobuf.ByteString.copyFromUtf8(
+              (java.lang.String) ref);
+      filePathGroup_ = b;
       return b;
     } else {
       return (com.google.protobuf.ByteString) ref;
@@ -137,8 +180,11 @@ private static final long serialVersionUID = 0L;
   @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
-    if (!getServerBytes().isEmpty()) {
-      com.google.protobuf.GeneratedMessageV3.writeString(output, 1, server_);
+    if (!getFilePathTagBytes().isEmpty()) {
+      com.google.protobuf.GeneratedMessageV3.writeString(output, 1, filePathTag_);
+    }
+    if (!getFilePathGroupBytes().isEmpty()) {
+      com.google.protobuf.GeneratedMessageV3.writeString(output, 2, filePathGroup_);
     }
     unknownFields.writeTo(output);
   }
@@ -149,8 +195,11 @@ private static final long serialVersionUID = 0L;
     if (size != -1) return size;
 
     size = 0;
-    if (!getServerBytes().isEmpty()) {
-      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, server_);
+    if (!getFilePathTagBytes().isEmpty()) {
+      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, filePathTag_);
+    }
+    if (!getFilePathGroupBytes().isEmpty()) {
+      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, filePathGroup_);
     }
     size += unknownFields.getSerializedSize();
     memoizedSize = size;
@@ -162,13 +211,15 @@ private static final long serialVersionUID = 0L;
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof com.scm.resources.ConnectRequest)) {
+    if (!(obj instanceof com.scm.resources.TagGroupTwoFileRequest)) {
       return super.equals(obj);
     }
-    com.scm.resources.ConnectRequest other = (com.scm.resources.ConnectRequest) obj;
+    com.scm.resources.TagGroupTwoFileRequest other = (com.scm.resources.TagGroupTwoFileRequest) obj;
 
-    if (!getServer()
-        .equals(other.getServer())) return false;
+    if (!getFilePathTag()
+        .equals(other.getFilePathTag())) return false;
+    if (!getFilePathGroup()
+        .equals(other.getFilePathGroup())) return false;
     if (!unknownFields.equals(other.unknownFields)) return false;
     return true;
   }
@@ -180,76 +231,78 @@ private static final long serialVersionUID = 0L;
     }
     int hash = 41;
     hash = (19 * hash) + getDescriptor().hashCode();
-    hash = (37 * hash) + SERVER_FIELD_NUMBER;
-    hash = (53 * hash) + getServer().hashCode();
+    hash = (37 * hash) + FILEPATHTAG_FIELD_NUMBER;
+    hash = (53 * hash) + getFilePathTag().hashCode();
+    hash = (37 * hash) + FILEPATHGROUP_FIELD_NUMBER;
+    hash = (53 * hash) + getFilePathGroup().hashCode();
     hash = (29 * hash) + unknownFields.hashCode();
     memoizedHashCode = hash;
     return hash;
   }
 
-  public static com.scm.resources.ConnectRequest parseFrom(
+  public static com.scm.resources.TagGroupTwoFileRequest parseFrom(
       java.nio.ByteBuffer data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.scm.resources.ConnectRequest parseFrom(
+  public static com.scm.resources.TagGroupTwoFileRequest parseFrom(
       java.nio.ByteBuffer data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.scm.resources.ConnectRequest parseFrom(
+  public static com.scm.resources.TagGroupTwoFileRequest parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.scm.resources.ConnectRequest parseFrom(
+  public static com.scm.resources.TagGroupTwoFileRequest parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.scm.resources.ConnectRequest parseFrom(byte[] data)
+  public static com.scm.resources.TagGroupTwoFileRequest parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.scm.resources.ConnectRequest parseFrom(
+  public static com.scm.resources.TagGroupTwoFileRequest parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.scm.resources.ConnectRequest parseFrom(java.io.InputStream input)
+  public static com.scm.resources.TagGroupTwoFileRequest parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.scm.resources.ConnectRequest parseFrom(
+  public static com.scm.resources.TagGroupTwoFileRequest parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.scm.resources.ConnectRequest parseDelimitedFrom(java.io.InputStream input)
+  public static com.scm.resources.TagGroupTwoFileRequest parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static com.scm.resources.ConnectRequest parseDelimitedFrom(
+  public static com.scm.resources.TagGroupTwoFileRequest parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.scm.resources.ConnectRequest parseFrom(
+  public static com.scm.resources.TagGroupTwoFileRequest parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.scm.resources.ConnectRequest parseFrom(
+  public static com.scm.resources.TagGroupTwoFileRequest parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -262,7 +315,7 @@ private static final long serialVersionUID = 0L;
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(com.scm.resources.ConnectRequest prototype) {
+  public static Builder newBuilder(com.scm.resources.TagGroupTwoFileRequest prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
   @java.lang.Override
@@ -278,26 +331,26 @@ private static final long serialVersionUID = 0L;
     return builder;
   }
   /**
-   * Protobuf type {@code com.scm.resources.ConnectRequest}
+   * Protobuf type {@code com.scm.resources.TagGroupTwoFileRequest}
    */
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-      // @@protoc_insertion_point(builder_implements:com.scm.resources.ConnectRequest)
-      com.scm.resources.ConnectRequestOrBuilder {
+      // @@protoc_insertion_point(builder_implements:com.scm.resources.TagGroupTwoFileRequest)
+      com.scm.resources.TagGroupTwoFileRequestOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.scm.resources.Scmmessages.internal_static_com_scm_resources_ConnectRequest_descriptor;
+      return com.scm.resources.Scmmessages.internal_static_com_scm_resources_TagGroupTwoFileRequest_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.scm.resources.Scmmessages.internal_static_com_scm_resources_ConnectRequest_fieldAccessorTable
+      return com.scm.resources.Scmmessages.internal_static_com_scm_resources_TagGroupTwoFileRequest_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.scm.resources.ConnectRequest.class, com.scm.resources.ConnectRequest.Builder.class);
+              com.scm.resources.TagGroupTwoFileRequest.class, com.scm.resources.TagGroupTwoFileRequest.Builder.class);
     }
 
-    // Construct using com.scm.resources.ConnectRequest.newBuilder()
+    // Construct using com.scm.resources.TagGroupTwoFileRequest.newBuilder()
     private Builder() {
       maybeForceBuilderInitialization();
     }
@@ -315,7 +368,9 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public Builder clear() {
       super.clear();
-      server_ = "";
+      filePathTag_ = "";
+
+      filePathGroup_ = "";
 
       return this;
     }
@@ -323,17 +378,17 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return com.scm.resources.Scmmessages.internal_static_com_scm_resources_ConnectRequest_descriptor;
+      return com.scm.resources.Scmmessages.internal_static_com_scm_resources_TagGroupTwoFileRequest_descriptor;
     }
 
     @java.lang.Override
-    public com.scm.resources.ConnectRequest getDefaultInstanceForType() {
-      return com.scm.resources.ConnectRequest.getDefaultInstance();
+    public com.scm.resources.TagGroupTwoFileRequest getDefaultInstanceForType() {
+      return com.scm.resources.TagGroupTwoFileRequest.getDefaultInstance();
     }
 
     @java.lang.Override
-    public com.scm.resources.ConnectRequest build() {
-      com.scm.resources.ConnectRequest result = buildPartial();
+    public com.scm.resources.TagGroupTwoFileRequest build() {
+      com.scm.resources.TagGroupTwoFileRequest result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
@@ -341,9 +396,10 @@ private static final long serialVersionUID = 0L;
     }
 
     @java.lang.Override
-    public com.scm.resources.ConnectRequest buildPartial() {
-      com.scm.resources.ConnectRequest result = new com.scm.resources.ConnectRequest(this);
-      result.server_ = server_;
+    public com.scm.resources.TagGroupTwoFileRequest buildPartial() {
+      com.scm.resources.TagGroupTwoFileRequest result = new com.scm.resources.TagGroupTwoFileRequest(this);
+      result.filePathTag_ = filePathTag_;
+      result.filePathGroup_ = filePathGroup_;
       onBuilt();
       return result;
     }
@@ -382,18 +438,22 @@ private static final long serialVersionUID = 0L;
     }
     @java.lang.Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof com.scm.resources.ConnectRequest) {
-        return mergeFrom((com.scm.resources.ConnectRequest)other);
+      if (other instanceof com.scm.resources.TagGroupTwoFileRequest) {
+        return mergeFrom((com.scm.resources.TagGroupTwoFileRequest)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(com.scm.resources.ConnectRequest other) {
-      if (other == com.scm.resources.ConnectRequest.getDefaultInstance()) return this;
-      if (!other.getServer().isEmpty()) {
-        server_ = other.server_;
+    public Builder mergeFrom(com.scm.resources.TagGroupTwoFileRequest other) {
+      if (other == com.scm.resources.TagGroupTwoFileRequest.getDefaultInstance()) return this;
+      if (!other.getFilePathTag().isEmpty()) {
+        filePathTag_ = other.filePathTag_;
+        onChanged();
+      }
+      if (!other.getFilePathGroup().isEmpty()) {
+        filePathGroup_ = other.filePathGroup_;
         onChanged();
       }
       this.mergeUnknownFields(other.unknownFields);
@@ -411,11 +471,11 @@ private static final long serialVersionUID = 0L;
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      com.scm.resources.ConnectRequest parsedMessage = null;
+      com.scm.resources.TagGroupTwoFileRequest parsedMessage = null;
       try {
         parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
       } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        parsedMessage = (com.scm.resources.ConnectRequest) e.getUnfinishedMessage();
+        parsedMessage = (com.scm.resources.TagGroupTwoFileRequest) e.getUnfinishedMessage();
         throw e.unwrapIOException();
       } finally {
         if (parsedMessage != null) {
@@ -425,78 +485,154 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private java.lang.Object server_ = "";
+    private java.lang.Object filePathTag_ = "";
     /**
-     * <code>string server = 1;</code>
-     * @return The server.
+     * <code>string filePathTag = 1;</code>
+     * @return The filePathTag.
      */
-    public java.lang.String getServer() {
-      java.lang.Object ref = server_;
+    public java.lang.String getFilePathTag() {
+      java.lang.Object ref = filePathTag_;
       if (!(ref instanceof java.lang.String)) {
         com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
-        server_ = s;
+        filePathTag_ = s;
         return s;
       } else {
         return (java.lang.String) ref;
       }
     }
     /**
-     * <code>string server = 1;</code>
-     * @return The bytes for server.
+     * <code>string filePathTag = 1;</code>
+     * @return The bytes for filePathTag.
      */
     public com.google.protobuf.ByteString
-        getServerBytes() {
-      java.lang.Object ref = server_;
+        getFilePathTagBytes() {
+      java.lang.Object ref = filePathTag_;
       if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
                 (java.lang.String) ref);
-        server_ = b;
+        filePathTag_ = b;
         return b;
       } else {
         return (com.google.protobuf.ByteString) ref;
       }
     }
     /**
-     * <code>string server = 1;</code>
-     * @param value The server to set.
+     * <code>string filePathTag = 1;</code>
+     * @param value The filePathTag to set.
      * @return This builder for chaining.
      */
-    public Builder setServer(
+    public Builder setFilePathTag(
         java.lang.String value) {
       if (value == null) {
     throw new NullPointerException();
   }
   
-      server_ = value;
+      filePathTag_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>string server = 1;</code>
+     * <code>string filePathTag = 1;</code>
      * @return This builder for chaining.
      */
-    public Builder clearServer() {
+    public Builder clearFilePathTag() {
       
-      server_ = getDefaultInstance().getServer();
+      filePathTag_ = getDefaultInstance().getFilePathTag();
       onChanged();
       return this;
     }
     /**
-     * <code>string server = 1;</code>
-     * @param value The bytes for server to set.
+     * <code>string filePathTag = 1;</code>
+     * @param value The bytes for filePathTag to set.
      * @return This builder for chaining.
      */
-    public Builder setServerBytes(
+    public Builder setFilePathTagBytes(
         com.google.protobuf.ByteString value) {
       if (value == null) {
     throw new NullPointerException();
   }
   checkByteStringIsUtf8(value);
       
-      server_ = value;
+      filePathTag_ = value;
+      onChanged();
+      return this;
+    }
+
+    private java.lang.Object filePathGroup_ = "";
+    /**
+     * <code>string filePathGroup = 2;</code>
+     * @return The filePathGroup.
+     */
+    public java.lang.String getFilePathGroup() {
+      java.lang.Object ref = filePathGroup_;
+      if (!(ref instanceof java.lang.String)) {
+        com.google.protobuf.ByteString bs =
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        filePathGroup_ = s;
+        return s;
+      } else {
+        return (java.lang.String) ref;
+      }
+    }
+    /**
+     * <code>string filePathGroup = 2;</code>
+     * @return The bytes for filePathGroup.
+     */
+    public com.google.protobuf.ByteString
+        getFilePathGroupBytes() {
+      java.lang.Object ref = filePathGroup_;
+      if (ref instanceof String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        filePathGroup_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+    /**
+     * <code>string filePathGroup = 2;</code>
+     * @param value The filePathGroup to set.
+     * @return This builder for chaining.
+     */
+    public Builder setFilePathGroup(
+        java.lang.String value) {
+      if (value == null) {
+    throw new NullPointerException();
+  }
+  
+      filePathGroup_ = value;
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>string filePathGroup = 2;</code>
+     * @return This builder for chaining.
+     */
+    public Builder clearFilePathGroup() {
+      
+      filePathGroup_ = getDefaultInstance().getFilePathGroup();
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>string filePathGroup = 2;</code>
+     * @param value The bytes for filePathGroup to set.
+     * @return This builder for chaining.
+     */
+    public Builder setFilePathGroupBytes(
+        com.google.protobuf.ByteString value) {
+      if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+      
+      filePathGroup_ = value;
       onChanged();
       return this;
     }
@@ -513,41 +649,41 @@ private static final long serialVersionUID = 0L;
     }
 
 
-    // @@protoc_insertion_point(builder_scope:com.scm.resources.ConnectRequest)
+    // @@protoc_insertion_point(builder_scope:com.scm.resources.TagGroupTwoFileRequest)
   }
 
-  // @@protoc_insertion_point(class_scope:com.scm.resources.ConnectRequest)
-  private static final com.scm.resources.ConnectRequest DEFAULT_INSTANCE;
+  // @@protoc_insertion_point(class_scope:com.scm.resources.TagGroupTwoFileRequest)
+  private static final com.scm.resources.TagGroupTwoFileRequest DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new com.scm.resources.ConnectRequest();
+    DEFAULT_INSTANCE = new com.scm.resources.TagGroupTwoFileRequest();
   }
 
-  public static com.scm.resources.ConnectRequest getDefaultInstance() {
+  public static com.scm.resources.TagGroupTwoFileRequest getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
-  private static final com.google.protobuf.Parser<ConnectRequest>
-      PARSER = new com.google.protobuf.AbstractParser<ConnectRequest>() {
+  private static final com.google.protobuf.Parser<TagGroupTwoFileRequest>
+      PARSER = new com.google.protobuf.AbstractParser<TagGroupTwoFileRequest>() {
     @java.lang.Override
-    public ConnectRequest parsePartialFrom(
+    public TagGroupTwoFileRequest parsePartialFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
-      return new ConnectRequest(input, extensionRegistry);
+      return new TagGroupTwoFileRequest(input, extensionRegistry);
     }
   };
 
-  public static com.google.protobuf.Parser<ConnectRequest> parser() {
+  public static com.google.protobuf.Parser<TagGroupTwoFileRequest> parser() {
     return PARSER;
   }
 
   @java.lang.Override
-  public com.google.protobuf.Parser<ConnectRequest> getParserForType() {
+  public com.google.protobuf.Parser<TagGroupTwoFileRequest> getParserForType() {
     return PARSER;
   }
 
   @java.lang.Override
-  public com.scm.resources.ConnectRequest getDefaultInstanceForType() {
+  public com.scm.resources.TagGroupTwoFileRequest getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

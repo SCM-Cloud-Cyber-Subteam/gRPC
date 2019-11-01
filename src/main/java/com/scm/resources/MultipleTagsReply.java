@@ -20,6 +20,13 @@ private static final long serialVersionUID = 0L;
   }
 
   @java.lang.Override
+  @SuppressWarnings({"unused"})
+  protected java.lang.Object newInstance(
+      UnusedPrivateParameter unused) {
+    return new MultipleTagsReply();
+  }
+
+  @java.lang.Override
   public final com.google.protobuf.UnknownFieldSet
   getUnknownFields() {
     return this.unknownFields;
@@ -44,7 +51,7 @@ private static final long serialVersionUID = 0L;
             done = true;
             break;
           case 10: {
-            if (!((mutable_bitField0_ & 0x00000001) == 0x00000001)) {
+            if (!((mutable_bitField0_ & 0x00000001) != 0)) {
               tagReply_ = new java.util.ArrayList<com.scm.resources.TagReply>();
               mutable_bitField0_ |= 0x00000001;
             }
@@ -67,7 +74,7 @@ private static final long serialVersionUID = 0L;
       throw new com.google.protobuf.InvalidProtocolBufferException(
           e).setUnfinishedMessage(this);
     } finally {
-      if (((mutable_bitField0_ & 0x00000001) == 0x00000001)) {
+      if (((mutable_bitField0_ & 0x00000001) != 0)) {
         tagReply_ = java.util.Collections.unmodifiableList(tagReply_);
       }
       this.unknownFields = unknownFields.build();
@@ -167,11 +174,10 @@ private static final long serialVersionUID = 0L;
     }
     com.scm.resources.MultipleTagsReply other = (com.scm.resources.MultipleTagsReply) obj;
 
-    boolean result = true;
-    result = result && getTagReplyList()
-        .equals(other.getTagReplyList());
-    result = result && unknownFields.equals(other.unknownFields);
-    return result;
+    if (!getTagReplyList()
+        .equals(other.getTagReplyList())) return false;
+    if (!unknownFields.equals(other.unknownFields)) return false;
+    return true;
   }
 
   @java.lang.Override
@@ -353,7 +359,7 @@ private static final long serialVersionUID = 0L;
       com.scm.resources.MultipleTagsReply result = new com.scm.resources.MultipleTagsReply(this);
       int from_bitField0_ = bitField0_;
       if (tagReplyBuilder_ == null) {
-        if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        if (((bitField0_ & 0x00000001) != 0)) {
           tagReply_ = java.util.Collections.unmodifiableList(tagReply_);
           bitField0_ = (bitField0_ & ~0x00000001);
         }
@@ -468,7 +474,7 @@ private static final long serialVersionUID = 0L;
     private java.util.List<com.scm.resources.TagReply> tagReply_ =
       java.util.Collections.emptyList();
     private void ensureTagReplyIsMutable() {
-      if (!((bitField0_ & 0x00000001) == 0x00000001)) {
+      if (!((bitField0_ & 0x00000001) != 0)) {
         tagReply_ = new java.util.ArrayList<com.scm.resources.TagReply>(tagReply_);
         bitField0_ |= 0x00000001;
        }
@@ -697,7 +703,7 @@ private static final long serialVersionUID = 0L;
         tagReplyBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
             com.scm.resources.TagReply, com.scm.resources.TagReply.Builder, com.scm.resources.TagReplyOrBuilder>(
                 tagReply_,
-                ((bitField0_ & 0x00000001) == 0x00000001),
+                ((bitField0_ & 0x00000001) != 0),
                 getParentForChildren(),
                 isClean());
         tagReply_ = null;

@@ -9,6 +9,7 @@ public interface ConnectReplyOrBuilder extends
 
   /**
    * <code>bool confirmation = 1;</code>
+   * @return The confirmation.
    */
   boolean getConfirmation();
 }

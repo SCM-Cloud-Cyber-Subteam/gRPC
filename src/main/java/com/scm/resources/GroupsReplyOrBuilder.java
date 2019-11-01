@@ -9,19 +9,25 @@ public interface GroupsReplyOrBuilder extends
 
   /**
    * <code>repeated string groupNames = 1;</code>
+   * @return A list containing the groupNames.
    */
   java.util.List<java.lang.String>
       getGroupNamesList();
   /**
    * <code>repeated string groupNames = 1;</code>
+   * @return The count of groupNames.
    */
   int getGroupNamesCount();
   /**
    * <code>repeated string groupNames = 1;</code>
+   * @param index The index of the element to return.
+   * @return The groupNames at the given index.
    */
   java.lang.String getGroupNames(int index);
   /**
    * <code>repeated string groupNames = 1;</code>
+   * @param index The index of the value to return.
+   * @return The bytes of the groupNames at the given index.
    */
   com.google.protobuf.ByteString
       getGroupNamesBytes(int index);
