@@ -27,17 +27,22 @@ public class ScmGrpcClientMain {
 	public static void main(String [] args){
 		ScmGrpcClient foo = new ScmGrpcClient("141.212.133.36", 50051);
 		Scanner input = new Scanner(System.in);
-		String tagName, groupName;
+		String choice, tagName, groupName, srcPath,destPath;
 		while(true){
-			System.out.println("Enter tag name SPACE group name to get value or 'exit' to quit");
-			tagName = input.next();
-			if (tagName.equals("exit")) {
-				System.out.println("Goodbye");
-				System.exit(0);
+			System.out.println("Enter 1 to read tags from file or 2 to input tag/group name or 'exit' to exit");
+			choice = input.next();
+			switch(choice) {
+				case "exit":
+					System.out.println("Goodbye");
+					System.exit(0);
+				case "1":
+					System.out.println("Enter source file path");
+					srcPath = input.next();
+					System.out.println("Enter a destination path");
+					destPath = input.next();
+
 			}
-			groupName = input.next();
-			System.out.println("VALUE OF " + tagName + ":");
-			System.out.println(foo.getTag(tagName, groupName));
+
 		}
 
 }
