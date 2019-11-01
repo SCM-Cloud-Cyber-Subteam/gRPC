@@ -409,14 +409,14 @@ public class getAllInfo {
      * param JSONArray of tag values
      * @write information to a file
      */
-    public void writeTagsToFile(String filePath, JSONArray tags)throws IOException {
+    public String writeTagsToFile(String filePath, JSONArray tags)throws IOException {
         //try to find file path to write to and write tags to file
         try(FileWriter f = new FileWriter(filePath)){
             for(int i = 0;i<tags.size();++i) {
                 f.write(tags.get(i).toString() + System.getProperty("line.separator"));
             }
         }
-        System.out.println("File successfully created at " + filePath);
+        return"File successfully created at " + filePath;
     }
 
     /**
