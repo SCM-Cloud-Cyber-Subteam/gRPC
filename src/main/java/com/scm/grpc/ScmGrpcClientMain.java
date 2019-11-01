@@ -1,6 +1,7 @@
 package com.scm.grpc;
 
 import com.scm.resources.*;
+import main.java.com.scm.resources.getAllInfo;
 
 import io.grpc.stub.StreamObserver;
 import io.grpc.ManagedChannel;
@@ -24,7 +25,7 @@ import org.json.simple.JSONObject;
 import org.json.simple.JSONArray;
 
 public class ScmGrpcClientMain {
-	public static void main(String [] args){
+	public static void main(String [] args)throws IOException{
 		ScmGrpcClient foo = new ScmGrpcClient("141.212.133.36", 50051);
 		Scanner input = new Scanner(System.in);
 		getAllInfo OPCDataExtractor = new getAllInfo();
@@ -41,8 +42,7 @@ public class ScmGrpcClientMain {
 					srcPath = input.next();
 					System.out.println("Enter a destination path");
 					destPath = input.next();
-					String[][] tagsAndGroups = OPCDataExtractor.readTagsFromFile(srcPath);
-					System.out.println(OPCDataExtractor.writeTagsToFile(destPath,OPCDataExtractor.getTags(tagsAndGroups)));
+					System.out.println(OPCDataExtractor.readTagsFromFile(srcPath,destPath));
 				case "2":
 					System.out.println("Enter a tag name");
 					tagName = input.next();
