@@ -18,7 +18,7 @@ import static io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall;
 /**
  */
 @javax.annotation.Generated(
-    value = "by gRPC proto compiler (version 1.18.0-SNAPSHOT)",
+    value = "by gRPC proto compiler (version 1.24.1)",
     comments = "Source: scmmessages.proto")
 public final class MessageHandlerGrpc {
 
@@ -41,22 +41,21 @@ public final class MessageHandlerGrpc {
     if ((getConnectMethod = MessageHandlerGrpc.getConnectMethod) == null) {
       synchronized (MessageHandlerGrpc.class) {
         if ((getConnectMethod = MessageHandlerGrpc.getConnectMethod) == null) {
-          MessageHandlerGrpc.getConnectMethod = getConnectMethod = 
+          MessageHandlerGrpc.getConnectMethod = getConnectMethod =
               io.grpc.MethodDescriptor.<com.scm.resources.ConnectRequest, com.scm.resources.ConnectReply>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
-              .setFullMethodName(generateFullMethodName(
-                  "com.scm.resources.MessageHandler", "connect"))
+              .setFullMethodName(generateFullMethodName(SERVICE_NAME, "connect"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
                   com.scm.resources.ConnectRequest.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
                   com.scm.resources.ConnectReply.getDefaultInstance()))
-                  .setSchemaDescriptor(new MessageHandlerMethodDescriptorSupplier("connect"))
-                  .build();
-          }
+              .setSchemaDescriptor(new MessageHandlerMethodDescriptorSupplier("connect"))
+              .build();
         }
-     }
-     return getConnectMethod;
+      }
+    }
+    return getConnectMethod;
   }
 
   private static volatile io.grpc.MethodDescriptor<com.scm.resources.GroupsRequest,
@@ -73,22 +72,21 @@ public final class MessageHandlerGrpc {
     if ((getGetGroupsMethod = MessageHandlerGrpc.getGetGroupsMethod) == null) {
       synchronized (MessageHandlerGrpc.class) {
         if ((getGetGroupsMethod = MessageHandlerGrpc.getGetGroupsMethod) == null) {
-          MessageHandlerGrpc.getGetGroupsMethod = getGetGroupsMethod = 
+          MessageHandlerGrpc.getGetGroupsMethod = getGetGroupsMethod =
               io.grpc.MethodDescriptor.<com.scm.resources.GroupsRequest, com.scm.resources.GroupsReply>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
-              .setFullMethodName(generateFullMethodName(
-                  "com.scm.resources.MessageHandler", "getGroups"))
+              .setFullMethodName(generateFullMethodName(SERVICE_NAME, "getGroups"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
                   com.scm.resources.GroupsRequest.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
                   com.scm.resources.GroupsReply.getDefaultInstance()))
-                  .setSchemaDescriptor(new MessageHandlerMethodDescriptorSupplier("getGroups"))
-                  .build();
-          }
+              .setSchemaDescriptor(new MessageHandlerMethodDescriptorSupplier("getGroups"))
+              .build();
         }
-     }
-     return getGetGroupsMethod;
+      }
+    }
+    return getGetGroupsMethod;
   }
 
   private static volatile io.grpc.MethodDescriptor<com.scm.resources.GroupTagsRequest,
@@ -105,22 +103,21 @@ public final class MessageHandlerGrpc {
     if ((getGetGroupTagsMethod = MessageHandlerGrpc.getGetGroupTagsMethod) == null) {
       synchronized (MessageHandlerGrpc.class) {
         if ((getGetGroupTagsMethod = MessageHandlerGrpc.getGetGroupTagsMethod) == null) {
-          MessageHandlerGrpc.getGetGroupTagsMethod = getGetGroupTagsMethod = 
+          MessageHandlerGrpc.getGetGroupTagsMethod = getGetGroupTagsMethod =
               io.grpc.MethodDescriptor.<com.scm.resources.GroupTagsRequest, com.scm.resources.GroupTagsReply>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
-              .setFullMethodName(generateFullMethodName(
-                  "com.scm.resources.MessageHandler", "getGroupTags"))
+              .setFullMethodName(generateFullMethodName(SERVICE_NAME, "getGroupTags"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
                   com.scm.resources.GroupTagsRequest.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
                   com.scm.resources.GroupTagsReply.getDefaultInstance()))
-                  .setSchemaDescriptor(new MessageHandlerMethodDescriptorSupplier("getGroupTags"))
-                  .build();
-          }
+              .setSchemaDescriptor(new MessageHandlerMethodDescriptorSupplier("getGroupTags"))
+              .build();
         }
-     }
-     return getGetGroupTagsMethod;
+      }
+    }
+    return getGetGroupTagsMethod;
   }
 
   private static volatile io.grpc.MethodDescriptor<com.scm.resources.TagRequest,
@@ -137,22 +134,21 @@ public final class MessageHandlerGrpc {
     if ((getGetTagMethod = MessageHandlerGrpc.getGetTagMethod) == null) {
       synchronized (MessageHandlerGrpc.class) {
         if ((getGetTagMethod = MessageHandlerGrpc.getGetTagMethod) == null) {
-          MessageHandlerGrpc.getGetTagMethod = getGetTagMethod = 
+          MessageHandlerGrpc.getGetTagMethod = getGetTagMethod =
               io.grpc.MethodDescriptor.<com.scm.resources.TagRequest, com.scm.resources.TagReply>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
-              .setFullMethodName(generateFullMethodName(
-                  "com.scm.resources.MessageHandler", "getTag"))
+              .setFullMethodName(generateFullMethodName(SERVICE_NAME, "getTag"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
                   com.scm.resources.TagRequest.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
                   com.scm.resources.TagReply.getDefaultInstance()))
-                  .setSchemaDescriptor(new MessageHandlerMethodDescriptorSupplier("getTag"))
-                  .build();
-          }
+              .setSchemaDescriptor(new MessageHandlerMethodDescriptorSupplier("getTag"))
+              .build();
         }
-     }
-     return getGetTagMethod;
+      }
+    }
+    return getGetTagMethod;
   }
 
   private static volatile io.grpc.MethodDescriptor<com.scm.resources.MultipleTagsRequest,
@@ -162,29 +158,90 @@ public final class MessageHandlerGrpc {
       fullMethodName = SERVICE_NAME + '/' + "getMultipleTags",
       requestType = com.scm.resources.MultipleTagsRequest.class,
       responseType = com.scm.resources.MultipleTagsReply.class,
-      methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
+      methodType = io.grpc.MethodDescriptor.MethodType.SERVER_STREAMING)
   public static io.grpc.MethodDescriptor<com.scm.resources.MultipleTagsRequest,
       com.scm.resources.MultipleTagsReply> getGetMultipleTagsMethod() {
     io.grpc.MethodDescriptor<com.scm.resources.MultipleTagsRequest, com.scm.resources.MultipleTagsReply> getGetMultipleTagsMethod;
     if ((getGetMultipleTagsMethod = MessageHandlerGrpc.getGetMultipleTagsMethod) == null) {
       synchronized (MessageHandlerGrpc.class) {
         if ((getGetMultipleTagsMethod = MessageHandlerGrpc.getGetMultipleTagsMethod) == null) {
-          MessageHandlerGrpc.getGetMultipleTagsMethod = getGetMultipleTagsMethod = 
+          MessageHandlerGrpc.getGetMultipleTagsMethod = getGetMultipleTagsMethod =
               io.grpc.MethodDescriptor.<com.scm.resources.MultipleTagsRequest, com.scm.resources.MultipleTagsReply>newBuilder()
-              .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
-              .setFullMethodName(generateFullMethodName(
-                  "com.scm.resources.MessageHandler", "getMultipleTags"))
+              .setType(io.grpc.MethodDescriptor.MethodType.SERVER_STREAMING)
+              .setFullMethodName(generateFullMethodName(SERVICE_NAME, "getMultipleTags"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
                   com.scm.resources.MultipleTagsRequest.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
                   com.scm.resources.MultipleTagsReply.getDefaultInstance()))
-                  .setSchemaDescriptor(new MessageHandlerMethodDescriptorSupplier("getMultipleTags"))
-                  .build();
-          }
+              .setSchemaDescriptor(new MessageHandlerMethodDescriptorSupplier("getMultipleTags"))
+              .build();
         }
-     }
-     return getGetMultipleTagsMethod;
+      }
+    }
+    return getGetMultipleTagsMethod;
+  }
+
+  private static volatile io.grpc.MethodDescriptor<com.scm.resources.TagGroupFileRequest,
+      com.scm.resources.SuccessfulWritingReply> getReadTagsFromFileMethod;
+
+  @io.grpc.stub.annotations.RpcMethod(
+      fullMethodName = SERVICE_NAME + '/' + "readTagsFromFile",
+      requestType = com.scm.resources.TagGroupFileRequest.class,
+      responseType = com.scm.resources.SuccessfulWritingReply.class,
+      methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
+  public static io.grpc.MethodDescriptor<com.scm.resources.TagGroupFileRequest,
+      com.scm.resources.SuccessfulWritingReply> getReadTagsFromFileMethod() {
+    io.grpc.MethodDescriptor<com.scm.resources.TagGroupFileRequest, com.scm.resources.SuccessfulWritingReply> getReadTagsFromFileMethod;
+    if ((getReadTagsFromFileMethod = MessageHandlerGrpc.getReadTagsFromFileMethod) == null) {
+      synchronized (MessageHandlerGrpc.class) {
+        if ((getReadTagsFromFileMethod = MessageHandlerGrpc.getReadTagsFromFileMethod) == null) {
+          MessageHandlerGrpc.getReadTagsFromFileMethod = getReadTagsFromFileMethod =
+              io.grpc.MethodDescriptor.<com.scm.resources.TagGroupFileRequest, com.scm.resources.SuccessfulWritingReply>newBuilder()
+              .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
+              .setFullMethodName(generateFullMethodName(SERVICE_NAME, "readTagsFromFile"))
+              .setSampledToLocalTracing(true)
+              .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  com.scm.resources.TagGroupFileRequest.getDefaultInstance()))
+              .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  com.scm.resources.SuccessfulWritingReply.getDefaultInstance()))
+              .setSchemaDescriptor(new MessageHandlerMethodDescriptorSupplier("readTagsFromFile"))
+              .build();
+        }
+      }
+    }
+    return getReadTagsFromFileMethod;
+  }
+
+  private static volatile io.grpc.MethodDescriptor<com.scm.resources.TagGroupTwoFileRequest,
+      com.scm.resources.MultipleTagsReply> getReadTagsFromSeparateFileMethod;
+
+  @io.grpc.stub.annotations.RpcMethod(
+      fullMethodName = SERVICE_NAME + '/' + "readTagsFromSeparateFile",
+      requestType = com.scm.resources.TagGroupTwoFileRequest.class,
+      responseType = com.scm.resources.MultipleTagsReply.class,
+      methodType = io.grpc.MethodDescriptor.MethodType.SERVER_STREAMING)
+  public static io.grpc.MethodDescriptor<com.scm.resources.TagGroupTwoFileRequest,
+      com.scm.resources.MultipleTagsReply> getReadTagsFromSeparateFileMethod() {
+    io.grpc.MethodDescriptor<com.scm.resources.TagGroupTwoFileRequest, com.scm.resources.MultipleTagsReply> getReadTagsFromSeparateFileMethod;
+    if ((getReadTagsFromSeparateFileMethod = MessageHandlerGrpc.getReadTagsFromSeparateFileMethod) == null) {
+      synchronized (MessageHandlerGrpc.class) {
+        if ((getReadTagsFromSeparateFileMethod = MessageHandlerGrpc.getReadTagsFromSeparateFileMethod) == null) {
+          MessageHandlerGrpc.getReadTagsFromSeparateFileMethod = getReadTagsFromSeparateFileMethod =
+              io.grpc.MethodDescriptor.<com.scm.resources.TagGroupTwoFileRequest, com.scm.resources.MultipleTagsReply>newBuilder()
+              .setType(io.grpc.MethodDescriptor.MethodType.SERVER_STREAMING)
+              .setFullMethodName(generateFullMethodName(SERVICE_NAME, "readTagsFromSeparateFile"))
+              .setSampledToLocalTracing(true)
+              .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  com.scm.resources.TagGroupTwoFileRequest.getDefaultInstance()))
+              .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  com.scm.resources.MultipleTagsReply.getDefaultInstance()))
+              .setSchemaDescriptor(new MessageHandlerMethodDescriptorSupplier("readTagsFromSeparateFile"))
+              .build();
+        }
+      }
+    }
+    return getReadTagsFromSeparateFileMethod;
   }
 
   /**
@@ -261,6 +318,26 @@ public final class MessageHandlerGrpc {
       asyncUnimplementedUnaryCall(getGetMultipleTagsMethod(), responseObserver);
     }
 
+    /**
+     * <pre>
+     *RPC for getting tag values from reading a single file
+     * </pre>
+     */
+    public void readTagsFromFile(com.scm.resources.TagGroupFileRequest request,
+        io.grpc.stub.StreamObserver<com.scm.resources.SuccessfulWritingReply> responseObserver) {
+      asyncUnimplementedUnaryCall(getReadTagsFromFileMethod(), responseObserver);
+    }
+
+    /**
+     * <pre>
+     *RPC for getting tag values from reading separate files for groups/tagNames
+     * </pre>
+     */
+    public void readTagsFromSeparateFile(com.scm.resources.TagGroupTwoFileRequest request,
+        io.grpc.stub.StreamObserver<com.scm.resources.MultipleTagsReply> responseObserver) {
+      asyncUnimplementedUnaryCall(getReadTagsFromSeparateFileMethod(), responseObserver);
+    }
+
     @java.lang.Override public final io.grpc.ServerServiceDefinition bindService() {
       return io.grpc.ServerServiceDefinition.builder(getServiceDescriptor())
           .addMethod(
@@ -293,11 +370,25 @@ public final class MessageHandlerGrpc {
                   this, METHODID_GET_TAG)))
           .addMethod(
             getGetMultipleTagsMethod(),
-            asyncUnaryCall(
+            asyncServerStreamingCall(
               new MethodHandlers<
                 com.scm.resources.MultipleTagsRequest,
                 com.scm.resources.MultipleTagsReply>(
                   this, METHODID_GET_MULTIPLE_TAGS)))
+          .addMethod(
+            getReadTagsFromFileMethod(),
+            asyncUnaryCall(
+              new MethodHandlers<
+                com.scm.resources.TagGroupFileRequest,
+                com.scm.resources.SuccessfulWritingReply>(
+                  this, METHODID_READ_TAGS_FROM_FILE)))
+          .addMethod(
+            getReadTagsFromSeparateFileMethod(),
+            asyncServerStreamingCall(
+              new MethodHandlers<
+                com.scm.resources.TagGroupTwoFileRequest,
+                com.scm.resources.MultipleTagsReply>(
+                  this, METHODID_READ_TAGS_FROM_SEPARATE_FILE)))
           .build();
     }
   }
@@ -368,8 +459,30 @@ public final class MessageHandlerGrpc {
      */
     public void getMultipleTags(com.scm.resources.MultipleTagsRequest request,
         io.grpc.stub.StreamObserver<com.scm.resources.MultipleTagsReply> responseObserver) {
-      asyncUnaryCall(
+      asyncServerStreamingCall(
           getChannel().newCall(getGetMultipleTagsMethod(), getCallOptions()), request, responseObserver);
+    }
+
+    /**
+     * <pre>
+     *RPC for getting tag values from reading a single file
+     * </pre>
+     */
+    public void readTagsFromFile(com.scm.resources.TagGroupFileRequest request,
+        io.grpc.stub.StreamObserver<com.scm.resources.SuccessfulWritingReply> responseObserver) {
+      asyncUnaryCall(
+          getChannel().newCall(getReadTagsFromFileMethod(), getCallOptions()), request, responseObserver);
+    }
+
+    /**
+     * <pre>
+     *RPC for getting tag values from reading separate files for groups/tagNames
+     * </pre>
+     */
+    public void readTagsFromSeparateFile(com.scm.resources.TagGroupTwoFileRequest request,
+        io.grpc.stub.StreamObserver<com.scm.resources.MultipleTagsReply> responseObserver) {
+      asyncServerStreamingCall(
+          getChannel().newCall(getReadTagsFromSeparateFileMethod(), getCallOptions()), request, responseObserver);
     }
   }
 
@@ -433,9 +546,31 @@ public final class MessageHandlerGrpc {
      * RPC for getting tag values (multiple)
      * </pre>
      */
-    public com.scm.resources.MultipleTagsReply getMultipleTags(com.scm.resources.MultipleTagsRequest request) {
-      return blockingUnaryCall(
+    public java.util.Iterator<com.scm.resources.MultipleTagsReply> getMultipleTags(
+        com.scm.resources.MultipleTagsRequest request) {
+      return blockingServerStreamingCall(
           getChannel(), getGetMultipleTagsMethod(), getCallOptions(), request);
+    }
+
+    /**
+     * <pre>
+     *RPC for getting tag values from reading a single file
+     * </pre>
+     */
+    public com.scm.resources.SuccessfulWritingReply readTagsFromFile(com.scm.resources.TagGroupFileRequest request) {
+      return blockingUnaryCall(
+          getChannel(), getReadTagsFromFileMethod(), getCallOptions(), request);
+    }
+
+    /**
+     * <pre>
+     *RPC for getting tag values from reading separate files for groups/tagNames
+     * </pre>
+     */
+    public java.util.Iterator<com.scm.resources.MultipleTagsReply> readTagsFromSeparateFile(
+        com.scm.resources.TagGroupTwoFileRequest request) {
+      return blockingServerStreamingCall(
+          getChannel(), getReadTagsFromSeparateFileMethod(), getCallOptions(), request);
     }
   }
 
@@ -500,13 +635,13 @@ public final class MessageHandlerGrpc {
 
     /**
      * <pre>
-     * RPC for getting tag values (multiple)
+     *RPC for getting tag values from reading a single file
      * </pre>
      */
-    public com.google.common.util.concurrent.ListenableFuture<com.scm.resources.MultipleTagsReply> getMultipleTags(
-        com.scm.resources.MultipleTagsRequest request) {
+    public com.google.common.util.concurrent.ListenableFuture<com.scm.resources.SuccessfulWritingReply> readTagsFromFile(
+        com.scm.resources.TagGroupFileRequest request) {
       return futureUnaryCall(
-          getChannel().newCall(getGetMultipleTagsMethod(), getCallOptions()), request);
+          getChannel().newCall(getReadTagsFromFileMethod(), getCallOptions()), request);
     }
   }
 
@@ -515,6 +650,8 @@ public final class MessageHandlerGrpc {
   private static final int METHODID_GET_GROUP_TAGS = 2;
   private static final int METHODID_GET_TAG = 3;
   private static final int METHODID_GET_MULTIPLE_TAGS = 4;
+  private static final int METHODID_READ_TAGS_FROM_FILE = 5;
+  private static final int METHODID_READ_TAGS_FROM_SEPARATE_FILE = 6;
 
   private static final class MethodHandlers<Req, Resp> implements
       io.grpc.stub.ServerCalls.UnaryMethod<Req, Resp>,
@@ -551,6 +688,14 @@ public final class MessageHandlerGrpc {
           break;
         case METHODID_GET_MULTIPLE_TAGS:
           serviceImpl.getMultipleTags((com.scm.resources.MultipleTagsRequest) request,
+              (io.grpc.stub.StreamObserver<com.scm.resources.MultipleTagsReply>) responseObserver);
+          break;
+        case METHODID_READ_TAGS_FROM_FILE:
+          serviceImpl.readTagsFromFile((com.scm.resources.TagGroupFileRequest) request,
+              (io.grpc.stub.StreamObserver<com.scm.resources.SuccessfulWritingReply>) responseObserver);
+          break;
+        case METHODID_READ_TAGS_FROM_SEPARATE_FILE:
+          serviceImpl.readTagsFromSeparateFile((com.scm.resources.TagGroupTwoFileRequest) request,
               (io.grpc.stub.StreamObserver<com.scm.resources.MultipleTagsReply>) responseObserver);
           break;
         default:
@@ -619,6 +764,8 @@ public final class MessageHandlerGrpc {
               .addMethod(getGetGroupTagsMethod())
               .addMethod(getGetTagMethod())
               .addMethod(getGetMultipleTagsMethod())
+              .addMethod(getReadTagsFromFileMethod())
+              .addMethod(getReadTagsFromSeparateFileMethod())
               .build();
         }
       }
