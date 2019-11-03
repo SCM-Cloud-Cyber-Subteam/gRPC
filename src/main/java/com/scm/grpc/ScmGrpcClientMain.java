@@ -28,7 +28,7 @@ public class ScmGrpcClientMain {
 	public static void main(String [] args)throws IOException{
 		ScmGrpcClient foo = new ScmGrpcClient("141.212.133.36", 50051);
 		Scanner input = new Scanner(System.in);
-		getAllInfo OPCDataExtractor = new getAllInfo();
+		//getAllInfo OPCDataExtractor = new getAllInfo();
 		String choice, tagName, groupName, srcPath,destPath;
 		while(true){
 			System.out.println("Enter 1 to read tags from file or 2 to input tag/group name or 'exit' to exit");
@@ -42,15 +42,14 @@ public class ScmGrpcClientMain {
 					srcPath = input.next();
 					System.out.println("Enter a destination path");
 					destPath = input.next();
-					String[][] tagsAndGroups = OPCDataExtractor.readTagsFromFile(srcPath);
-					System.out.println(OPCDataExtractor.writeTagsToFile(destPath,OPCDataExtractor.getTags(tagsAndGroups)));
+					System.out.println(foo.readTagsFromFile(srcPath,destPath));
 					break;
 				case "2":
 					System.out.println("Enter a tag name");
 					tagName = input.next();
 					System.out.println("Enter its group corresponding group name");
 					groupName = input.next();
-					System.out.println(OPCDataExtractor.getTag(tagName,groupName));
+					System.out.println(foo.getTag(tagName,groupName));
 					break;
 			}
 
